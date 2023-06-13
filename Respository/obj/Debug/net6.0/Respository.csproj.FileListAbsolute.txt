@@ -48,3 +48,9 @@ C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Respository\obj\Deb
 C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Respository\obj\Debug\net6.0\Respository.dll
 C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Respository\obj\Debug\net6.0\refint\Respository.dll
 C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Respository\obj\Debug\net6.0\Respository.pdb
+C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Respository\bin\Debug\net6.0\Respository.deps.json
+C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Respository\bin\Debug\net6.0\Respository.runtimeconfig.json
+C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Respository\bin\Debug\net6.0\Respository.dll
+C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Respository\bin\Debug\net6.0\Respository.pdb
+C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Respository\obj\Debug\net6.0\Respository.genruntimeconfig.cache
+C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Respository\obj\Debug\net6.0\ref\Respository.dll

@@ -64,5 +64,17 @@ namespace Bird_Management
 
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            
+            Form fo = new CreateAccount();
+            fo.ShowDialog();
+        }
     }
 }
