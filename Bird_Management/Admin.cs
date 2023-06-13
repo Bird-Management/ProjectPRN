@@ -47,5 +47,19 @@ namespace Bird_Management
             Form fo = new CreateAccount();
             fo.Show();
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form fo = new UpdateAccount();
+            fo.Show();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form fo = new DeleteAccount();
+            fo.Show();
+        }
     }
 }
