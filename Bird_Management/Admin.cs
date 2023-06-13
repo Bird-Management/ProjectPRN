@@ -25,32 +25,7 @@ namespace Bird_Management
 
         }
 
-        private void dgvListAccount_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            txtUsername.Enabled = false;
-            txtPassword.Enabled = false;
-            chbAdmin.Enabled = false;
-            chbSeller.Enabled = false;
-            AccountServices accountServices = new AccountServices(_context);
-            var id = dgvListAccount[0, e.RowIndex].Value;
-            var allAccount = accountServices.GetAccounts().Where(x => x.UId.Equals(id)).FirstOrDefault();
-            if (allAccount != null)
-            {
-                txtUsername.Text = allAccount.User;
-                txtPassword.Text = allAccount.Pass;
-                if (allAccount.IsAdmin == true)
-                {
-                    chbAdmin.Checked = true;
-                    chbSeller.Checked = false;
-                }
-                else
-                {
-                    chbAdmin.Checked = false;
-                    chbSeller.Checked = true;
-                }
-            }
 
-        }
 
         private void btLogout_Click_1(object sender, EventArgs e)
         {
