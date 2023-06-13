@@ -20,12 +20,13 @@ namespace Bird_Management
         private void btBack_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Do you want to back Admin Page?", "BirdShop",
-                MessageBoxButtons.YesNoCancel);
+                MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
                 this.Close();
-                Form form = new Login();
+                Form form = new Admin();
                 form.Show();
             }
+        }
     }
 }

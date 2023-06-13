@@ -48,5 +48,17 @@ namespace Bird_Management
                 throw new Exception(ex.Message);
             }
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want to back Login Page?", "BirdShop",
+                MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+                Form form = new Login();
+                form.Show();
+            }
+        }
     }
 }
