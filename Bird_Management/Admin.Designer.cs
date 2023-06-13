@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
             label1 = new Label();
             dgvListAccount = new DataGridView();
-            button1 = new Button();
+            btnCreate = new Button();
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
@@ -71,15 +71,16 @@
             dgvListAccount.TabIndex = 1;
             dgvListAccount.CellDoubleClick += dgvListAccount_CellDoubleClick;
             // 
-            // button1
+            // btnCreate
             // 
-            button1.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(51, 94);
-            button1.Name = "button1";
-            button1.Size = new Size(111, 62);
-            button1.TabIndex = 2;
-            button1.Text = "Create";
-            button1.UseVisualStyleBackColor = true;
+            btnCreate.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCreate.Location = new Point(51, 94);
+            btnCreate.Name = "btnCreate";
+            btnCreate.Size = new Size(111, 62);
+            btnCreate.TabIndex = 2;
+            btnCreate.Text = "Create";
+            btnCreate.UseVisualStyleBackColor = true;
+            btnCreate.Click += btnCreate_Click;
             // 
             // button2
             // 
@@ -226,7 +227,7 @@
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnCreate);
             Controls.Add(dgvListAccount);
             Controls.Add(label1);
             Name = "Admin";
@@ -242,7 +243,7 @@
 
         private Label label1;
         private DataGridView dgvListAccount;
-        private Button button1;
+        private Button btnCreate;
         private Button button2;
         private Button button3;
         private Button button4;

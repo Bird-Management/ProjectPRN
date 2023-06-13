@@ -22,8 +22,8 @@ namespace Respository.Models
         [Unicode(false)]
         public string Pass { get; set; }
         [Column("isSell")]
-        public int? IsSell { get; set; }
+        public bool? IsSell { get; set; }
         [Column("isAdmin")]
-        public int? IsAdmin { get; set; }
+        public bool? IsAdmin { get; set; }
     }
 }

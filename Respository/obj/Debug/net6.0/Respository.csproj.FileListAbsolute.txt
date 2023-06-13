@@ -40,3 +40,17 @@ C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Respository\obj\Debug\net6.0\Respository.pdb
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Respository\obj\Debug\net6.0\Respository.genruntimeconfig.cache
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Respository\obj\Debug\net6.0\ref\Respository.dll
+C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Respository\obj\Debug\net6.0\Respository.csproj.AssemblyReference.cache
+C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Respository\obj\Debug\net6.0\Respository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Respository\obj\Debug\net6.0\Respository.AssemblyInfoInputs.cache
+C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Respository\obj\Debug\net6.0\Respository.AssemblyInfo.cs
+C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Respository\obj\Debug\net6.0\Respository.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Respository\obj\Debug\net6.0\Respository.dll
+C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Respository\obj\Debug\net6.0\refint\Respository.dll
+C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Respository\obj\Debug\net6.0\Respository.pdb
+C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Respository\bin\Debug\net6.0\Respository.deps.json
+C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Respository\bin\Debug\net6.0\Respository.runtimeconfig.json
+C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Respository\bin\Debug\net6.0\Respository.dll
+C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Respository\bin\Debug\net6.0\Respository.pdb
+C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Respository\obj\Debug\net6.0\Respository.genruntimeconfig.cache
+C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Respository\obj\Debug\net6.0\ref\Respository.dll

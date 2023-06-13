@@ -38,7 +38,7 @@ namespace Bird_Management
             {
                 txtUsername.Text = allAccount.User;
                 txtPassword.Text = allAccount.Pass;
-                if (allAccount.IsAdmin == 1)
+                if (allAccount.IsAdmin == true)
                 {
                     chbAdmin.Checked = true;
                     chbSeller.Checked = false;
@@ -63,6 +63,18 @@ namespace Bird_Management
                 form.Show();
 
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            
+            Form fo = new CreateAccount();
+            fo.ShowDialog();
         }
     }
 }
