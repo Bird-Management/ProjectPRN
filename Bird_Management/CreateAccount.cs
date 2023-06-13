@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using Respository.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,5 +30,42 @@ namespace Bird_Management
                 form.Show();
             }
         }
+
+        private void btnCreateAccount_Click(object sender, EventArgs e)
+        {
+            BirdManagementContext _context = new BirdManagementContext();
+
+            Account account = new Account();
+            account.User = txtUsername.Text;
+            account.Pass = txtPassword.Text;
+            account.Pass = txtConfirmPassword.Text;
+            account.IsAdmin = chbAdmin.Checked;
+            account.IsSell = chbSeller.Checked;
+            _context.Account.Add(account);
+            _context.SaveChanges();
+
+            // Clear the text fields or reset their Text properties
+            txtUsername.Clear();
+            txtPassword.Clear();
+            txtConfirmPassword.Clear();
+            chbAdmin.Checked = false;
+            chbSeller.Checked = false;
+
+            if (string.IsNullOrWhiteSpace(txtUsername.Text) ||
+                string.IsNullOrWhiteSpace(txtPassword.Text) ||
+                string.IsNullOrWhiteSpace(txtConfirmPassword.Text) ||
+                (!chbSeller.Checked && !chbAdmin.Checked))
+            {
+                MessageBox.Show("Invalid Account Information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
+            }
+            else
+            {
+                MessageBox.Show("Add Account Successfully", "Notification", MessageBoxButtons.OK);
+            }
+
+        }
+
+
     }
 }
