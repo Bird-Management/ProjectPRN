@@ -64,8 +64,8 @@ namespace Respository.Services
                 var account = new Account();
                 account.User = username;
                 account.Pass = password;
-                account.IsAdmin = 1;
-                account.IsSell = 0;
+                account.IsAdmin = true;
+                account.IsSell = false;
 
                 this._context.Add(account);
                 this._context.SaveChanges();
@@ -85,8 +85,8 @@ namespace Respository.Services
                 var account = new Account();
                 account.User = username;
                 account.Pass = password;
-                account.IsAdmin = 0;
-                account.IsSell = 1;
+                account.IsAdmin = false;
+                account.IsSell = true;
 
                 this._context.Add(account);
                 this._context.SaveChanges();

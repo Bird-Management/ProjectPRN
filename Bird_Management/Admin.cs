@@ -38,7 +38,7 @@ namespace Bird_Management
             {
                 txtUsername.Text = allAccount.User;
                 txtPassword.Text = allAccount.Pass;
-                if (allAccount.IsAdmin == 1)
+                if (allAccount.IsAdmin == true)
                 {
                     chbAdmin.Checked = true;
                     chbSeller.Checked = false;

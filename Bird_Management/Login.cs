@@ -29,7 +29,7 @@ namespace Bird_Management
                 string pas = txtPassword.Text;
 
                 Account ac = _accountServices.LoginAccount(us, pas);
-                if (ac.IsAdmin == 1)
+                if (ac.IsAdmin == true)
                 {
                     this.Hide();
 
