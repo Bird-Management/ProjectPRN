@@ -16,5 +16,8 @@
     <Compile Update="Sell.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UpdateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
