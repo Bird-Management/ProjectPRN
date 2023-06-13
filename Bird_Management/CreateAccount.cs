@@ -36,7 +36,7 @@ namespace Bird_Management
             BirdManagementContext _context = new BirdManagementContext();
 
             Account account = new Account();
-            account.User = txtUsername.Text;
+            account.User = txtUsername.Text.Trim();
             account.Pass = txtPassword.Text;
             account.Pass = txtConfirmPassword.Text;
             account.IsAdmin = chbAdmin.Checked;
@@ -44,25 +44,14 @@ namespace Bird_Management
             _context.Account.Add(account);
             _context.SaveChanges();
 
+
             // Clear the text fields or reset their Text properties
             txtUsername.Clear();
             txtPassword.Clear();
             txtConfirmPassword.Clear();
             chbAdmin.Checked = false;
-            chbSeller.Checked = false;
-
-            if (string.IsNullOrWhiteSpace(txtUsername.Text) ||
-                string.IsNullOrWhiteSpace(txtPassword.Text) ||
-                string.IsNullOrWhiteSpace(txtConfirmPassword.Text) ||
-                (!chbSeller.Checked && !chbAdmin.Checked))
-            {
-                MessageBox.Show("Invalid Account Information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                
-            }
-            else
-            {
-                MessageBox.Show("Add Account Successfully", "Notification", MessageBoxButtons.OK);
-            }
+            chbSeller.Checked = false;          
+            
 
         }
 
