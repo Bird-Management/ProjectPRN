@@ -53,11 +53,8 @@ namespace Bird_Management
         private void btRegister_Click(object sender, EventArgs e)
         {
             this.Hide();
-
             Form formSignUp = new SignUp();
             formSignUp.ShowDialog();
-            formSignUp = null;
-            this.Show();
 
         }
     }
