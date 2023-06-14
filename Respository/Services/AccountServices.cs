@@ -78,6 +78,25 @@ namespace Respository.Services
             }
         }
 
+        public bool DeleteAccountAdmin(string username, string password)
+        {
+            try
+            {
+                var account = _context.Account.FirstOrDefault(a => a.User == username && a.Pass == password);
+                if (account != null)
+                {
+                    _context.Remove(account);
+                    _context.SaveChanges(); 
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception (ex.Message);
+            }
+        }
+
         public Account NewAccountSeller(string username, string password)
         {
             try

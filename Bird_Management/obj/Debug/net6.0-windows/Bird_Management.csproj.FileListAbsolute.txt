@@ -268,3 +268,4 @@ C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\B
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\ref\Bird_Management.dll
 C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.DeleteAccount.resources
 C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.UpdateAccount.resources
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.DeleteAccount.resources
