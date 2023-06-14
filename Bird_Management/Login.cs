@@ -36,7 +36,14 @@ namespace Bird_Management
                     Form form = new Admin();
                     form.ShowDialog();
                 }
-                else if(ac.IsSell == true) 
+                else if (ac.IsSell == true)
+                {
+                    this.Hide();
+
+                    Form form = new Sell();
+                    form.ShowDialog();
+                }
+                else 
                 {
                     this.Hide();
 

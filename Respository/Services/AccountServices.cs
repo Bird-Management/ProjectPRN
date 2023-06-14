@@ -78,15 +78,13 @@ namespace Respository.Services
             }
         }
 
-        public Account NewAccountSeller(string username, string password)
+        public Account NewAccount(string username, string password)
         {
             try
             {
                 var account = new Account();
                 account.User = username;
                 account.Pass = password;
-                account.IsAdmin = false;
-                account.IsSell = true;
 
                 this._context.Add(account);
                 this._context.SaveChanges();

@@ -34,8 +34,6 @@
             label3 = new Label();
             txtUsername = new TextBox();
             txtPassword = new TextBox();
-            chbSell = new CheckBox();
-            chbAdmin = new CheckBox();
             btSignUp = new Button();
             toolStrip1 = new ToolStrip();
             btnBack = new ToolStripButton();
@@ -95,35 +93,11 @@
             txtPassword.Size = new Size(199, 35);
             txtPassword.TabIndex = 6;
             // 
-            // chbSell
-            // 
-            chbSell.AutoSize = true;
-            chbSell.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            chbSell.ForeColor = Color.Black;
-            chbSell.Location = new Point(412, 303);
-            chbSell.Name = "chbSell";
-            chbSell.Size = new Size(82, 33);
-            chbSell.TabIndex = 7;
-            chbSell.Text = "Sell";
-            chbSell.UseVisualStyleBackColor = true;
-            // 
-            // chbAdmin
-            // 
-            chbAdmin.AutoSize = true;
-            chbAdmin.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            chbAdmin.ForeColor = Color.Black;
-            chbAdmin.Location = new Point(496, 303);
-            chbAdmin.Name = "chbAdmin";
-            chbAdmin.Size = new Size(114, 33);
-            chbAdmin.TabIndex = 8;
-            chbAdmin.Text = "Admin";
-            chbAdmin.UseVisualStyleBackColor = true;
-            // 
             // btSignUp
             // 
             btSignUp.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
             btSignUp.ForeColor = Color.Black;
-            btSignUp.Location = new Point(411, 342);
+            btSignUp.Location = new Point(411, 311);
             btSignUp.Name = "btSignUp";
             btSignUp.Size = new Size(199, 54);
             btSignUp.TabIndex = 9;
@@ -180,8 +154,6 @@
             Controls.Add(label4);
             Controls.Add(toolStrip1);
             Controls.Add(btSignUp);
-            Controls.Add(chbAdmin);
-            Controls.Add(chbSell);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
             Controls.Add(label3);
@@ -203,8 +175,6 @@
         private Label label3;
         private TextBox txtUsername;
         private TextBox txtPassword;
-        private CheckBox chbSell;
-        private CheckBox chbAdmin;
         private Button btSignUp;
         private ToolStrip toolStrip1;
         private ToolStripButton btnBack;

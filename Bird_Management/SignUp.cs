@@ -29,17 +29,9 @@ namespace Bird_Management
 
                 string user = txtUsername.Text;
                 string password = txtPassword.Text;
-
-                if (chbAdmin.Checked == true)
-                {
-                    var newAccount = accountServices.NewAccountAdmin(user, password);
-                    MessageBox.Show("Sign Up Success", "Notification", MessageBoxButtons.OK);
-                }
-                else
-                {
-                    var newAccount = accountServices.NewAccountSeller(user, password);
-                    MessageBox.Show("Sign Up Success", "Notification", MessageBoxButtons.OK);
-                }
+                var newAccount = accountServices.NewAccount(user, password);
+                MessageBox.Show("Sign Up Success", "Notification", MessageBoxButtons.OK);
+                
 
 
             }
