@@ -28,6 +28,21 @@ namespace Bird_Management
                 string us = txtUsername.Text;
                 string pas = txtPassword.Text;
 
+                //check empty string
+                if (string.IsNullOrWhiteSpace(us))
+                {
+                    MessageBox.Show("Please enter Username", "Validation error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                //check empty 
+                if (string.IsNullOrWhiteSpace(pas))
+                {
+                    MessageBox.Show("Please enter Password", "Validation error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+
                 Account ac = _accountServices.LoginAccount(us, pas);
                 if (ac.IsAdmin == true)
                 {

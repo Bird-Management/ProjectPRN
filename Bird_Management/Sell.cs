@@ -26,7 +26,7 @@ namespace Bird_Management
         private void btLogout_Click_1(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Do you want to exit BirdShop", "BirdShop",
-               MessageBoxButtons.YesNoCancel);
+               MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
                 this.Close();
