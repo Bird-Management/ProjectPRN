@@ -87,7 +87,14 @@ namespace Bird_Management
             Account account;
             try
             {
-                account = accountServices.NewAccountAdmin(username, password);
+                if (chbAdmin.Checked)
+                {
+                    account = accountServices.NewAccountAdmin(username, password);
+                }
+                else
+                {
+                    account = accountServices.NewAccountSeller(username, password);
+                }
             }
             catch (Exception ex)
             {

@@ -118,5 +118,26 @@ namespace Respository.Services
                 throw new Exception(ex.Message);
             }
         }
+
+        public void UpdateAccount(string username, string password, bool isSell, bool isAdmin)
+        {
+            try
+            {
+                var checkAcc = this._context.Account.Where(x => x.User.Equals(username)).FirstOrDefault();
+                if (checkAcc != null)
+                {
+                    checkAcc.User = username;
+                    checkAcc.Pass = password;
+                    checkAcc.IsAdmin = isAdmin;
+                    checkAcc.IsSell = isSell;
+                    
+                    this._context.SaveChanges();
+                }
+
+            }catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

@@ -1924,27 +1924,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nghia\\.nuget\\packages\\": {}
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "D:\\ProjectPRN\\Bird_Management\\Bird_Management.csproj",
       "projectName": "Bird_Management",
       "projectPath": "D:\\ProjectPRN\\Bird_Management\\Bird_Management.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
       "outputPath": "D:\\ProjectPRN\\Bird_Management\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Bird_Management\\Bird_Management.csproj",
-      "projectName": "Bird_Management",
-      "projectPath": "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Bird_Management\\Bird_Management.csproj",
-      "packagesPath": "C:\\Users\\nghia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Bird_Management\\obj\\",
->>>>>>> a93415b059678b5b19644bc2e1f711f3683be7de
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nghia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1958,13 +1950,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-<<<<<<< HEAD
             "D:\\ProjectPRN\\Respository\\Respository.csproj": {
               "projectPath": "D:\\ProjectPRN\\Respository\\Respository.csproj"
-=======
-            "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Respository\\Respository.csproj": {
-              "projectPath": "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Respository\\Respository.csproj"
->>>>>>> a93415b059678b5b19644bc2e1f711f3683be7de
             }
           }
         }
@@ -1997,8 +1984,16 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\ProjectPRN\\Bird_Management\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

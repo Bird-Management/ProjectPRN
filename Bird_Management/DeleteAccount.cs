@@ -1,7 +1,5 @@
 ﻿using Respository.Models;
 using Respository.Services;
-using Respository.Models;
-using Respository.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

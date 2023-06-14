@@ -33,14 +33,15 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            dataGridView1 = new DataGridView();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            comboBox1 = new ComboBox();
-            button1 = new Button();
+            dgvUpdateAccount = new DataGridView();
+            txtUsername = new TextBox();
+            txtPassword = new TextBox();
+            btnUpdateAccount = new Button();
             toolStrip1 = new ToolStrip();
             btnBack = new ToolStripButton();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            chbSeller = new CheckBox();
+            chbAdmin = new CheckBox();
+            ((System.ComponentModel.ISupportInitialize)dgvUpdateAccount).BeginInit();
             toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -58,76 +59,70 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(75, 121);
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(75, 113);
             label2.Name = "label2";
-            label2.Size = new Size(128, 32);
+            label2.Size = new Size(121, 32);
             label2.TabIndex = 1;
             label2.Text = "Username";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(75, 179);
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(75, 171);
             label3.Name = "label3";
-            label3.Size = new Size(122, 32);
+            label3.Size = new Size(111, 32);
             label3.TabIndex = 2;
             label3.Text = "Password";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(75, 244);
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(75, 236);
             label4.Name = "label4";
-            label4.Size = new Size(64, 32);
+            label4.Size = new Size(60, 32);
             label4.TabIndex = 3;
             label4.Text = "Role";
             // 
-            // dataGridView1
+            // dgvUpdateAccount
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(558, 114);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.RowTemplate.Height = 33;
-            dataGridView1.Size = new Size(614, 397);
-            dataGridView1.TabIndex = 4;
+            dgvUpdateAccount.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvUpdateAccount.Location = new Point(558, 114);
+            dgvUpdateAccount.Name = "dgvUpdateAccount";
+            dgvUpdateAccount.RowHeadersWidth = 62;
+            dgvUpdateAccount.RowTemplate.Height = 33;
+            dgvUpdateAccount.Size = new Size(632, 311);
+            dgvUpdateAccount.TabIndex = 4;
+            dgvUpdateAccount.CellDoubleClick += dgvUpdateAccount_CellDoubleClick;
             // 
-            // textBox1
+            // txtUsername
             // 
-            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(228, 121);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(308, 39);
-            textBox1.TabIndex = 5;
+            txtUsername.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtUsername.Location = new Point(228, 113);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(308, 39);
+            txtUsername.TabIndex = 5;
             // 
-            // textBox2
+            // txtPassword
             // 
-            textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.Location = new Point(228, 179);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(308, 39);
-            textBox2.TabIndex = 6;
+            txtPassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPassword.Location = new Point(228, 171);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(308, 39);
+            txtPassword.TabIndex = 6;
             // 
-            // comboBox1
+            // btnUpdateAccount
             // 
-            comboBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(228, 244);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(308, 40);
-            comboBox1.TabIndex = 7;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(231, 308);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 8;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btnUpdateAccount.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnUpdateAccount.Location = new Point(228, 300);
+            btnUpdateAccount.Name = "btnUpdateAccount";
+            btnUpdateAccount.Size = new Size(308, 47);
+            btnUpdateAccount.TabIndex = 8;
+            btnUpdateAccount.Text = "Update Account";
+            btnUpdateAccount.UseVisualStyleBackColor = true;
+            btnUpdateAccount.Click += btnUpdateAccount_Click;
             // 
             // toolStrip1
             // 
@@ -149,24 +144,47 @@
             btnBack.Text = "Back";
             btnBack.Click += btnBack_Click;
             // 
+            // chbSeller
+            // 
+            chbSeller.AutoSize = true;
+            chbSeller.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            chbSeller.Location = new Point(228, 243);
+            chbSeller.Name = "chbSeller";
+            chbSeller.Size = new Size(99, 36);
+            chbSeller.TabIndex = 10;
+            chbSeller.Text = "Seller";
+            chbSeller.UseVisualStyleBackColor = true;
+            // 
+            // chbAdmin
+            // 
+            chbAdmin.AutoSize = true;
+            chbAdmin.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            chbAdmin.Location = new Point(379, 243);
+            chbAdmin.Name = "chbAdmin";
+            chbAdmin.Size = new Size(110, 36);
+            chbAdmin.TabIndex = 11;
+            chbAdmin.Text = "Admin";
+            chbAdmin.UseVisualStyleBackColor = true;
+            // 
             // UpdateAccount
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1213, 591);
+            ClientSize = new Size(1213, 464);
+            Controls.Add(chbAdmin);
+            Controls.Add(chbSeller);
             Controls.Add(toolStrip1);
-            Controls.Add(button1);
-            Controls.Add(comboBox1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(dataGridView1);
+            Controls.Add(btnUpdateAccount);
+            Controls.Add(txtPassword);
+            Controls.Add(txtUsername);
+            Controls.Add(dgvUpdateAccount);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "UpdateAccount";
             Text = "UpdateAccount";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvUpdateAccount).EndInit();
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
             ResumeLayout(false);
@@ -179,12 +197,13 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private DataGridView dataGridView1;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private ComboBox comboBox1;
-        private Button button1;
+        private DataGridView dgvUpdateAccount;
+        private TextBox txtUsername;
+        private TextBox txtPassword;
+        private Button btnUpdateAccount;
         private ToolStrip toolStrip1;
         private ToolStripButton btnBack;
+        private CheckBox chbSeller;
+        private CheckBox chbAdmin;
     }
 }
