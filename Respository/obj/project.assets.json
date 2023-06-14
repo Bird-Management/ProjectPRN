@@ -1976,11 +1976,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\SUMMER2023\\SWP391\\ProjectPRN\\Respository\\Respository.csproj",
+      "projectUniqueName": "D:\\ProjectPRN\\Respository\\Respository.csproj",
       "projectName": "Respository",
-      "projectPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\SUMMER2023\\SWP391\\ProjectPRN\\Respository\\Respository.csproj",
+      "projectPath": "D:\\ProjectPRN\\Respository\\Respository.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\SUMMER2023\\SWP391\\ProjectPRN\\Respository\\obj\\",
+      "outputPath": "D:\\ProjectPRN\\Respository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",

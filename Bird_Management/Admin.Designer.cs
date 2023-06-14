@@ -36,8 +36,6 @@
             toolStrip1 = new ToolStrip();
             btLogout = new ToolStripButton();
             label1 = new Label();
-            label2 = new Label();
-            txtSearch = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dgvListAccount).BeginInit();
             toolStrip1.SuspendLayout();
             SuspendLayout();
@@ -121,33 +119,11 @@
             label1.TabIndex = 19;
             label1.Text = "WELCOME TO ADMIN PAGE";
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(109, 130);
-            label2.Margin = new Padding(2, 0, 2, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(89, 32);
-            label2.TabIndex = 20;
-            label2.Text = "Search";
-            // 
-            // txtSearch
-            // 
-            txtSearch.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtSearch.Location = new Point(200, 128);
-            txtSearch.Margin = new Padding(2);
-            txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(574, 39);
-            txtSearch.TabIndex = 21;
-            // 
             // Admin
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(975, 585);
-            Controls.Add(txtSearch);
-            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(toolStrip1);
             Controls.Add(btnDelete);
@@ -173,7 +149,5 @@
         private ToolStrip toolStrip1;
         private ToolStripButton btLogout;
         private Label label1;
-        private Label label2;
-        private TextBox txtSearch;
     }
 }

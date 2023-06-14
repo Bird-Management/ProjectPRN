@@ -1929,11 +1929,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\SUMMER2023\\SWP391\\ProjectPRN\\Bird_Management\\Bird_Management.csproj",
+      "projectUniqueName": "D:\\ProjectPRN\\Bird_Management\\Bird_Management.csproj",
       "projectName": "Bird_Management",
-      "projectPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\SUMMER2023\\SWP391\\ProjectPRN\\Bird_Management\\Bird_Management.csproj",
+      "projectPath": "D:\\ProjectPRN\\Bird_Management\\Bird_Management.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\SUMMER2023\\SWP391\\ProjectPRN\\Bird_Management\\obj\\",
+      "outputPath": "D:\\ProjectPRN\\Bird_Management\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1950,8 +1950,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\ADMIN\\OneDrive\\Desktop\\SUMMER2023\\SWP391\\ProjectPRN\\Respository\\Respository.csproj": {
-              "projectPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\SUMMER2023\\SWP391\\ProjectPRN\\Respository\\Respository.csproj"
+            "D:\\ProjectPRN\\Respository\\Respository.csproj": {
+              "projectPath": "D:\\ProjectPRN\\Respository\\Respository.csproj"
             }
           }
         }

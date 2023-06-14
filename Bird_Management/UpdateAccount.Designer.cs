@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateAccount));
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -37,7 +38,10 @@
             textBox2 = new TextBox();
             comboBox1 = new ComboBox();
             button1 = new Button();
+            toolStrip1 = new ToolStrip();
+            btnBack = new ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -125,11 +129,32 @@
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             // 
+            // toolStrip1
+            // 
+            toolStrip1.ImageScalingSize = new Size(24, 24);
+            toolStrip1.Items.AddRange(new ToolStripItem[] { btnBack });
+            toolStrip1.Location = new Point(0, 0);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.Size = new Size(1213, 41);
+            toolStrip1.TabIndex = 9;
+            toolStrip1.Text = "toolStrip1";
+            // 
+            // btnBack
+            // 
+            btnBack.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnBack.Image = (Image)resources.GetObject("btnBack.Image");
+            btnBack.ImageTransparentColor = Color.Magenta;
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(95, 36);
+            btnBack.Text = "Back";
+            btnBack.Click += btnBack_Click;
+            // 
             // UpdateAccount
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1213, 591);
+            Controls.Add(toolStrip1);
             Controls.Add(button1);
             Controls.Add(comboBox1);
             Controls.Add(textBox2);
@@ -142,6 +167,8 @@
             Name = "UpdateAccount";
             Text = "UpdateAccount";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -157,5 +184,7 @@
         private TextBox textBox2;
         private ComboBox comboBox1;
         private Button button1;
+        private ToolStrip toolStrip1;
+        private ToolStripButton btnBack;
     }
 }

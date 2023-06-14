@@ -28,19 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sell));
             label1 = new Label();
             dgvListProduct = new DataGridView();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            productBindingSource = new BindingSource(components);
+            btnCreateProduct = new Button();
+            btnUpdateProduct = new Button();
+            btnDeleteProduct = new Button();
             toolStrip1 = new ToolStrip();
             btLogout = new ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)dgvListProduct).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)productBindingSource).BeginInit();
             toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -49,7 +45,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.DarkOrange;
             label1.Font = new Font("Arial", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(296, 51);
+            label1.Location = new Point(235, 57);
             label1.Name = "label1";
             label1.Size = new Size(527, 46);
             label1.TabIndex = 0;
@@ -58,56 +54,45 @@
             // dgvListProduct
             // 
             dgvListProduct.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvListProduct.Location = new Point(196, 115);
+            dgvListProduct.Location = new Point(115, 122);
             dgvListProduct.Name = "dgvListProduct";
             dgvListProduct.RowHeadersWidth = 62;
             dgvListProduct.RowTemplate.Height = 33;
             dgvListProduct.Size = new Size(771, 225);
             dgvListProduct.TabIndex = 1;
             // 
-            // button1
+            // btnCreateProduct
             // 
-            button1.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(53, 111);
-            button1.Name = "button1";
-            button1.Size = new Size(111, 57);
-            button1.TabIndex = 2;
-            button1.Text = "Create";
-            button1.UseVisualStyleBackColor = true;
+            btnCreateProduct.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCreateProduct.Location = new Point(115, 383);
+            btnCreateProduct.Name = "btnCreateProduct";
+            btnCreateProduct.Size = new Size(111, 57);
+            btnCreateProduct.TabIndex = 2;
+            btnCreateProduct.Text = "Create";
+            btnCreateProduct.UseVisualStyleBackColor = true;
+            btnCreateProduct.Click += btnCreateProduct_Click;
             // 
-            // button2
+            // btnUpdateProduct
             // 
-            button2.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(53, 175);
-            button2.Name = "button2";
-            button2.Size = new Size(111, 55);
-            button2.TabIndex = 3;
-            button2.Text = "Update";
-            button2.UseVisualStyleBackColor = true;
+            btnUpdateProduct.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
+            btnUpdateProduct.Location = new Point(303, 384);
+            btnUpdateProduct.Name = "btnUpdateProduct";
+            btnUpdateProduct.Size = new Size(111, 55);
+            btnUpdateProduct.TabIndex = 3;
+            btnUpdateProduct.Text = "Update";
+            btnUpdateProduct.UseVisualStyleBackColor = true;
+            btnUpdateProduct.Click += btnUpdateProduct_Click;
             // 
-            // button3
+            // btnDeleteProduct
             // 
-            button3.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.Location = new Point(53, 236);
-            button3.Name = "button3";
-            button3.Size = new Size(111, 48);
-            button3.TabIndex = 4;
-            button3.Text = "Delete";
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            button4.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.Location = new Point(53, 291);
-            button4.Name = "button4";
-            button4.Size = new Size(111, 58);
-            button4.TabIndex = 5;
-            button4.Text = "Reset";
-            button4.UseVisualStyleBackColor = true;
-            // 
-            // productBindingSource
-            // 
-            productBindingSource.DataSource = typeof(Respository.Models.Product);
+            btnDeleteProduct.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDeleteProduct.Location = new Point(494, 384);
+            btnDeleteProduct.Name = "btnDeleteProduct";
+            btnDeleteProduct.Size = new Size(111, 56);
+            btnDeleteProduct.TabIndex = 4;
+            btnDeleteProduct.Text = "Delete";
+            btnDeleteProduct.UseVisualStyleBackColor = true;
+            btnDeleteProduct.Click += btnDeleteProduct_Click;
             // 
             // toolStrip1
             // 
@@ -137,16 +122,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(979, 523);
             Controls.Add(toolStrip1);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnDeleteProduct);
+            Controls.Add(btnUpdateProduct);
+            Controls.Add(btnCreateProduct);
             Controls.Add(dgvListProduct);
             Controls.Add(label1);
             Name = "Sell";
             Text = "Sell";
             ((System.ComponentModel.ISupportInitialize)dgvListProduct).EndInit();
-            ((System.ComponentModel.ISupportInitialize)productBindingSource).EndInit();
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
             ResumeLayout(false);
@@ -157,11 +140,9 @@
 
         private Label label1;
         private DataGridView dgvListProduct;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private BindingSource productBindingSource;
+        private Button btnCreateProduct;
+        private Button btnUpdateProduct;
+        private Button btnDeleteProduct;
         private ToolStrip toolStrip1;
         private ToolStripButton btLogout;
     }

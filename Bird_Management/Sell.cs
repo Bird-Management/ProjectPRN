@@ -26,7 +26,7 @@ namespace Bird_Management
         private void btLogout_Click_1(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Do you want to exit BirdShop", "BirdShop",
-               MessageBoxButtons.YesNoCancel);
+               MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
                 this.Close();
@@ -34,6 +34,27 @@ namespace Bird_Management
                 form.Show();
 
             }
+        }
+
+        private void btnCreateProduct_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form fo = new CreateProduct();
+            fo.Show();
+        }
+
+        private void btnUpdateProduct_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form fo = new UpdateProduct();
+            fo.Show();
+        }
+
+        private void btnDeleteProduct_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form fo = new DeleteProduct();
+            fo.Show();
         }
     }
 }
