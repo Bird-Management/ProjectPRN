@@ -34,8 +34,9 @@ namespace Bird_Management
         private void btnCreateAccount_Click(object sender, EventArgs e)
         {
             // Create a new instance of the BirdManagementContext
-            using (BirdManagementContext _context = new BirdManagementContext())
+            /*sing (BirdManagementContext _context = new BirdManagementContext())*/
             {
+                BirdManagementContext _context = new BirdManagementContext();
                 // Get the trimmed username, password, and confirm password from the textboxes
                 string username = txtUsername.Text.Trim();
                 string password = txtPassword.Text;
