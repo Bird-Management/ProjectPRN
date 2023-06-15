@@ -36,7 +36,7 @@ namespace Bird_Management
                     Form form = new Admin();
                     form.ShowDialog();
                 }
-                else if(ac.IsSell == true) 
+                else if (ac.IsSell == true)
                 {
                     this.Hide();
 
@@ -56,6 +56,20 @@ namespace Bird_Management
             Form formSignUp = new SignUp();
             formSignUp.ShowDialog();
 
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            this.KeyPreview = true;
+            this.KeyDown += btLogin_KeyDown;
+        }
+
+        private void btLogin_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btLogin_Click(sender, e);
+            }
         }
     }
 }
