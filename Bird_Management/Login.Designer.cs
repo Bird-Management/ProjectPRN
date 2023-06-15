@@ -40,29 +40,26 @@
             // txtUsername
             // 
             txtUsername.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            txtUsername.Location = new Point(229, 83);
-            txtUsername.Margin = new Padding(2);
+            txtUsername.Location = new Point(327, 138);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(176, 26);
+            txtUsername.Size = new Size(250, 35);
             txtUsername.TabIndex = 0;
             // 
             // txtPassword
             // 
             txtPassword.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            txtPassword.Location = new Point(229, 127);
-            txtPassword.Margin = new Padding(2);
+            txtPassword.Location = new Point(327, 212);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
-            txtPassword.Size = new Size(176, 26);
+            txtPassword.Size = new Size(250, 35);
             txtPassword.TabIndex = 1;
             // 
             // btLogin
             // 
             btLogin.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            btLogin.Location = new Point(229, 166);
-            btLogin.Margin = new Padding(2);
+            btLogin.Location = new Point(327, 277);
             btLogin.Name = "btLogin";
-            btLogin.Size = new Size(78, 34);
+            btLogin.Size = new Size(111, 57);
             btLogin.TabIndex = 2;
             btLogin.Text = "Login";
             btLogin.UseVisualStyleBackColor = true;
@@ -71,12 +68,12 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.Fuchsia;
-            label1.Font = new Font("Arial", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(132, 23);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.BackColor = SystemColors.Control;
+            label1.Font = new Font("Arial", 20F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label1.ForeColor = Color.IndianRed;
+            label1.Location = new Point(189, 38);
             label1.Name = "label1";
-            label1.Size = new Size(362, 32);
+            label1.Size = new Size(527, 46);
             label1.TabIndex = 3;
             label1.Text = "WELCOME TO BIRD SHOP";
             // 
@@ -84,10 +81,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(132, 87);
-            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Location = new Point(189, 145);
             label2.Name = "label2";
-            label2.Size = new Size(87, 19);
+            label2.Size = new Size(127, 29);
             label2.TabIndex = 4;
             label2.Text = "Username";
             // 
@@ -95,20 +91,18 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(132, 131);
-            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.Location = new Point(189, 218);
             label3.Name = "label3";
-            label3.Size = new Size(86, 19);
+            label3.Size = new Size(126, 29);
             label3.TabIndex = 5;
             label3.Text = "Password";
             // 
             // btRegister
             // 
             btRegister.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            btRegister.Location = new Point(311, 166);
-            btRegister.Margin = new Padding(2);
+            btRegister.Location = new Point(444, 277);
             btRegister.Name = "btRegister";
-            btRegister.Size = new Size(94, 34);
+            btRegister.Size = new Size(134, 57);
             btRegister.TabIndex = 6;
             btRegister.Text = "Register";
             btRegister.UseVisualStyleBackColor = true;
@@ -116,9 +110,9 @@
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(600, 264);
+            ClientSize = new Size(857, 440);
             Controls.Add(btRegister);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -126,7 +120,6 @@
             Controls.Add(btLogin);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
-            Margin = new Padding(2);
             Name = "Login";
             Text = "Login";
             ResumeLayout(false);
