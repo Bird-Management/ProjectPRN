@@ -83,7 +83,7 @@ namespace Bird_Management
                 return;
             }
 
-            // Create a new account using the NewAccountAdmin method
+            // Create a new account using the NewAccountAdmin & NewAccountSeller method
             Account account;
             try
             {

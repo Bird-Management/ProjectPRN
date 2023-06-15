@@ -1971,19 +1971,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
+    "C:\\Users\\nghia\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ProjectPRN\\Respository\\Respository.csproj",
+      "projectUniqueName": "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Respository\\Respository.csproj",
       "projectName": "Respository",
-      "projectPath": "D:\\ProjectPRN\\Respository\\Respository.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "D:\\ProjectPRN\\Respository\\obj\\",
+      "projectPath": "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Respository\\Respository.csproj",
+      "packagesPath": "C:\\Users\\nghia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Respository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nghia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2036,16 +2036,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\ProjectPRN\\Respository\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

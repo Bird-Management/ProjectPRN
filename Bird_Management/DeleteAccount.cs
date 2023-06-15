@@ -65,10 +65,6 @@ namespace Bird_Management
                     chkAdmin.Enabled = false;
                     chkSeller.Enabled = false;
 
-                    // Clear checkbox selections
-                    chkAdmin.Checked = false;
-                    chkSeller.Checked = false;
-
                     // Set checkbox selections based on account type
                     if (selectedAccount.IsAdmin.HasValue && selectedAccount.IsAdmin.Value)
                     {
