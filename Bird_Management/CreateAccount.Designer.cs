@@ -117,6 +117,7 @@
             btnCreateAccount.Text = "Create account";
             btnCreateAccount.UseVisualStyleBackColor = true;
             btnCreateAccount.Click += btnCreateAccount_Click;
+            btnCreateAccount.KeyDown += btnCreateAccount_KeyDown;
             // 
             // label4
             // 
@@ -189,6 +190,7 @@
             Margin = new Padding(2);
             Name = "CreateAccount";
             Text = "CreateAccount";
+            Load += CreateAccount_Load;
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
             ResumeLayout(false);

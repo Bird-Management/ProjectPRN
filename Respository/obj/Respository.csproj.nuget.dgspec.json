@@ -1,20 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ProjectPRN\\Respository\\Respository.csproj": {}
+<<<<<<< HEAD
+    "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Respository\\Respository.csproj": {}
   },
   "projects": {
-    "D:\\ProjectPRN\\Respository\\Respository.csproj": {
+    "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Respository\\Respository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ProjectPRN\\Respository\\Respository.csproj",
+        "projectUniqueName": "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Respository\\Respository.csproj",
         "projectName": "Respository",
-        "projectPath": "D:\\ProjectPRN\\Respository\\Respository.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\ProjectPRN\\Respository\\obj\\",
+        "projectPath": "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Respository\\Respository.csproj",
+        "packagesPath": "C:\\Users\\nghia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Respository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nghia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "D:\\HCHCHC\\SU23\\PRN211\\BirdSelling\\ProjectPRN\\Respository\\Respository.csproj": {}
+  },
+  "projects": {
+    "D:\\HCHCHC\\SU23\\PRN211\\BirdSelling\\ProjectPRN\\Respository\\Respository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\HCHCHC\\SU23\\PRN211\\BirdSelling\\ProjectPRN\\Respository\\Respository.csproj",
+        "projectName": "Respository",
+        "projectPath": "D:\\HCHCHC\\SU23\\PRN211\\BirdSelling\\ProjectPRN\\Respository\\Respository.csproj",
+        "packagesPath": "C:\\Users\\THANGNGUYEN.THANGNGUYEN\\.nuget\\packages\\",
+        "outputPath": "D:\\HCHCHC\\SU23\\PRN211\\BirdSelling\\ProjectPRN\\Respository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\THANGNGUYEN.THANGNGUYEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 73b558eb4dec62c6da4ba378b8df23f3f9329548
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

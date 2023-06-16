@@ -59,12 +59,15 @@ namespace Bird_Management
 
         }
 
+<<<<<<< HEAD
         private void Login_Load(object sender, EventArgs e)
         {
             this.KeyPreview = true;
             this.KeyDown += btLogin_KeyDown;
         }
 
+=======
+>>>>>>> 60c2d3dbde5943b4c3a70dd550e590dd58d56718
         private void btLogin_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -72,5 +75,14 @@ namespace Bird_Management
                 btLogin_Click(sender, e);
             }
         }
+<<<<<<< HEAD
+=======
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            this.KeyPreview = true;
+            this.KeyDown += btLogin_KeyDown;
+        }
+>>>>>>> 60c2d3dbde5943b4c3a70dd550e590dd58d56718
     }
 }
