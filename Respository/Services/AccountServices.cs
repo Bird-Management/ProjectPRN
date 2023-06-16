@@ -1,11 +1,13 @@
-﻿using Respository.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
+using Repository.Services;
+using Respository.Models;
 
-namespace Respository.Services
+namespace Repository.Services
 {
     public class AccountServices
     {
@@ -20,14 +22,15 @@ namespace Respository.Services
         {
             try
             {
-                var checkLogin = this._context.Account.Where(x => x.User.Equals(username) && x.Pass.Equals(password)).FirstOrDefault();
+                var checkLogin = _context.Account.FirstOrDefault(x => x.User.Equals(username) && x.Pass.Equals(password));
                 if (checkLogin == null)
                 {
                     throw new Exception("Invalid account");
                 }
 
                 return checkLogin;
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
@@ -37,27 +40,25 @@ namespace Respository.Services
         {
             try
             {
-                var listAccounts = this._context.Account.Select(x => new Account { 
-                    User = x.User, 
-                    Pass = x.Pass, 
-                    IsAdmin = x.IsAdmin, 
+                var listAccounts = _context.Account.Select(x => new Account
+                {
+                    User = x.User,
+                    Pass = x.Pass,
+                    IsAdmin = x.IsAdmin,
                     IsSell = x.IsSell,
                     UId = x.UId
                 })
                 .ToList();
-                if (listAccounts != null)
-                {
-                    return listAccounts;
-                }
-                return null;
 
-            }catch(Exception ex)
+                return listAccounts;
+            }
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
         }
 
-        public Account NewAccountAdmin( string username, string password)
+        public Account NewAccountAdmin(string username, string password)
         {
             try
             {
@@ -67,12 +68,12 @@ namespace Respository.Services
                 account.IsAdmin = true;
                 account.IsSell = false;
 
-                this._context.Add(account);
-                this._context.SaveChanges();
-
+                _context.Account.Add(account);
+                _context.SaveChanges();
 
                 return account;
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
@@ -85,15 +86,15 @@ namespace Respository.Services
                 var account = _context.Account.FirstOrDefault(a => a.User == username && a.Pass == password);
                 if (account != null)
                 {
-                    _context.Remove(account);
-                    _context.SaveChanges(); 
+                    _context.Account.Remove(account);
+                    _context.SaveChanges();
                     return true;
                 }
                 return false;
             }
             catch (Exception ex)
             {
-                throw new Exception (ex.Message);
+                throw new Exception(ex.Message);
             }
         }
 
@@ -107,9 +108,8 @@ namespace Respository.Services
                 account.IsAdmin = false;
                 account.IsSell = true;
 
-                this._context.Add(account);
-                this._context.SaveChanges();
-
+                _context.Account.Add(account);
+                _context.SaveChanges();
 
                 return account;
             }
@@ -119,16 +119,22 @@ namespace Respository.Services
             }
         }
 
-        
-
-        public void UpdateAccount()
+        public void UpdateAccountAdmin(Account account)
         {
             try
             {
-                
-            
+                var existingAccount = _context.Account.FirstOrDefault(a => a.UId == account.UId);
+                if (existingAccount != null)
+                {
+                    existingAccount.User = account.User;
+                    existingAccount.Pass = account.Pass;
+                    existingAccount.IsAdmin = account.IsAdmin;
+                    existingAccount.IsSell = account.IsSell;
 
-            }catch (Exception ex)
+                    _context.SaveChanges();
+                }
+            }
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }

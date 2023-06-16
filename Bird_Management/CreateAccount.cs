@@ -6,6 +6,7 @@ using Respository.Services;
 using System;
 using System.Linq;
 using System.Windows.Forms;
+using Repository.Services;
 
 namespace Bird_Management
 {
@@ -25,9 +26,9 @@ namespace Bird_Management
                 MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                this.Close();
-                Form form = new Admin();
-                form.Show();
+                this.Close(); // Close the current form
+                Form form = new Admin(); // Create a new instance of the Admin form
+                form.Show(); // Show the Admin form
             }
         }
 
@@ -89,11 +90,11 @@ namespace Bird_Management
             {
                 if (chbAdmin.Checked)
                 {
-                    account = accountServices.NewAccountAdmin(username, password);
+                    account = accountServices.NewAccountAdmin(username, password); // Create an admin account
                 }
                 else
                 {
-                    account = accountServices.NewAccountSeller(username, password);
+                    account = accountServices.NewAccountSeller(username, password); // Create a seller account
                 }
             }
             catch (Exception ex)
