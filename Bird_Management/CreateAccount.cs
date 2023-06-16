@@ -113,5 +113,19 @@ namespace Bird_Management
             chbAdmin.Checked = false;
             chbSeller.Checked = false;
         }
+
+        private void btnCreateAccount_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnCreateAccount_KeyDown(sender, e);
+            }
+        }
+
+        private void CreateAccount_Load(object sender, EventArgs e)
+        {
+            this.KeyPreview = true;
+            this.KeyDown += btnCreateAccount_KeyDown;
+        }
     }
 }
