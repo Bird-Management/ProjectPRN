@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Bird_Management\\Bird_Management.csproj": {}
+    "D:\\HCHCHC\\SU23\\PRN211\\BirdSelling\\ProjectPRN\\Bird_Management\\Bird_Management.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Bird_Management\\Bird_Management.csproj": {
+    "D:\\HCHCHC\\SU23\\PRN211\\BirdSelling\\ProjectPRN\\Bird_Management\\Bird_Management.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Bird_Management\\Bird_Management.csproj",
+        "projectUniqueName": "D:\\HCHCHC\\SU23\\PRN211\\BirdSelling\\ProjectPRN\\Bird_Management\\Bird_Management.csproj",
         "projectName": "Bird_Management",
-        "projectPath": "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Bird_Management\\Bird_Management.csproj",
-        "packagesPath": "C:\\Users\\nghia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Bird_Management\\obj\\",
+        "projectPath": "D:\\HCHCHC\\SU23\\PRN211\\BirdSelling\\ProjectPRN\\Bird_Management\\Bird_Management.csproj",
+        "packagesPath": "C:\\Users\\THANGNGUYEN.THANGNGUYEN\\.nuget\\packages\\",
+        "outputPath": "D:\\HCHCHC\\SU23\\PRN211\\BirdSelling\\ProjectPRN\\Bird_Management\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nghia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\THANGNGUYEN.THANGNGUYEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Respository\\Respository.csproj": {
-                "projectPath": "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Respository\\Respository.csproj"
+              "D:\\HCHCHC\\SU23\\PRN211\\BirdSelling\\ProjectPRN\\Respository\\Respository.csproj": {
+                "projectPath": "D:\\HCHCHC\\SU23\\PRN211\\BirdSelling\\ProjectPRN\\Respository\\Respository.csproj"
               }
             }
           }
@@ -43,6 +43,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -62,21 +68,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Respository\\Respository.csproj": {
+    "D:\\HCHCHC\\SU23\\PRN211\\BirdSelling\\ProjectPRN\\Respository\\Respository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Respository\\Respository.csproj",
+        "projectUniqueName": "D:\\HCHCHC\\SU23\\PRN211\\BirdSelling\\ProjectPRN\\Respository\\Respository.csproj",
         "projectName": "Respository",
-        "projectPath": "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Respository\\Respository.csproj",
-        "packagesPath": "C:\\Users\\nghia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Respository\\obj\\",
+        "projectPath": "D:\\HCHCHC\\SU23\\PRN211\\BirdSelling\\ProjectPRN\\Respository\\Respository.csproj",
+        "packagesPath": "C:\\Users\\THANGNGUYEN.THANGNGUYEN\\.nuget\\packages\\",
+        "outputPath": "D:\\HCHCHC\\SU23\\PRN211\\BirdSelling\\ProjectPRN\\Respository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nghia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\THANGNGUYEN.THANGNGUYEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -129,7 +135,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
