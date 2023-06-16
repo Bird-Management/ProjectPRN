@@ -41,7 +41,7 @@
             // 
             txtUsername.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
             txtUsername.Location = new Point(262, 110);
-            txtUsername.Margin = new Padding(2, 2, 2, 2);
+            txtUsername.Margin = new Padding(2);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(201, 30);
             txtUsername.TabIndex = 0;
@@ -50,7 +50,7 @@
             // 
             txtPassword.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
             txtPassword.Location = new Point(262, 170);
-            txtPassword.Margin = new Padding(2, 2, 2, 2);
+            txtPassword.Margin = new Padding(2);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
             txtPassword.Size = new Size(201, 30);
@@ -60,7 +60,7 @@
             // 
             btLogin.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
             btLogin.Location = new Point(262, 222);
-            btLogin.Margin = new Padding(2, 2, 2, 2);
+            btLogin.Margin = new Padding(2);
             btLogin.Name = "btLogin";
             btLogin.Size = new Size(89, 46);
             btLogin.TabIndex = 2;
@@ -108,7 +108,7 @@
             // 
             btRegister.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
             btRegister.Location = new Point(355, 222);
-            btRegister.Margin = new Padding(2, 2, 2, 2);
+            btRegister.Margin = new Padding(2);
             btRegister.Name = "btRegister";
             btRegister.Size = new Size(107, 46);
             btRegister.TabIndex = 6;
@@ -128,9 +128,10 @@
             Controls.Add(btLogin);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "Login";
             Text = "Login";
+            Load += Login_Load;
             ResumeLayout(false);
             PerformLayout();
         }

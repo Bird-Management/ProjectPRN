@@ -59,18 +59,18 @@ namespace Bird_Management
 
         }
 
-        private void Login_Load(object sender, EventArgs e)
-        {
-            this.KeyPreview = true;
-            this.KeyDown += btLogin_KeyDown;
-        }
-
         private void btLogin_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
                 btLogin_Click(sender, e);
             }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            this.KeyPreview = true;
+            this.KeyDown += btLogin_KeyDown;
         }
     }
 }
