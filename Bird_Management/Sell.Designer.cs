@@ -43,11 +43,12 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.DarkOrange;
-            label1.Font = new Font("Arial", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.BackColor = SystemColors.Control;
+            label1.Font = new Font("Arial", 20F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label1.ForeColor = Color.IndianRed;
             label1.Location = new Point(235, 57);
             label1.Name = "label1";
-            label1.Size = new Size(527, 46);
+            label1.Size = new Size(528, 46);
             label1.TabIndex = 0;
             label1.Text = "WELCOME TO SELL PAGE";
             // 

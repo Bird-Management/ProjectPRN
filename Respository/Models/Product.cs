@@ -24,9 +24,5 @@ namespace Respository.Models
         public string Title { get; set; }
         [Column("description")]
         public string Description { get; set; }
-        [Column("cateID")]
-        public int? CateId { get; set; }
-        [Column("sell_ID")]
-        public int? SellId { get; set; }
     }
 }

@@ -35,12 +35,13 @@
             label2 = new Label();
             label3 = new Label();
             btRegister = new Button();
+            btnShoppingCart = new Button();
             SuspendLayout();
             // 
             // txtUsername
             // 
             txtUsername.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            txtUsername.Location = new Point(327, 138);
+            txtUsername.Location = new Point(293, 139);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(250, 35);
             txtUsername.TabIndex = 0;
@@ -48,7 +49,7 @@
             // txtPassword
             // 
             txtPassword.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            txtPassword.Location = new Point(327, 212);
+            txtPassword.Location = new Point(293, 213);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
             txtPassword.Size = new Size(250, 35);
@@ -57,7 +58,7 @@
             // btLogin
             // 
             btLogin.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            btLogin.Location = new Point(327, 277);
+            btLogin.Location = new Point(293, 278);
             btLogin.Name = "btLogin";
             btLogin.Size = new Size(111, 57);
             btLogin.TabIndex = 2;
@@ -71,7 +72,7 @@
             label1.BackColor = SystemColors.Control;
             label1.Font = new Font("Arial", 20F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label1.ForeColor = Color.IndianRed;
-            label1.Location = new Point(189, 38);
+            label1.Location = new Point(155, 39);
             label1.Name = "label1";
             label1.Size = new Size(527, 46);
             label1.TabIndex = 3;
@@ -81,7 +82,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(189, 145);
+            label2.Location = new Point(155, 146);
             label2.Name = "label2";
             label2.Size = new Size(127, 29);
             label2.TabIndex = 4;
@@ -91,7 +92,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(189, 218);
+            label3.Location = new Point(155, 219);
             label3.Name = "label3";
             label3.Size = new Size(126, 29);
             label3.TabIndex = 5;
@@ -100,7 +101,7 @@
             // btRegister
             // 
             btRegister.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            btRegister.Location = new Point(444, 277);
+            btRegister.Location = new Point(410, 278);
             btRegister.Name = "btRegister";
             btRegister.Size = new Size(134, 57);
             btRegister.TabIndex = 6;
@@ -108,11 +109,22 @@
             btRegister.UseVisualStyleBackColor = true;
             btRegister.Click += btRegister_Click;
             // 
+            // btnShoppingCart
+            // 
+            btnShoppingCart.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnShoppingCart.Location = new Point(293, 350);
+            btnShoppingCart.Name = "btnShoppingCart";
+            btnShoppingCart.Size = new Size(251, 45);
+            btnShoppingCart.TabIndex = 7;
+            btnShoppingCart.Text = "Shopping here";
+            btnShoppingCart.UseVisualStyleBackColor = true;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(857, 440);
+            ClientSize = new Size(815, 448);
+            Controls.Add(btnShoppingCart);
             Controls.Add(btRegister);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -135,5 +147,6 @@
         private Label label2;
         private Label label3;
         private Button btRegister;
+        private Button btnShoppingCart;
     }
 }
