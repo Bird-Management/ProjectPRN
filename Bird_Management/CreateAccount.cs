@@ -20,6 +20,7 @@ namespace Bird_Management
             _context = new BirdManagementContext();
         }
 
+        // Handle the Back button click event
         private void btBack_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Do you want to go back to the Admin Page?", "BirdShop",
@@ -32,6 +33,7 @@ namespace Bird_Management
             }
         }
 
+        // Handle the Create Account button click event
         private void btnCreateAccount_Click(object sender, EventArgs e)
         {
             AccountServices accountServices = new AccountServices(_context);
@@ -77,29 +79,54 @@ namespace Bird_Management
                 return;
             }
 
-            // Check if both checkboxes are checked or unchecked
-            if (chbAdmin.Checked == chbSeller.Checked)
+            // Check if checkboxes are checked or unchecked
+            if (chbAdmin.Checked == chbSeller.Checked && chbSeller.Checked == chbCustomer.Checked)
             {
-                MessageBox.Show("Please select either Admin or Seller.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please select either Admin, Seller, or Customer.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
+<<<<<<< HEAD
             // Create a new account using the NewAccountAdmin & NewAccountSeller method
+=======
+            // Create a new account using the appropriate method based on the selected checkbox
+>>>>>>> 1062abc77efa1e2dd0233f09b1315691e0f0ae58
             Account account;
-            try
+
+            // Check if one and only one checkbox is selected
+            if ((chbAdmin.Checked && !chbSeller.Checked && !chbCustomer.Checked) ||  // Only admin checkbox is checked
+                (!chbAdmin.Checked && chbSeller.Checked && !chbCustomer.Checked) ||  // Only seller checkbox is checked
+                (!chbAdmin.Checked && !chbSeller.Checked && chbCustomer.Checked))    // Only customer checkbox is checked
             {
+                // Valid selection: only one checkbox is checked
+
+                // Create the account based on the checked checkbox
                 if (chbAdmin.Checked)
                 {
                     account = accountServices.NewAccountAdmin(username, password); // Create an admin account
+<<<<<<< HEAD
                 }
                 else
                 {
                     account = accountServices.NewAccountSeller(username, password); // Create a seller account
+=======
+                }
+                else if (chbSeller.Checked)
+                {
+                    account = accountServices.NewAccountSeller(username, password); // Create a seller account
+                }
+                else
+                {
+                    account = accountServices.NewAccountCustomer(username, password); // Create a customer account
+>>>>>>> 1062abc77efa1e2dd0233f09b1315691e0f0ae58
                 }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Error creating the account: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // Invalid selection: either no checkbox or multiple checkboxes are checked
+
+                // Display validation error message
+                MessageBox.Show("Please select only one option: Admin, Seller, or Customer.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -112,8 +139,13 @@ namespace Bird_Management
             txtConfirmPassword.Clear();
             chbAdmin.Checked = false;
             chbSeller.Checked = false;
+            chbCustomer.Checked = false;
         }
 
+<<<<<<< HEAD
+=======
+        // Handle the Enter key press event on the Create Account button
+>>>>>>> 1062abc77efa1e2dd0233f09b1315691e0f0ae58
         private void btnCreateAccount_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -122,10 +154,13 @@ namespace Bird_Management
             }
         }
 
+<<<<<<< HEAD
         private void CreateAccount_Load(object sender, EventArgs e)
         {
             this.KeyPreview = true;
             this.KeyDown += btnCreateAccount_KeyDown;
         }
+=======
+>>>>>>> 1062abc77efa1e2dd0233f09b1315691e0f0ae58
     }
 }

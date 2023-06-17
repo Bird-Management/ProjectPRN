@@ -46,8 +46,15 @@ namespace Repository.Services
                     Pass = x.Pass,
                     IsAdmin = x.IsAdmin,
                     IsSell = x.IsSell,
+<<<<<<< HEAD
                     UId = x.UId
                 })
+=======
+                    IsCustomer = x.IsCustomer,
+                    UId = x.UId
+                }
+                )
+>>>>>>> 1062abc77efa1e2dd0233f09b1315691e0f0ae58
                 .ToList();
 
                 return listAccounts;
@@ -67,11 +74,117 @@ namespace Repository.Services
                 account.Pass = password;
                 account.IsAdmin = true;
                 account.IsSell = false;
+                account.IsCustomer = false;
 
                 _context.Account.Add(account);
                 _context.SaveChanges();
 
                 return account;
+<<<<<<< HEAD
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public bool DeleteAccountAdmin(string username, string password)
+        {
+            try
+            {
+                var account = _context.Account.FirstOrDefault(a => a.User == username && a.Pass == password);
+                if (account != null)
+                {
+                    _context.Account.Remove(account);
+                    _context.SaveChanges();
+                    return true;
+                }
+                return false;
+=======
+>>>>>>> 1062abc77efa1e2dd0233f09b1315691e0f0ae58
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public Account NewAccountSeller(string username, string password)
+        {
+            try
+            {
+                var account = new Account();
+                account.User = username;
+                account.Pass = password;
+                account.IsAdmin = false;
+                account.IsSell = true;
+                account.IsCustomer = false;
+
+                _context.Account.Add(account);
+                _context.SaveChanges();
+
+                return account;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+<<<<<<< HEAD
+        public void UpdateAccountAdmin(Account account)
+        {
+            try
+            {
+                var existingAccount = _context.Account.FirstOrDefault(a => a.UId == account.UId);
+                if (existingAccount != null)
+                {
+                    existingAccount.User = account.User;
+                    existingAccount.Pass = account.Pass;
+                    existingAccount.IsAdmin = account.IsAdmin;
+                    existingAccount.IsSell = account.IsSell;
+
+                    _context.SaveChanges();
+                }
+=======
+        public Account NewAccountCustomer(string username, string password)
+        {
+            try
+            {
+                var account = new Account();
+                account.User = username;
+                account.Pass = password;
+                account.IsAdmin = false;
+                account.IsSell = false;
+                account.IsCustomer = true;
+
+                _context.Account.Add(account);
+                _context.SaveChanges();
+
+                return account;
+>>>>>>> 1062abc77efa1e2dd0233f09b1315691e0f0ae58
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public void UpdateAccountAdmin(Account account)
+        {
+            try
+            {
+                var existingAccount = _context.Account.FirstOrDefault(a => a.UId == account.UId);
+                if (existingAccount != null)
+                {
+                    existingAccount.User = account.User;
+                    existingAccount.Pass = account.Pass;
+                    existingAccount.IsAdmin = account.IsAdmin;
+                    existingAccount.IsSell = account.IsSell;
+                    existingAccount.IsCustomer = account.IsCustomer;
+
+                    _context.SaveChanges();
+                }
             }
             catch (Exception ex)
             {
@@ -98,46 +211,5 @@ namespace Repository.Services
             }
         }
 
-        public Account NewAccountSeller(string username, string password)
-        {
-            try
-            {
-                var account = new Account();
-                account.User = username;
-                account.Pass = password;
-                account.IsAdmin = false;
-                account.IsSell = true;
-
-                _context.Account.Add(account);
-                _context.SaveChanges();
-
-                return account;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
-
-        public void UpdateAccountAdmin(Account account)
-        {
-            try
-            {
-                var existingAccount = _context.Account.FirstOrDefault(a => a.UId == account.UId);
-                if (existingAccount != null)
-                {
-                    existingAccount.User = account.User;
-                    existingAccount.Pass = account.Pass;
-                    existingAccount.IsAdmin = account.IsAdmin;
-                    existingAccount.IsSell = account.IsSell;
-
-                    _context.SaveChanges();
-                }
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
     }
 }

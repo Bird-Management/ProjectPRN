@@ -24,7 +24,11 @@ namespace Bird_Management
             if (result == DialogResult.Yes)
             {
                 this.Close();
+<<<<<<< HEAD
                 Form form = new Sell();
+=======
+                Form form = new Seller();
+>>>>>>> 1062abc77efa1e2dd0233f09b1315691e0f0ae58
                 form.Show();
             }
         }

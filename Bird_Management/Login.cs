@@ -41,7 +41,7 @@ namespace Bird_Management
                 {
                     this.Hide();
 
-                    Form form = new Sell();
+                    Form form = new Seller();
                     form.ShowDialog();
                 }
             }
@@ -58,11 +58,14 @@ namespace Bird_Management
             formSignUp.ShowDialog();
 
         }
+<<<<<<< HEAD
         private void Login_Load(object sender, EventArgs e)
         {
             this.KeyPreview = true;
             this.KeyDown += btLogin_KeyDown;
         }
+=======
+>>>>>>> 1062abc77efa1e2dd0233f09b1315691e0f0ae58
 
         private void btLogin_KeyDown(object sender, KeyEventArgs e)
         {
@@ -71,5 +74,14 @@ namespace Bird_Management
                 btLogin_Click(sender, e);
             }
         }
+<<<<<<< HEAD
+=======
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            this.KeyPreview = true;
+            this.KeyDown += btLogin_KeyDown;
+        }
+>>>>>>> 1062abc77efa1e2dd0233f09b1315691e0f0ae58
     }
 }

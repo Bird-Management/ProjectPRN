@@ -41,6 +41,7 @@
             btBack = new ToolStripButton();
             chbSeller = new CheckBox();
             chbAdmin = new CheckBox();
+            chbCustomer = new CheckBox();
             toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -83,7 +84,7 @@
             txtUsername.Location = new Point(319, 109);
             txtUsername.Margin = new Padding(2);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(199, 34);
+            txtUsername.Size = new Size(289, 34);
             txtUsername.TabIndex = 5;
             // 
             // txtPassword
@@ -93,7 +94,7 @@
             txtPassword.Margin = new Padding(2);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
-            txtPassword.Size = new Size(199, 34);
+            txtPassword.Size = new Size(289, 34);
             txtPassword.TabIndex = 6;
             // 
             // txtConfirmPassword
@@ -103,7 +104,7 @@
             txtConfirmPassword.Margin = new Padding(2);
             txtConfirmPassword.Name = "txtConfirmPassword";
             txtConfirmPassword.PasswordChar = '*';
-            txtConfirmPassword.Size = new Size(198, 34);
+            txtConfirmPassword.Size = new Size(288, 34);
             txtConfirmPassword.TabIndex = 7;
             // 
             // btnCreateAccount
@@ -112,7 +113,7 @@
             btnCreateAccount.Location = new Point(319, 287);
             btnCreateAccount.Margin = new Padding(2);
             btnCreateAccount.Name = "btnCreateAccount";
-            btnCreateAccount.Size = new Size(199, 36);
+            btnCreateAccount.Size = new Size(289, 36);
             btnCreateAccount.TabIndex = 10;
             btnCreateAccount.Text = "Create account";
             btnCreateAccount.UseVisualStyleBackColor = true;
@@ -124,7 +125,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.Peru;
-            label4.Location = new Point(130, 40);
+            label4.Location = new Point(173, 35);
             label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
             label4.Size = new Size(388, 50);
@@ -137,7 +138,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { btBack });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(640, 35);
+            toolStrip1.Size = new Size(776, 35);
             toolStrip1.TabIndex = 12;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -164,18 +165,29 @@
             // chbAdmin
             // 
             chbAdmin.AutoSize = true;
-            chbAdmin.Location = new Point(426, 247);
+            chbAdmin.Location = new Point(421, 247);
             chbAdmin.Name = "chbAdmin";
             chbAdmin.Size = new Size(75, 24);
             chbAdmin.TabIndex = 24;
             chbAdmin.Text = "Admin";
             chbAdmin.UseVisualStyleBackColor = true;
             // 
+            // chbCustomer
+            // 
+            chbCustomer.AutoSize = true;
+            chbCustomer.Location = new Point(514, 247);
+            chbCustomer.Name = "chbCustomer";
+            chbCustomer.Size = new Size(94, 24);
+            chbCustomer.TabIndex = 25;
+            chbCustomer.Text = "Customer";
+            chbCustomer.UseVisualStyleBackColor = true;
+            // 
             // CreateAccount
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(640, 360);
+            ClientSize = new Size(776, 394);
+            Controls.Add(chbCustomer);
             Controls.Add(chbAdmin);
             Controls.Add(chbSeller);
             Controls.Add(toolStrip1);
@@ -214,5 +226,6 @@
         private TextBox txtConfirmPassword;
         private CheckBox chbSeller;
         private CheckBox chbAdmin;
+        private CheckBox chbCustomer;
     }
 }
