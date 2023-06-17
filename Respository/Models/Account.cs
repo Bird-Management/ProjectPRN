@@ -14,16 +14,16 @@ namespace Respository.Models
         [Column("uID")]
         public int UId { get; set; }
         [Column("user")]
-        [StringLength(255)]
-        [Unicode(false)]
+        [StringLength(50)]
         public string User { get; set; }
         [Column("pass")]
-        [StringLength(255)]
-        [Unicode(false)]
+        [StringLength(50)]
         public string Pass { get; set; }
         [Column("isSell")]
         public bool? IsSell { get; set; }
         [Column("isAdmin")]
         public bool? IsAdmin { get; set; }
+        [Column("isCustomer")]
+        public bool? IsCustomer { get; set; }
     }
 }

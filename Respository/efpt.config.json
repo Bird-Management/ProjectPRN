@@ -27,7 +27,7 @@
          "ObjectType": 0
       },
       {
-         "Name": "[dbo].[product]",
+         "Name": "[dbo].[Product]",
          "ObjectType": 0
       }
    ],

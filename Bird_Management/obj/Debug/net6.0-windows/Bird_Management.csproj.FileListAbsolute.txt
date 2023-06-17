@@ -331,3 +331,4 @@ D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\ref\Bird_Management.dll
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.CreateProduct.resources
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.DeleteProduct.resources
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.UpdateProduct.resources
+D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Customer.resources

@@ -15,6 +15,11 @@ namespace Respository.Models
         public int? AccountId { get; set; }
         [Column("ProductID")]
         public int? ProductId { get; set; }
-        public int? Amount { get; set; }
+        [Column(TypeName = "money")]
+        public decimal? Amount { get; set; }
+        [Column(TypeName = "money")]
+        public decimal? Price { get; set; }
+        [StringLength(50)]
+        public string Title { get; set; }
     }
 }

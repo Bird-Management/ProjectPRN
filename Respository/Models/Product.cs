@@ -9,7 +9,6 @@ using Microsoft.EntityFrameworkCore;
 namespace Respository.Models
 {
     [Keyless]
-    [Table("product")]
     public partial class Product
     {
         [Column("id")]
@@ -24,5 +23,7 @@ namespace Respository.Models
         public string Title { get; set; }
         [Column("description")]
         public string Description { get; set; }
+        [Column("cateID")]
+        public int? CateId { get; set; }
     }
 }

@@ -43,7 +43,7 @@
             // dgvListAccount
             // 
             dgvListAccount.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvListAccount.Location = new Point(109, 190);
+            dgvListAccount.Location = new Point(109, 145);
             dgvListAccount.Margin = new Padding(2);
             dgvListAccount.Name = "dgvListAccount";
             dgvListAccount.RowHeadersWidth = 62;
@@ -54,7 +54,7 @@
             // btnCreate
             // 
             btnCreate.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            btnCreate.Location = new Point(109, 464);
+            btnCreate.Location = new Point(107, 429);
             btnCreate.Margin = new Padding(2);
             btnCreate.Name = "btnCreate";
             btnCreate.Size = new Size(111, 62);
@@ -66,7 +66,7 @@
             // btnUpdate
             // 
             btnUpdate.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            btnUpdate.Location = new Point(320, 464);
+            btnUpdate.Location = new Point(318, 429);
             btnUpdate.Margin = new Padding(2);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(111, 62);
@@ -78,7 +78,7 @@
             // btnDelete
             // 
             btnDelete.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            btnDelete.Location = new Point(532, 466);
+            btnDelete.Location = new Point(530, 431);
             btnDelete.Margin = new Padding(2);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(111, 60);
@@ -110,12 +110,13 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.IndianRed;
-            label1.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.BackColor = SystemColors.Control;
+            label1.Font = new Font("Segoe UI", 20F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label1.ForeColor = Color.IndianRed;
             label1.Location = new Point(214, 41);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(543, 54);
+            label1.Size = new Size(541, 54);
             label1.TabIndex = 19;
             label1.Text = "WELCOME TO ADMIN PAGE";
             // 
