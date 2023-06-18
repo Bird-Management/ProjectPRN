@@ -12,7 +12,11 @@
       }
     ],
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "C:\\Users\\ADMIN\\.dotnet\\store\\|arch|\\|tfm|",
+=======
+      "C:\\Users\\nghia\\.dotnet\\store\\|arch|\\|tfm|",
+>>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
       "C:\\Users\\nghia\\.nuget\\packages"
     ],
     "configProperties": {

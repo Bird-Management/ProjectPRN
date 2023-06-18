@@ -43,6 +43,10 @@ namespace Bird_Management
             chkAdmin.Checked = false;
             chkSeller.Checked = false;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            chkCustomer.Checked = false;
+>>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
 =======
             chkCustomer.Checked = false;
 >>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
@@ -82,6 +86,10 @@ namespace Bird_Management
                     chkAdmin.Enabled = false;
                     chkSeller.Enabled = false;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                    chkCustomer.Enabled = false;
+>>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
 =======
                     chkCustomer.Enabled = false;
 >>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
@@ -105,7 +113,10 @@ namespace Bird_Management
                         chkSeller.Checked = false; // Uncheck the Seller checkbox
                     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
 
                     if (selectedAccount.IsCustomer.HasValue && selectedAccount.IsCustomer.Value)
                     {
@@ -115,6 +126,9 @@ namespace Bird_Management
                     {
                         chkCustomer.Checked = false; // Uncheck the Customer checkbox
                     }
+<<<<<<< HEAD
+>>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
+=======
 >>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
                 }
             }

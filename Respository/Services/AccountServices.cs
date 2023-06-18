@@ -49,7 +49,12 @@ namespace Repository.Services
                     IsCustomer = x.IsCustomer,
                     UId = x.UId
 <<<<<<< HEAD
+<<<<<<< HEAD
                 })
+=======
+                }
+                )
+>>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
 =======
                 }
                 )
@@ -80,6 +85,7 @@ namespace Repository.Services
 
                 return account;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             }
             catch (Exception ex)
@@ -100,6 +106,8 @@ namespace Repository.Services
                     return true;
                 }
                 return false;
+=======
+>>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
 =======
 >>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
             }
@@ -176,7 +184,10 @@ namespace Repository.Services
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
         public bool DeleteAccountAdmin(string username, string password)
         {
             try
@@ -195,6 +206,9 @@ namespace Repository.Services
                 throw new Exception(ex.Message);
             }
         }
+<<<<<<< HEAD
+>>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
+=======
 >>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
 
     }
