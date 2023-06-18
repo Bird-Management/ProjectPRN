@@ -46,7 +46,7 @@
             button2 = new Button();
             pictureBox1 = new PictureBox();
             Id = new DataGridViewTextBoxColumn();
-            Name = new DataGridViewTextBoxColumn();
+            _Name = new DataGridViewTextBoxColumn();
             Image = new DataGridViewImageColumn();
             Price = new DataGridViewTextBoxColumn();
             Title = new DataGridViewTextBoxColumn();
@@ -71,7 +71,7 @@
             // dgvProduct
             // 
             dgvProduct.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvProduct.Columns.AddRange(new DataGridViewColumn[] { Id, Name, Image, Price, Title, Description, CateID });
+            dgvProduct.Columns.AddRange(new DataGridViewColumn[] { Id, _Name, Image, Price, Title, Description, CateID });
             dgvProduct.Location = new Point(55, 495);
             dgvProduct.Name = "dgvProduct";
             dgvProduct.RowHeadersWidth = 62;
@@ -219,13 +219,13 @@
             Id.Name = "Id";
             Id.Width = 150;
             // 
-            // Name
+            // _Name
             // 
-            Name.DataPropertyName = "name";
-            Name.HeaderText = "Name";
-            Name.MinimumWidth = 8;
-            Name.Name = "Name";
-            Name.Width = 150;
+            _Name.DataPropertyName = "name";
+            _Name.HeaderText = "Name";
+            _Name.MinimumWidth = 8;
+            _Name.Name = "_Name";
+            _Name.Width = 150;
             // 
             // Image
             // 
@@ -320,7 +320,7 @@
         private Button button2;
         private PictureBox pictureBox1;
         private DataGridViewTextBoxColumn Id;
-        private DataGridViewTextBoxColumn Name;
+        private DataGridViewTextBoxColumn _Name;
         private DataGridViewImageColumn Image;
         private DataGridViewTextBoxColumn Price;
         private DataGridViewTextBoxColumn Title;

@@ -39,7 +39,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Update="CreateAccount.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Update="CreateProduct.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Seller.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>

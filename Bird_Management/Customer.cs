@@ -37,16 +37,10 @@ namespace Bird_Management
 
         public void loadData()
         {
-            ProductServices productServices = new ProductServices(context);
-            var listProduct = productServices.GetProducts();
-            DataTable dtProduct = new DataTable();
-            dtProduct.Columns.Add("Image", Type.GetType("System.Byte[]"));
-            foreach ( DataRow dr in listProduct )
-            {
-
-            }
-            dgvProduct.DataSource = new BindingSource() { DataSource = listProduct };
-
+                ProductServices productServices = new ProductServices(context);
+                var listProduct = productServices.GetProducts();
+                
+                dgvProduct.DataSource = new BindingSource() { DataSource = listProduct };
         }
 
 

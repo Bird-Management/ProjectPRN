@@ -27,27 +27,6 @@ namespace Bird_Management
             _accountServices = new AccountServices(_context);
 
             LoadAccountData(); // Load account data into the DataGridView
-<<<<<<< HEAD
-        }
-
-        private void LoadAccountData()
-        {
-            // Retrieve the list of accounts from the database
-            var accountList = _accountServices.GetAccounts();
-
-            // Set the DataGridView's data source to the account list
-            dgvUpdateAccount.DataSource = new BindingSource() { DataSource = accountList };
-        }
-
-        private void ClearInputFields()
-        {
-            // Clear the input fields (textboxes and checkboxes)
-            txtUsername.Text = string.Empty;
-            txtPassword.Text = string.Empty;
-            chbAdmin.Checked = false;
-            chbSeller.Checked = false;
-=======
->>>>>>> 1062abc77efa1e2dd0233f09b1315691e0f0ae58
         }
 
         // Load the account data into the DataGridView
@@ -89,46 +68,7 @@ namespace Bird_Management
         {
             if (e.RowIndex >= 0) // Check if a valid row is double-clicked
             {
-<<<<<<< HEAD
-                // Retrieve the list of accounts from the database
-                var accountList = _accountServices.GetAccounts();
 
-                if (e.RowIndex < accountList.Count) // Check if the row index is within the range of the account list
-                {
-                    var selectedAccount = accountList[e.RowIndex]; // Retrieve the selected account details
-
-                    // Populate the text fields with the selected account details
-                    txtUsername.Text = selectedAccount.User;
-                    txtPassword.Text = selectedAccount.Pass;
-
-                    // Set TextBoxes as editable
-                    txtUsername.ReadOnly = false;
-                    txtPassword.ReadOnly = false;
-
-                    // Set checkboxes as editable
-                    chbAdmin.Enabled = true;
-                    chbSeller.Enabled = true;
-
-                    // Set checkbox selections based on account type
-                    if (selectedAccount.IsAdmin.HasValue && selectedAccount.IsAdmin.Value)
-                    {
-                        chbAdmin.Checked = true; // Check the Admin checkbox
-                    }
-                    else
-                    {
-                        chbAdmin.Checked = false; // Uncheck the Admin checkbox
-                    }
-
-                    if (selectedAccount.IsSell.HasValue && selectedAccount.IsSell.Value)
-                    {
-                        chbSeller.Checked = true; // Check the Seller checkbox
-                    }
-                    else
-                    {
-                        chbSeller.Checked = false; // Uncheck the Seller checkbox
-                    }
-                }
-=======
                 // Retrieve the selected account from the DataGridView
                 var selectedAccount = dgvUpdateAccount.Rows[e.RowIndex].DataBoundItem as Account;
 
@@ -173,46 +113,13 @@ namespace Bird_Management
 
                 // Disable the update button
                 btnUpdateAccount.Enabled = false;
->>>>>>> 1062abc77efa1e2dd0233f09b1315691e0f0ae58
             }
         }
 
         // Handle the click event on the Update button
         private void btnUpdateAccount_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            // Get the selected account from the DataGridView
-            var selectedAccount = dgvUpdateAccount.CurrentRow?.DataBoundItem as Account;
 
-            // Check if the required fields are not empty
-            if (string.IsNullOrWhiteSpace(txtUsername.Text) || string.IsNullOrWhiteSpace(txtPassword.Text))
-            {
-                MessageBox.Show("Username and password are required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return; // Stop further execution if fields are empty
-            }
-
-            // Check if both checkboxes are checked or none of them are checked
-            if ((chbAdmin.Checked && chbSeller.Checked) || (!chbAdmin.Checked && !chbSeller.Checked))
-            {
-                MessageBox.Show("Please select either Admin or Seller.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return; // Stop further execution if both checkboxes are checked or none of them are checked
-            }
-
-            // Update the account properties with the values from the text boxes and checkboxes
-            selectedAccount.User = txtUsername.Text;
-            selectedAccount.Pass = txtPassword.Text;
-            selectedAccount.IsAdmin = chbAdmin.Checked;
-            selectedAccount.IsSell = chbSeller.Checked;
-
-            try
-            {
-                // Call the UpdateAccountAdmin method from the AccountServices class to update the account
-                _accountServices.UpdateAccountAdmin(selectedAccount);
-
-                // Display success message
-                MessageBox.Show("Account updated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-=======
             // Check if the required fields are empty
             if (string.IsNullOrWhiteSpace(txtUsername.Text) || string.IsNullOrWhiteSpace(txtPassword.Text))
             {
@@ -248,13 +155,11 @@ namespace Bird_Management
                 // Display success message
                 MessageBox.Show("Account updated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
->>>>>>> 1062abc77efa1e2dd0233f09b1315691e0f0ae58
                 // Clear the input fields (textboxes and checkboxes)
                 ClearInputFields();
 
                 LoadAccountData(); // Reload the account data in the DataGridView
-<<<<<<< HEAD
-=======
+
 
                 // Set textboxes and checkboxes as read-only
                 txtUsername.ReadOnly = true;
@@ -265,7 +170,6 @@ namespace Bird_Management
 
                 // Disable the update button
                 btnUpdateAccount.Enabled = false;
->>>>>>> 1062abc77efa1e2dd0233f09b1315691e0f0ae58
             }
             catch (Exception ex)
             {

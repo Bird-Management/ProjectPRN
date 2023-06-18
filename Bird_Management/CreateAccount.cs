@@ -86,11 +86,7 @@ namespace Bird_Management
                 return;
             }
 
-<<<<<<< HEAD
-            // Create a new account using the NewAccountAdmin & NewAccountSeller method
-=======
             // Create a new account using the appropriate method based on the selected checkbox
->>>>>>> 1062abc77efa1e2dd0233f09b1315691e0f0ae58
             Account account;
 
             // Check if one and only one checkbox is selected
@@ -104,21 +100,14 @@ namespace Bird_Management
                 if (chbAdmin.Checked)
                 {
                     account = accountServices.NewAccountAdmin(username, password); // Create an admin account
-<<<<<<< HEAD
-                }
-                else
-                {
-                    account = accountServices.NewAccountSeller(username, password); // Create a seller account
-=======
-                }
-                else if (chbSeller.Checked)
+
+                }else if (chbSeller.Checked)
                 {
                     account = accountServices.NewAccountSeller(username, password); // Create a seller account
                 }
                 else
                 {
                     account = accountServices.NewAccountCustomer(username, password); // Create a customer account
->>>>>>> 1062abc77efa1e2dd0233f09b1315691e0f0ae58
                 }
             }
             else
@@ -142,10 +131,8 @@ namespace Bird_Management
             chbCustomer.Checked = false;
         }
 
-<<<<<<< HEAD
-=======
+
         // Handle the Enter key press event on the Create Account button
->>>>>>> 1062abc77efa1e2dd0233f09b1315691e0f0ae58
         private void btnCreateAccount_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -154,13 +141,11 @@ namespace Bird_Management
             }
         }
 
-<<<<<<< HEAD
+
         private void CreateAccount_Load(object sender, EventArgs e)
         {
             this.KeyPreview = true;
             this.KeyDown += btnCreateAccount_KeyDown;
         }
-=======
->>>>>>> 1062abc77efa1e2dd0233f09b1315691e0f0ae58
     }
 }
