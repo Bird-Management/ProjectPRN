@@ -43,21 +43,29 @@
             // dgvListAccount
             // 
             dgvListAccount.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+<<<<<<< HEAD
             dgvListAccount.Location = new Point(109, 145);
+=======
+            dgvListAccount.Location = new Point(87, 152);
+>>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
             dgvListAccount.Margin = new Padding(2);
             dgvListAccount.Name = "dgvListAccount";
             dgvListAccount.RowHeadersWidth = 62;
             dgvListAccount.RowTemplate.Height = 33;
-            dgvListAccount.Size = new Size(792, 258);
+            dgvListAccount.Size = new Size(634, 206);
             dgvListAccount.TabIndex = 1;
             // 
             // btnCreate
             // 
             btnCreate.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
+<<<<<<< HEAD
             btnCreate.Location = new Point(107, 429);
+=======
+            btnCreate.Location = new Point(110, 372);
+>>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
             btnCreate.Margin = new Padding(2);
             btnCreate.Name = "btnCreate";
-            btnCreate.Size = new Size(111, 62);
+            btnCreate.Size = new Size(159, 50);
             btnCreate.TabIndex = 2;
             btnCreate.Text = "Create";
             btnCreate.UseVisualStyleBackColor = true;
@@ -66,10 +74,14 @@
             // btnUpdate
             // 
             btnUpdate.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
+<<<<<<< HEAD
             btnUpdate.Location = new Point(318, 429);
+=======
+            btnUpdate.Location = new Point(322, 372);
+>>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
             btnUpdate.Margin = new Padding(2);
             btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(111, 62);
+            btnUpdate.Size = new Size(163, 50);
             btnUpdate.TabIndex = 3;
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = true;
@@ -78,10 +90,14 @@
             // btnDelete
             // 
             btnDelete.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
+<<<<<<< HEAD
             btnDelete.Location = new Point(530, 431);
+=======
+            btnDelete.Location = new Point(530, 372);
+>>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
             btnDelete.Margin = new Padding(2);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(111, 60);
+            btnDelete.Size = new Size(160, 50);
             btnDelete.TabIndex = 4;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
@@ -93,7 +109,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { btLogout });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(975, 41);
+            toolStrip1.Size = new Size(780, 35);
             toolStrip1.TabIndex = 18;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -103,13 +119,14 @@
             btLogout.Image = (Image)resources.GetObject("btLogout.Image");
             btLogout.ImageTransparentColor = Color.Magenta;
             btLogout.Name = "btLogout";
-            btLogout.Size = new Size(123, 36);
+            btLogout.Size = new Size(106, 32);
             btLogout.Text = "Logout";
             btLogout.Click += btLogout_Click_1;
             // 
             // label1
             // 
             label1.AutoSize = true;
+<<<<<<< HEAD
             label1.BackColor = SystemColors.Control;
             label1.Font = new Font("Segoe UI", 20F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label1.ForeColor = Color.IndianRed;
@@ -117,14 +134,22 @@
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(541, 54);
+=======
+            label1.BackColor = Color.IndianRed;
+            label1.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(171, 33);
+            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(463, 46);
+>>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
             label1.TabIndex = 19;
             label1.Text = "WELCOME TO ADMIN PAGE";
             // 
             // Admin
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(975, 585);
+            ClientSize = new Size(780, 468);
             Controls.Add(label1);
             Controls.Add(toolStrip1);
             Controls.Add(btnDelete);

@@ -42,11 +42,14 @@ namespace Bird_Management
                     this.Hide();
 
                     Form form = new Seller();
+<<<<<<< HEAD
                     form.ShowDialog();
                 }else
                 {
                     this.Hide();
                     Form form = new Customer();
+=======
+>>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
                     form.ShowDialog();
                 }
             }
@@ -64,7 +67,10 @@ namespace Bird_Management
 
         }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
         private void btLogin_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)

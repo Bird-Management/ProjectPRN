@@ -48,7 +48,12 @@ namespace Repository.Services
                     IsSell = x.IsSell,
                     IsCustomer = x.IsCustomer,
                     UId = x.UId
+<<<<<<< HEAD
                 })
+=======
+                }
+                )
+>>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
                 .ToList();
 
                 return listAccounts;
@@ -74,6 +79,7 @@ namespace Repository.Services
                 _context.SaveChanges();
 
                 return account;
+<<<<<<< HEAD
 
             }
             catch (Exception ex)
@@ -94,6 +100,8 @@ namespace Repository.Services
                     return true;
                 }
                 return false;
+=======
+>>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
             }
             catch (Exception ex)
             {
@@ -167,6 +175,27 @@ namespace Repository.Services
             }
         }
 
+<<<<<<< HEAD
+=======
+        public bool DeleteAccountAdmin(string username, string password)
+        {
+            try
+            {
+                var account = _context.Account.FirstOrDefault(a => a.User == username && a.Pass == password);
+                if (account != null)
+                {
+                    _context.Account.Remove(account);
+                    _context.SaveChanges();
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+>>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
 
     }
 }

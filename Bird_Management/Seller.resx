@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <root>
+=======
+﻿<root>
+>>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -358,5 +362,8 @@
         vqYHCDttbf8fzDq3t8tIC9kAAAAASUVORK5CYII=
 </value>
   </data>
+<<<<<<< HEAD
 >>>>>>> 1062abc77efa1e2dd0233f09b1315691e0f0ae58:Bird_Management/Seller.resx
+=======
+>>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
 </root>

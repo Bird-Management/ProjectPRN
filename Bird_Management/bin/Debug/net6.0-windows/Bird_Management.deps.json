@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Bird_Management/1.0.0": {
         "dependencies": {
-          "Respository": "1.0.0"
+          "Repository": "1.0.0"
         },
         "runtime": {
           "Bird_Management.dll": {}
@@ -381,12 +381,12 @@
           "System.Drawing.Common": "4.7.0"
         }
       },
-      "Respository/1.0.0": {
+      "Repository/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.0"
         },
         "runtime": {
-          "Respository.dll": {}
+          "Repository.dll": {}
         }
       }
     }
@@ -677,7 +677,7 @@
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
-    "Respository/1.0.0": {
+    "Repository/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bird_Management", "Bird_Management\Bird_Management.csproj", "{893D3BB2-B0C9-43EB-A510-CCA3731503C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bird_Management", "Bird_Management\Bird_Management.csproj", "{893D3BB2-B0C9-43EB-A510-CCA3731503C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Respository", "Respository\Respository.csproj", "{461FD41F-02FA-451F-A6F4-727E25E110AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Respository\Repository.csproj", "{461FD41F-02FA-451F-A6F4-727E25E110AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
