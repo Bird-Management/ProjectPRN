@@ -1,4 +1,5 @@
 ﻿using Respository.Models;
+
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -35,5 +36,40 @@ namespace Respository.Services
                 throw new Exception(ex.Message);
             }
         }
+
+        public Product GetProductById(int productId)
+        {
+            try
+            {
+                var product = _context.Product.FirstOrDefault(p => p.Id == productId);
+                return product;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error retrieving product: " + ex.Message);
+            }
+        }
+
+        public bool DeleteProduct(int productId)
+        {
+            try
+            {
+                var product = _context.Product.FirstOrDefault(p => p.Id == productId);
+
+                if (product != null)
+                {
+                    _context.Product.Remove(product);
+                    _context.SaveChanges();
+                    return true;
+                }
+
+                return false;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error deleting product: " + ex.Message);
+            }
+        }
+
     }
 }
