@@ -8,9 +8,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Respository.Models
 {
-    [Keyless]
     public partial class Product
     {
+        [Key]
         [Column("id")]
         public int Id { get; set; }
         [Column("name")]

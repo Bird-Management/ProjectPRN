@@ -150,5 +150,19 @@ namespace Bird_Management
                 }
             }
         }
+
+        private void btnDeleteAccount_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                Delete_Click(sender, e);
+            }
+        }
+
+        private void DeleteAccount_Load(object sender, EventArgs e)
+        {
+            this.KeyPreview = true;
+            this.KeyDown += btnDeleteAccount_KeyDown;
+        }
     }
 }

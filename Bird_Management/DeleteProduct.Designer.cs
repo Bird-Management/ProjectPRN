@@ -35,17 +35,17 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            pictureBox1 = new PictureBox();
-            dataGridView1 = new DataGridView();
-            button1 = new Button();
+            txtName = new TextBox();
+            txtTitle = new TextBox();
+            txtDescription = new TextBox();
+            txtPrice = new TextBox();
+            pbImage = new PictureBox();
+            dgvProduct = new DataGridView();
+            btnDeleteProduct = new Button();
             toolStrip1 = new ToolStrip();
             btnBack = new ToolStripButton();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbImage).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvProduct).BeginInit();
             toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -54,9 +54,10 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label1.ForeColor = Color.IndianRed;
-            label1.Location = new Point(383, 32);
+            label1.Location = new Point(306, 26);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(234, 54);
+            label1.Size = new Size(200, 46);
             label1.TabIndex = 0;
             label1.Text = "Delete Bird";
             // 
@@ -64,9 +65,10 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(31, 136);
+            label2.Location = new Point(25, 109);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(85, 32);
+            label2.Size = new Size(70, 28);
             label2.TabIndex = 1;
             label2.Text = "Image";
             // 
@@ -74,9 +76,10 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(34, 220);
+            label3.Location = new Point(27, 176);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(81, 32);
+            label3.Size = new Size(68, 28);
             label3.TabIndex = 2;
             label3.Text = "Name";
             // 
@@ -84,9 +87,10 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(34, 268);
+            label4.Location = new Point(27, 214);
+            label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(64, 32);
+            label4.Size = new Size(55, 28);
             label4.TabIndex = 3;
             label4.Text = "Title";
             // 
@@ -94,9 +98,10 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(34, 319);
+            label5.Location = new Point(27, 255);
+            label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(146, 32);
+            label5.Size = new Size(121, 28);
             label5.TabIndex = 4;
             label5.Text = "Description";
             // 
@@ -104,72 +109,83 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(34, 363);
+            label6.Location = new Point(27, 290);
+            label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
-            label6.Size = new Size(71, 32);
+            label6.Size = new Size(59, 28);
             label6.TabIndex = 5;
             label6.Text = "Price";
             // 
-            // textBox1
+            // txtName
             // 
-            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox1.Location = new Point(206, 220);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(225, 39);
-            textBox1.TabIndex = 6;
+            txtName.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtName.Location = new Point(165, 176);
+            txtName.Margin = new Padding(2);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(181, 34);
+            txtName.TabIndex = 6;
             // 
-            // textBox2
+            // txtTitle
             // 
-            textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox2.Location = new Point(206, 271);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(225, 39);
-            textBox2.TabIndex = 7;
+            txtTitle.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtTitle.Location = new Point(165, 217);
+            txtTitle.Margin = new Padding(2);
+            txtTitle.Name = "txtTitle";
+            txtTitle.Size = new Size(181, 34);
+            txtTitle.TabIndex = 7;
             // 
-            // textBox3
+            // txtDescription
             // 
-            textBox3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox3.Location = new Point(206, 316);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(225, 39);
-            textBox3.TabIndex = 8;
+            txtDescription.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtDescription.Location = new Point(164, 255);
+            txtDescription.Margin = new Padding(2);
+            txtDescription.Name = "txtDescription";
+            txtDescription.Size = new Size(181, 34);
+            txtDescription.TabIndex = 8;
             // 
-            // textBox4
+            // txtPrice
             // 
-            textBox4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox4.Location = new Point(206, 366);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(225, 39);
-            textBox4.TabIndex = 9;
+            txtPrice.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtPrice.Location = new Point(176, 284);
+            txtPrice.Margin = new Padding(2);
+            txtPrice.Name = "txtPrice";
+            txtPrice.Size = new Size(181, 34);
+            txtPrice.TabIndex = 9;
             // 
-            // pictureBox1
+            // pbImage
             // 
-            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox1.Location = new Point(206, 107);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(225, 94);
-            pictureBox1.TabIndex = 10;
-            pictureBox1.TabStop = false;
+            pbImage.BorderStyle = BorderStyle.FixedSingle;
+            pbImage.Location = new Point(165, 86);
+            pbImage.Margin = new Padding(2);
+            pbImage.Name = "pbImage";
+            pbImage.Size = new Size(180, 76);
+            pbImage.TabIndex = 10;
+            pbImage.TabStop = false;
             // 
-            // dataGridView1
+            // dgvProduct
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(451, 107);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.RowTemplate.Height = 33;
-            dataGridView1.Size = new Size(520, 298);
-            dataGridView1.TabIndex = 11;
+            dgvProduct.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvProduct.Location = new Point(361, 86);
+            dgvProduct.Margin = new Padding(2);
+            dgvProduct.Name = "dgvProduct";
+            dgvProduct.RowHeadersWidth = 62;
+            dgvProduct.RowTemplate.Height = 33;
+            dgvProduct.Size = new Size(416, 238);
+            dgvProduct.TabIndex = 11;
+            dgvProduct.CellDoubleClick += dgvProduct_CellDoubleClick;
             // 
-            // button1
+            // btnDeleteProduct
             // 
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(206, 421);
-            button1.Name = "button1";
-            button1.Size = new Size(225, 42);
-            button1.TabIndex = 12;
-            button1.Text = "Delete Bird";
-            button1.UseVisualStyleBackColor = true;
+            btnDeleteProduct.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDeleteProduct.Location = new Point(165, 337);
+            btnDeleteProduct.Margin = new Padding(2);
+            btnDeleteProduct.Name = "btnDeleteProduct";
+            btnDeleteProduct.Size = new Size(180, 34);
+            btnDeleteProduct.TabIndex = 12;
+            btnDeleteProduct.Text = "Delete Bird";
+            btnDeleteProduct.UseVisualStyleBackColor = true;
+            btnDeleteProduct.Click += btnDeleteProduct_Click;
+            btnDeleteProduct.KeyDown += btnDeleteProduct_KeyDown;
             // 
             // toolStrip1
             // 
@@ -177,7 +193,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { btnBack });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(983, 41);
+            toolStrip1.Size = new Size(786, 35);
             toolStrip1.TabIndex = 13;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -187,33 +203,35 @@
             btnBack.Image = (Image)resources.GetObject("btnBack.Image");
             btnBack.ImageTransparentColor = Color.Magenta;
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(95, 36);
+            btnBack.Size = new Size(85, 32);
             btnBack.Text = "Back";
             btnBack.Click += btnBack_Click;
             // 
             // DeleteProduct
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(983, 512);
+            ClientSize = new Size(786, 410);
             Controls.Add(toolStrip1);
-            Controls.Add(button1);
-            Controls.Add(dataGridView1);
-            Controls.Add(pictureBox1);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(btnDeleteProduct);
+            Controls.Add(dgvProduct);
+            Controls.Add(pbImage);
+            Controls.Add(txtPrice);
+            Controls.Add(txtDescription);
+            Controls.Add(txtTitle);
+            Controls.Add(txtName);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(2);
             Name = "DeleteProduct";
             Text = "DeleteProduct";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Load += DeleteProduct_Load;
+            ((System.ComponentModel.ISupportInitialize)pbImage).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvProduct).EndInit();
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
             ResumeLayout(false);
@@ -228,13 +246,13 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private PictureBox pictureBox1;
-        private DataGridView dataGridView1;
-        private Button button1;
+        private TextBox txtName;
+        private TextBox txtTitle;
+        private TextBox txtDescription;
+        private TextBox txtPrice;
+        private PictureBox pbImage;
+        private DataGridView dgvProduct;
+        private Button btnDeleteProduct;
         private ToolStrip toolStrip1;
         private ToolStripButton btnBack;
     }

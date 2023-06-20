@@ -144,6 +144,7 @@
             Delete.Text = "Delete account";
             Delete.UseVisualStyleBackColor = true;
             Delete.Click += Delete_Click;
+            Delete.KeyDown += btnDeleteAccount_KeyDown;
             // 
             // dgvDeleteAccount
             // 
@@ -209,6 +210,7 @@
             Margin = new Padding(2);
             Name = "DeleteAccount";
             Text = "DeleteAccount";
+            Load += DeleteAccount_Load;
             ((System.ComponentModel.ISupportInitialize)dgvDeleteAccount).EndInit();
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
