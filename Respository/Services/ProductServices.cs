@@ -24,12 +24,6 @@ namespace Respository.Services
                 var listAllProduct = this._context.Product.ToList();
                 if (listAllProduct != null )
                 {
-                    DataTable dtProduct = new DataTable();
-                    dtProduct.Columns.Add("Image", Type.GetType("System.Byte[]"));
-                    foreach (DataRow dr in dtProduct.Rows)
-                    {
-                        dr["Image"] = File.ReadAllBytes(dr["image"].ToString());
-                    }
                     return listAllProduct;
                 }
                 else

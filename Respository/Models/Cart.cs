@@ -8,15 +8,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Respository.Models
 {
-    [Keyless]
     public partial class Cart
     {
-        [Column("AccountID")]
-        public int? AccountId { get; set; }
+        [Key]
         [Column("ProductID")]
-        public int? ProductId { get; set; }
-        [Column(TypeName = "money")]
-        public decimal? Amount { get; set; }
+        public int ProductId { get; set; }
+        public int? Amount { get; set; }
         [Column(TypeName = "money")]
         public decimal? Price { get; set; }
         [StringLength(50)]

@@ -39,6 +39,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Update="Admin.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Update="CreateAccount.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>

@@ -1,8 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Respository.Models;
 using Respository.Services;
-using Respository.Models;
-using Respository.Services;
 using System;
 using System.Linq;
 using System.Windows.Forms;
@@ -100,18 +98,8 @@ namespace Bird_Management
                 if (chbAdmin.Checked)
                 {
                     account = accountServices.NewAccountAdmin(username, password); // Create an admin account
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-                }else if (chbSeller.Checked)
-=======
-                }
+                } 
                 else if (chbSeller.Checked)
->>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
-=======
-                }
-                else if (chbSeller.Checked)
->>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
                 {
                     account = accountServices.NewAccountSeller(username, password); // Create a seller account
                 }
@@ -139,18 +127,6 @@ namespace Bird_Management
             chbAdmin.Checked = false;
             chbSeller.Checked = false;
             chbCustomer.Checked = false;
-<<<<<<< HEAD
-<<<<<<< HEAD
-        }
-
-
-        // Handle the Enter key press event on the Create Account button
-        private void btnCreateAccount_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                btnCreateAccount_KeyDown(sender, e);
-            }
         }
 
 
@@ -158,14 +134,8 @@ namespace Bird_Management
         {
             this.KeyPreview = true;
             this.KeyDown += btnCreateAccount_KeyDown;
-=======
->>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
-        }
 
-=======
         }
-
->>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
         // Handle the Enter key press event on the Create Account button
         private void btnCreateAccount_KeyDown(object sender, KeyEventArgs e)
         {

@@ -329,21 +329,14 @@ C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\B
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.DeleteProduct.resources
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.UpdateProduct.resources
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Customer.resources
 =======
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Seller.resources
 >>>>>>> 1062abc77efa1e2dd0233f09b1315691e0f0ae58
 D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.ViewCart.resources
 D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Seller.resources
-=======
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Seller.resources
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Repository.dll
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Repository.pdb
 >>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
-=======
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Seller.resources
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Repository.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Repository.pdb
->>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
+D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Repository.dll
+D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Repository.pdb

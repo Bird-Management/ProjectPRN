@@ -68,13 +68,6 @@ namespace Bird_Management
         {
             if (e.RowIndex >= 0) // Check if a valid row is double-clicked
             {
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
-=======
->>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
                 // Retrieve the selected account from the DataGridView
                 var selectedAccount = dgvUpdateAccount.Rows[e.RowIndex].DataBoundItem as Account;
 
@@ -125,13 +118,6 @@ namespace Bird_Management
         // Handle the click event on the Update button
         private void btnUpdateAccount_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
-=======
->>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
             // Check if the required fields are empty
             if (string.IsNullOrWhiteSpace(txtUsername.Text) || string.IsNullOrWhiteSpace(txtPassword.Text))
             {
@@ -172,13 +158,6 @@ namespace Bird_Management
 
                 LoadAccountData(); // Reload the account data in the DataGridView
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
-=======
->>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
                 // Set textboxes and checkboxes as read-only
                 txtUsername.ReadOnly = true;
                 txtPassword.ReadOnly = true;

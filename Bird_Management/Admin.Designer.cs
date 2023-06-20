@@ -43,15 +43,8 @@
             // dgvListAccount
             // 
             dgvListAccount.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            dgvListAccount.Location = new Point(109, 145);
-=======
+
             dgvListAccount.Location = new Point(87, 152);
->>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
-=======
-            dgvListAccount.Location = new Point(87, 152);
->>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
             dgvListAccount.Margin = new Padding(2);
             dgvListAccount.Name = "dgvListAccount";
             dgvListAccount.RowHeadersWidth = 62;
@@ -62,15 +55,8 @@
             // btnCreate
             // 
             btnCreate.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-<<<<<<< HEAD
-<<<<<<< HEAD
-            btnCreate.Location = new Point(107, 429);
-=======
+
             btnCreate.Location = new Point(110, 372);
->>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
-=======
-            btnCreate.Location = new Point(110, 372);
->>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
             btnCreate.Margin = new Padding(2);
             btnCreate.Name = "btnCreate";
             btnCreate.Size = new Size(159, 50);
@@ -82,15 +68,8 @@
             // btnUpdate
             // 
             btnUpdate.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-<<<<<<< HEAD
-<<<<<<< HEAD
-            btnUpdate.Location = new Point(318, 429);
-=======
+
             btnUpdate.Location = new Point(322, 372);
->>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
-=======
-            btnUpdate.Location = new Point(322, 372);
->>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
             btnUpdate.Margin = new Padding(2);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(163, 50);
@@ -102,15 +81,8 @@
             // btnDelete
             // 
             btnDelete.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-<<<<<<< HEAD
-<<<<<<< HEAD
-            btnDelete.Location = new Point(530, 431);
-=======
+
             btnDelete.Location = new Point(530, 372);
->>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
-=======
-            btnDelete.Location = new Point(530, 372);
->>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
             btnDelete.Margin = new Padding(2);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(160, 50);
@@ -141,32 +113,12 @@
             // 
             // label1
             // 
-            label1.AutoSize = true;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            label1.BackColor = SystemColors.Control;
-            label1.Font = new Font("Segoe UI", 20F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.ForeColor = Color.IndianRed;
-            label1.Location = new Point(214, 41);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(541, 54);
-=======
             label1.BackColor = Color.IndianRed;
             label1.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             label1.Location = new Point(171, 33);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(463, 46);
->>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
-=======
-            label1.BackColor = Color.IndianRed;
-            label1.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(171, 33);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(463, 46);
->>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
             label1.TabIndex = 19;
             label1.Text = "WELCOME TO ADMIN PAGE";
             // 
