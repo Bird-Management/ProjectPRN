@@ -37,15 +37,15 @@ namespace Bird_Management
             if (e.RowIndex >= 0 && e.RowIndex < dgvProduct.Rows.Count)
             {
                 var productId = Convert.ToInt32(dgvProduct.Rows[e.RowIndex].Cells["Id"].Value);
-                var product = _productServices.GetProductById(productId);
+                //var product = _productServices.GetProductById(productId);
 
-                if (product != null)
-                {
-                    txtName.Text = product.Name;
-                    txtTitle.Text = product.Title;
-                    txtDescription.Text = product.Description;
-                    txtPrice.Text = product.Price.ToString();
-                }
+                //if (product != null)
+                //{
+                //    //txtName.Text = product.ProductNames;
+                //    txtTitle.Text = product.Title;
+                //    txtDescription.Text = product.Description;
+                //    txtPrice.Text = product.Price.ToString();
+                //}
             }
         }
 
@@ -55,7 +55,7 @@ namespace Bird_Management
 
             if (selectedProduct != null)
             {
-                var productName = selectedProduct.Name;
+                var productName = selectedProduct.ProductName;
 
                 var result = MessageBox.Show($"Are you sure you want to delete the product '{productName}'?", "Delete Product", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
 
@@ -63,19 +63,19 @@ namespace Bird_Management
                 {
                     try
                     {
-                        var productId = selectedProduct.Id;
-                        var success = _productServices.DeleteProduct(productId);
+                        var productId = selectedProduct.ProductId;
+                        //var success = _productServices.DeleteProduct(productId);
 
-                        if (success)
-                        {
-                            MessageBox.Show("Product deleted successfully.", "Delete Product", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            LoadProducts();
-                            ClearTextBoxes();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Failed to delete the product.", "Delete Product", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
+                        //if (success)
+                        //{
+                        //    MessageBox.Show("Product deleted successfully.", "Delete Product", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //    LoadProducts();
+                        //    ClearTextBoxes();
+                        //}
+                        //else
+                        //{
+                        //    MessageBox.Show("Failed to delete the product.", "Delete Product", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        //}
                     }
                     catch (Exception ex)
                     {

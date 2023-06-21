@@ -30,14 +30,14 @@ namespace Bird_Management
                 string pas = txtPassword.Text;
 
                 Account ac = _accountServices.LoginAccount(us, pas);
-                if (ac.IsAdmin == true)
+                if (ac.Role == "Admin")
                 {
                     this.Hide();
 
                     Form form = new Admin();
                     form.ShowDialog();
                 }
-                else if (ac.IsSell == true)
+                else if (ac.Role == "Seller")
                 {
                     this.Hide();
 
@@ -46,7 +46,7 @@ namespace Bird_Management
                 }else
                 {
                     this.Hide();
-                    Form form = new Customer();
+                    Form form = new Staff();
                     form.ShowDialog();
                 }
             }

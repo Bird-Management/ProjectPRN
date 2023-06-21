@@ -12,7 +12,8 @@ namespace Respository.Models
     {
         [Key]
         [Column("ProductID")]
-        public int ProductId { get; set; }
+        [StringLength(10)]
+        public string ProductId { get; set; }
         [StringLength(50)]
         public string ProductName { get; set; }
         public string Image { get; set; }
@@ -21,7 +22,8 @@ namespace Respository.Models
         public string Title { get; set; }
         public string Description { get; set; }
         [Column("CategoryID")]
-        public int? CategoryId { get; set; }
+        [StringLength(10)]
+        public string CategoryId { get; set; }
 
         [ForeignKey("CategoryId")]
         [InverseProperty("Product")]

@@ -49,7 +49,7 @@ namespace Bird_Management
             }
 
             // Check if the username already exists in the database
-            bool usernameExists = _context.Account.Any(a => a.User == username);
+            bool usernameExists = _context.Account.Any(a => a.UserName == username);
             if (usernameExists)
             {
                 MessageBox.Show("Username already exists. Please choose a different username.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -95,18 +95,18 @@ namespace Bird_Management
                 // Valid selection: only one checkbox is checked
 
                 // Create the account based on the checked checkbox
-                if (chbAdmin.Checked)
-                {
-                    account = accountServices.NewAccountAdmin(username, password); // Create an admin account
-                } 
-                else if (chbSeller.Checked)
-                {
-                    account = accountServices.NewAccountSeller(username, password); // Create a seller account
-                }
-                else
-                {
-                    account = accountServices.NewAccountCustomer(username, password); // Create a customer account
-                }
+                //if (chbAdmin.Checked)
+                //{
+                //    account = accountServices.NewAccountAdmin(username, password); // Create an admin account
+                //} 
+                //else if (chbSeller.Checked)
+                //{
+                //    account = accountServices.NewAccountSeller(username, password); // Create a seller account
+                //}
+                //else
+                //{
+                //    account = accountServices.NewAccountCustomer(username, password); // Create a customer account
+                //}
             }
             else
             {

@@ -24,7 +24,7 @@ namespace Repository.Services
         {
             try
             {
-                var checkLogin = _context.Account.FirstOrDefault(x => x.AccountId.Equals(username) && x.Password.Equals(password));
+                var checkLogin = _context.Account.FirstOrDefault(x => x.UserName.Equals(username) && x.Password.Equals(password));
                 if (checkLogin == null)
                 {
                     throw new Exception("Invalid account");

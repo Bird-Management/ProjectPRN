@@ -17,7 +17,8 @@ namespace Respository.Models
 
         [Key]
         [Column("CategoryID")]
-        public int CategoryId { get; set; }
+        [StringLength(10)]
+        public string CategoryId { get; set; }
         [Required]
         [StringLength(50)]
         public string CategoryName { get; set; }

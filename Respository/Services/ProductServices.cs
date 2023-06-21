@@ -37,7 +37,7 @@ namespace Respository.Services
             }
         }
 
-        public Product GetProductById(int productId)
+        public Product GetProductById(string productId)
         {
             try
             {
@@ -50,7 +50,7 @@ namespace Respository.Services
             }
         }
 
-        public bool DeleteProduct(int productId)
+        public bool DeleteProduct(string productId)
         {
             try
             {

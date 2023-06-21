@@ -1,6 +1,6 @@
 ﻿namespace Bird_Management
 {
-    partial class ViewCart
+    partial class AddFood
     {
         /// <summary>
         /// Required designer variable.
@@ -28,15 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewCart));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddFood));
             label1 = new Label();
             label3 = new Label();
             label5 = new Label();
-            dgvListCart = new DataGridView();
             textBox2 = new TextBox();
             textBox4 = new TextBox();
             btnUpdate = new Button();
-            btnDelete = new Button();
             label6 = new Label();
             textBox5 = new TextBox();
             toolStrip1 = new ToolStrip();
@@ -47,8 +45,9 @@
             button1 = new Button();
             label2 = new Label();
             textBox1 = new TextBox();
-            btnNewOrder = new Button();
-            ((System.ComponentModel.ISupportInitialize)dgvListCart).BeginInit();
+            label4 = new Label();
+            label8 = new Label();
+            label9 = new Label();
             toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -57,46 +56,36 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label1.ForeColor = Color.IndianRed;
-            label1.Location = new Point(349, 31);
+            label1.Location = new Point(314, 31);
             label1.Name = "label1";
-            label1.Size = new Size(201, 54);
+            label1.Size = new Size(289, 54);
             label1.TabIndex = 0;
-            label1.Text = "Your Cart";
+            label1.Text = "Add new Food";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(40, 392);
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(12, 148);
             label3.Name = "label3";
-            label3.Size = new Size(64, 32);
+            label3.Size = new Size(139, 32);
             label3.TabIndex = 2;
-            label3.Text = "Title";
+            label3.Text = "Food Name";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(40, 440);
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(477, 103);
             label5.Name = "label5";
-            label5.Size = new Size(71, 32);
+            label5.Size = new Size(65, 32);
             label5.TabIndex = 4;
             label5.Text = "Price";
-            // 
-            // dgvListCart
-            // 
-            dgvListCart.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvListCart.Location = new Point(42, 88);
-            dgvListCart.Name = "dgvListCart";
-            dgvListCart.RowHeadersWidth = 62;
-            dgvListCart.RowTemplate.Height = 33;
-            dgvListCart.Size = new Size(837, 253);
-            dgvListCart.TabIndex = 5;
             // 
             // textBox2
             // 
             textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox2.Location = new Point(192, 392);
+            textBox2.Location = new Point(174, 148);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(232, 39);
             textBox2.TabIndex = 7;
@@ -104,7 +93,7 @@
             // textBox4
             // 
             textBox4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox4.Location = new Point(192, 440);
+            textBox4.Location = new Point(596, 96);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(232, 39);
             textBox4.TabIndex = 9;
@@ -112,37 +101,27 @@
             // btnUpdate
             // 
             btnUpdate.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnUpdate.Location = new Point(193, 550);
+            btnUpdate.Location = new Point(174, 371);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(115, 51);
             btnUpdate.TabIndex = 10;
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // btnDelete
-            // 
-            btnDelete.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnDelete.Location = new Point(314, 550);
-            btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(111, 51);
-            btnDelete.TabIndex = 11;
-            btnDelete.Text = "Delete";
-            btnDelete.UseVisualStyleBackColor = true;
-            // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(40, 491);
+            label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Location = new Point(477, 148);
             label6.Name = "label6";
-            label6.Size = new Size(107, 32);
+            label6.Size = new Size(100, 32);
             label6.TabIndex = 12;
             label6.Text = "Amount";
             // 
             // textBox5
             // 
             textBox5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox5.Location = new Point(192, 491);
+            textBox5.Location = new Point(596, 145);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(232, 39);
             textBox5.TabIndex = 13;
@@ -206,38 +185,56 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(40, 347);
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(12, 103);
             label2.Name = "label2";
-            label2.Size = new Size(131, 32);
+            label2.Size = new Size(98, 32);
             label2.TabIndex = 1;
-            label2.Text = "ProductID";
+            label2.Text = "Food ID";
             // 
             // textBox1
             // 
             textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox1.Location = new Point(193, 347);
+            textBox1.Location = new Point(174, 100);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(232, 39);
             textBox1.TabIndex = 6;
             // 
-            // btnNewOrder
+            // label4
             // 
-            btnNewOrder.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnNewOrder.Location = new Point(193, 607);
-            btnNewOrder.Name = "btnNewOrder";
-            btnNewOrder.Size = new Size(231, 44);
-            btnNewOrder.TabIndex = 19;
-            btnNewOrder.Text = "New Order";
-            btnNewOrder.UseVisualStyleBackColor = true;
-            btnNewOrder.Click += btnNewOrder_Click;
+            label4.AutoSize = true;
+            label4.Location = new Point(14, 206);
+            label4.Name = "label4";
+            label4.Size = new Size(48, 25);
+            label4.TabIndex = 19;
+            label4.Text = "Start";
             // 
-            // ViewCart
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(14, 253);
+            label8.Name = "label8";
+            label8.Size = new Size(59, 25);
+            label8.TabIndex = 20;
+            label8.Text = "label8";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(14, 299);
+            label9.Name = "label9";
+            label9.Size = new Size(59, 25);
+            label9.TabIndex = 21;
+            label9.Text = "label9";
+            // 
+            // AddFood
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(903, 664);
-            Controls.Add(btnNewOrder);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(label4);
             Controls.Add(button1);
             Controls.Add(textBox6);
             Controls.Add(label7);
@@ -245,19 +242,16 @@
             Controls.Add(toolStrip1);
             Controls.Add(textBox5);
             Controls.Add(label6);
-            Controls.Add(btnDelete);
             Controls.Add(btnUpdate);
             Controls.Add(textBox4);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
-            Controls.Add(dgvListCart);
             Controls.Add(label5);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "ViewCart";
+            Name = "AddFood";
             Text = "ViewCart";
-            ((System.ComponentModel.ISupportInitialize)dgvListCart).EndInit();
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
             ResumeLayout(false);
@@ -269,11 +263,9 @@
         private Label label1;
         private Label label3;
         private Label label5;
-        private DataGridView dgvListCart;
         private TextBox textBox2;
         private TextBox textBox4;
         private Button btnUpdate;
-        private Button btnDelete;
         private Label label6;
         private TextBox textBox5;
         private ToolStrip toolStrip1;
@@ -284,6 +276,8 @@
         private Button button1;
         private Label label2;
         private TextBox textBox1;
-        private Button btnNewOrder;
+        private Label label4;
+        private Label label8;
+        private Label label9;
     }
 }

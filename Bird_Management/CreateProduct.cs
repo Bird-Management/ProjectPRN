@@ -35,10 +35,10 @@ namespace Bird_Management
             // Create a new Product object
             Product newProduct = new Product
             {
-                Name = name,
-                Title = title,
-                Description = description,
-                Price = price
+                //Name = name,
+                //Title = title,
+                //Description = description,
+                //Price = price
             };
 
             // Save the new product to the database

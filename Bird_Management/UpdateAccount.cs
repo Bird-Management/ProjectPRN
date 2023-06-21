@@ -72,8 +72,8 @@ namespace Bird_Management
                 var selectedAccount = dgvUpdateAccount.Rows[e.RowIndex].DataBoundItem as Account;
 
                 // Populate the text fields with the selected account details
-                txtUsername.Text = selectedAccount.User;
-                txtPassword.Text = selectedAccount.Pass;
+                txtUsername.Text = selectedAccount.UserName;
+                txtPassword.Text = selectedAccount.Password;
 
                 // Enable editing of the text fields
                 txtUsername.ReadOnly = false;
@@ -86,9 +86,9 @@ namespace Bird_Management
 
                 // Set checkbox selections based on account type
                 // If the account type is null, default to false
-                chbAdmin.Checked = selectedAccount.IsAdmin ?? false;
-                chbSeller.Checked = selectedAccount.IsSell ?? false;
-                chbCustomer.Checked = selectedAccount.IsCustomer ?? false;
+                //chbAdmin.Checked = selectedAccount.IsAdmin ?? false;
+                //chbSeller.Checked = selectedAccount.IsSell ?? false;
+                //chbCustomer.Checked = selectedAccount.IsCustomer ?? false;
 
                 // Enable the update button
                 btnUpdateAccount.Enabled = true;
@@ -139,11 +139,11 @@ namespace Bird_Management
             var selectedAccount = dgvUpdateAccount.CurrentRow?.DataBoundItem as Account;
 
             // Update the account properties with the values from the text boxes and checkboxes
-            selectedAccount.User = txtUsername.Text;
-            selectedAccount.Pass = txtPassword.Text;
-            selectedAccount.IsAdmin = chbAdmin.Checked;
-            selectedAccount.IsSell = chbSeller.Checked;
-            selectedAccount.IsCustomer = chbCustomer.Checked;
+            selectedAccount.UserName = txtUsername.Text;
+            selectedAccount.Password = txtPassword.Text;
+            //selectedAccount.IsAdmin = chbAdmin.Checked;
+            //selectedAccount.IsSell = chbSeller.Checked;
+            //selectedAccount.IsCustomer = chbCustomer.Checked;
 
             try
             {

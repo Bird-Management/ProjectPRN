@@ -68,8 +68,8 @@ namespace Bird_Management
                     var selectedAccount = accountList[e.RowIndex]; // Retrieve the selected account details
 
                     // Populate the text fields with the selected account details
-                    txtUsername.Text = selectedAccount.User;
-                    txtPassword.Text = selectedAccount.Pass;
+                    txtUsername.Text = selectedAccount.UserName;
+                    txtPassword.Text = selectedAccount.Password;
 
                     // Set TextBoxes as read-only
                     txtUsername.ReadOnly = true;
@@ -80,32 +80,32 @@ namespace Bird_Management
                     chkSeller.Enabled = false;
                     chkCustomer.Enabled = false;
                     // Set checkbox selections based on account type
-                    if (selectedAccount.IsAdmin.HasValue && selectedAccount.IsAdmin.Value)
-                    {
-                        chkAdmin.Checked = true; // Check the Admin checkbox
-                    }
-                    else
-                    {
-                        chkAdmin.Checked = false; // Uncheck the Admin checkbox
-                    }
+                    //if (selectedAccount.IsAdmin.HasValue && selectedAccount.IsAdmin.Value)
+                    //{
+                    //    chkAdmin.Checked = true; // Check the Admin checkbox
+                    //}
+                    //else
+                    //{
+                    //    chkAdmin.Checked = false; // Uncheck the Admin checkbox
+                    //}
 
-                    if (selectedAccount.IsSell.HasValue && selectedAccount.IsSell.Value)
-                    {
-                        chkSeller.Checked = true; // Check the Seller checkbox
-                    }
-                    else
-                    {
-                        chkSeller.Checked = false; // Uncheck the Seller checkbox
-                    }
+                    //if (selectedAccount.IsSell.HasValue && selectedAccount.IsSell.Value)
+                    //{
+                    //    chkSeller.Checked = true; // Check the Seller checkbox
+                    //}
+                    //else
+                    //{
+                    //    chkSeller.Checked = false; // Uncheck the Seller checkbox
+                    //}
 
-                    if (selectedAccount.IsCustomer.HasValue && selectedAccount.IsCustomer.Value)
-                    {
-                        chkCustomer.Checked = true; // Check the Customer checkbox
-                    }
-                    else
-                    {
-                        chkCustomer.Checked = false; // Uncheck the Customer checkbox
-                    }
+                    //if (selectedAccount.IsCustomer.HasValue && selectedAccount.IsCustomer.Value)
+                    //{
+                    //    chkCustomer.Checked = true; // Check the Customer checkbox
+                    //}
+                    //else
+                    //{
+                    //    chkCustomer.Checked = false; // Uncheck the Customer checkbox
+                    //}
                 }
             }
         }

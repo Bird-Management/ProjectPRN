@@ -12,13 +12,13 @@ using System.Windows.Forms;
 
 namespace Bird_Management
 {
-    public partial class ViewCart : Form
+    public partial class AddFood : Form
     {
         BirdManagementContext context = new BirdManagementContext();
-        public ViewCart()
+        public AddFood()
         {
             InitializeComponent();
-            loadData();
+            //loadData();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -28,23 +28,23 @@ namespace Bird_Management
             if (result == DialogResult.Yes)
             {
                 this.Close();
-                Form form = new Customer();
+                Form form = new Staff();
                 form.Show();
 
             }
         }
 
-        public void loadData()
-        {
-            CartServices cartServices = new CartServices(context);
-            var listCart = cartServices.getCarts();
+        //public void loadData()
+        //{
+        //    CartServices cartServices = new CartServices(context);
+        //    var listCart = cartServices.getCarts();
 
-            dgvListCart.DataSource = new BindingSource() { DataSource = listCart };
-        }
+        //    dgvListCart.DataSource = new BindingSource() { DataSource = listCart };
+        //}
 
         private void btnNewOrder_Click(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

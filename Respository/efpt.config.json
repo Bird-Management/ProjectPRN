@@ -23,11 +23,15 @@
          "ObjectType": 0
       },
       {
+         "Name": "[dbo].[Food]",
+         "ObjectType": 0
+      },
+      {
          "Name": "[dbo].[Product]",
          "ObjectType": 0
       }
    ],
-   "UiHint": "desktop-qkq1pq7\\sqlexpress.BirdManagement.dbo",
+   "UiHint": "minhnguyen\\sqlexpress.BirdManagement.dbo",
    "UncountableWords": null,
    "UseBoolPropertiesWithoutDefaultSql": false,
    "UseDatabaseNames": false,
