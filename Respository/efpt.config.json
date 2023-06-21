@@ -19,10 +19,6 @@
          "ObjectType": 0
       },
       {
-         "Name": "[dbo].[Cart]",
-         "ObjectType": 0
-      },
-      {
          "Name": "[dbo].[Category]",
          "ObjectType": 0
       },

@@ -8,22 +8,23 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Respository.Models
 {
-    [Keyless]
     public partial class Product
     {
-        [Column("id")]
-        public int Id { get; set; }
-        [Column("name")]
-        public string Name { get; set; }
-        [Column("image")]
+        [Key]
+        [Column("ProductID")]
+        public int ProductId { get; set; }
+        [StringLength(50)]
+        public string ProductName { get; set; }
         public string Image { get; set; }
-        [Column("price", TypeName = "money")]
-        public decimal? Price { get; set; }
-        [Column("title")]
+        public double? Price { get; set; }
+        [StringLength(50)]
         public string Title { get; set; }
-        [Column("description")]
         public string Description { get; set; }
-        [Column("cateID")]
-        public int? CateId { get; set; }
+        [Column("CategoryID")]
+        public int? CategoryId { get; set; }
+
+        [ForeignKey("CategoryId")]
+        [InverseProperty("Product")]
+        public virtual Category Category { get; set; }
     }
 }

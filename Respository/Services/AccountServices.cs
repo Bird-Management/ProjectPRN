@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
+using System.Numerics;
 using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,7 +24,7 @@ namespace Repository.Services
         {
             try
             {
-                var checkLogin = _context.Account.FirstOrDefault(x => x.User.Equals(username) && x.Pass.Equals(password));
+                var checkLogin = _context.Account.FirstOrDefault(x => x.AccountId.Equals(username) && x.Password.Equals(password));
                 if (checkLogin == null)
                 {
                     throw new Exception("Invalid account");
@@ -42,12 +44,11 @@ namespace Repository.Services
             {
                 var listAccounts = _context.Account.Select(x => new Account
                 {
-                    User = x.User,
-                    Pass = x.Pass,
-                    IsAdmin = x.IsAdmin,
-                    IsSell = x.IsSell,
-                    IsCustomer = x.IsCustomer,
-                    UId = x.UId
+                    AccountId = x.AccountId,
+                    Password = x.Password,
+                    Role = x.Role,
+                    Email = x.Email,
+                    Phone = x.Phone,
                 })
                 .ToList();
 
@@ -59,16 +60,17 @@ namespace Repository.Services
             }
         }
 
-        public Account NewAccountAdmin(string username, string password)
+        public Account NewAccountAdmin(string username, string password, string role, string email, int phone)
         {
+
             try
             {
                 var account = new Account();
-                account.User = username;
-                account.Pass = password;
-                account.IsAdmin = true;
-                account.IsSell = false;
-                account.IsCustomer = false;
+                account.UserName = username;
+                account.Password = password;
+                account.Role = role;
+                account.Email = email;
+                account.Phone = phone;
 
                 _context.Account.Add(account);
                 _context.SaveChanges();
@@ -86,7 +88,7 @@ namespace Repository.Services
         {
             try
             {
-                var account = _context.Account.FirstOrDefault(a => a.User == username && a.Pass == password);
+                var account = _context.Account.FirstOrDefault(a => a.UserName == username && a.Password == password);
                 if (account != null)
                 {
                     _context.Account.Remove(account);
@@ -101,16 +103,16 @@ namespace Repository.Services
             }
         }
 
-        public Account NewAccountSeller(string username, string password)
+        public Account NewAccountSeller(string username, string password, string role, string email, int phone)
         {
             try
             {
                 var account = new Account();
-                account.User = username;
-                account.Pass = password;
-                account.IsAdmin = false;
-                account.IsSell = true;
-                account.IsCustomer = false;
+                account.UserName = username;
+                account.Password = password;
+                account.Role = role;
+                account.Email = email;
+                account.Phone = phone;
 
                 _context.Account.Add(account);
                 _context.SaveChanges();
@@ -123,16 +125,16 @@ namespace Repository.Services
             }
         }
 
-        public Account NewAccountCustomer(string username, string password)
+        public Account NewAccountCustomer(string username, string password, string role, string email, int phone)
         {
             try
             {
                 var account = new Account();
-                account.User = username;
-                account.Pass = password;
-                account.IsAdmin = false;
-                account.IsSell = false;
-                account.IsCustomer = true;
+                account.UserName = username;
+                account.Password = password;
+                account.Role = role;
+                account.Email = email;
+                account.Phone = phone;
 
                 _context.Account.Add(account);
                 _context.SaveChanges();
@@ -149,14 +151,14 @@ namespace Repository.Services
         {
             try
             {
-                var existingAccount = _context.Account.FirstOrDefault(a => a.UId == account.UId);
+                var existingAccount = _context.Account.FirstOrDefault(a => a.AccountId == account.AccountId);
                 if (existingAccount != null)
                 {
-                    existingAccount.User = account.User;
-                    existingAccount.Pass = account.Pass;
-                    existingAccount.IsAdmin = account.IsAdmin;
-                    existingAccount.IsSell = account.IsSell;
-                    existingAccount.IsCustomer = account.IsCustomer;
+                    existingAccount.UserName = account.UserName;
+                    existingAccount.Password = account.Password;
+                    existingAccount.Role = account.Role;
+                    existingAccount.Email = account.Email;
+                    existingAccount.Phone = account.Phone;
 
                     _context.SaveChanges();
                 }

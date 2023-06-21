@@ -56,7 +56,7 @@ namespace Bird_Management
                 {
                     var product = listProduct[e.RowIndex];
 
-                    txtName.Text = product.Name;
+                    txtName.Text = product.ProductName;
                     txtDescription.Text = product.Description;
                     txtTitle.Text = product.Title;
 
@@ -77,45 +77,6 @@ namespace Bird_Management
                     txtPrice.Enabled = false;
                 }
             }
-        }
-
-        private void btnAddToCart_Click(object sender, EventArgs e)
-        {
-            // Create an instance of the CartServices class
-            CartServices cartServices = new CartServices(context);
-
-            // Retrieve the values from textboxes
-            string title = txtTitle.Text.Trim();
-            string sPrice = txtPrice.Text.Trim();
-            string sId = txtID.Text.Trim();
-
-            // Validate and convert the price
-            if (!decimal.TryParse(sPrice, out decimal dPrice))
-            {
-                MessageBox.Show("Invalid price format", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            // Validate and convert the product ID
-            if (!int.TryParse(sId, out int id))
-            {
-                MessageBox.Show("Invalid product ID", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            // Add the product to the cart
-            cartServices.addToCart(id, title, dPrice);
-
-            // Display success message
-            MessageBox.Show("Added to cart successfully", "Notification", MessageBoxButtons.OK);
-        }
-
-
-        private void btnViewCart_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form form = new ViewCart();
-            form.ShowDialog();
         }
 
     }

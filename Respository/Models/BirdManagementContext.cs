@@ -19,7 +19,6 @@ namespace Respository.Models
         }
 
         public virtual DbSet<Account> Account { get; set; }
-        public virtual DbSet<Cart> Cart { get; set; }
         public virtual DbSet<Category> Category { get; set; }
         public virtual DbSet<Product> Product { get; set; }
 
@@ -34,25 +33,17 @@ namespace Respository.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Account>(entity =>
-            {
-                entity.HasKey(e => e.UId)
-                    .HasName("PK__Account__DD771E3C5D44D2D1");
-            });
-
-            modelBuilder.Entity<Cart>(entity =>
-            {
-                entity.Property(e => e.ProductId).ValueGeneratedNever();
-            });
-
             modelBuilder.Entity<Category>(entity =>
             {
-                entity.Property(e => e.Cid).ValueGeneratedNever();
+                entity.Property(e => e.CategoryId).ValueGeneratedNever();
             });
 
             modelBuilder.Entity<Product>(entity =>
             {
-                entity.Property(e => e.Id).ValueGeneratedOnAdd();
+                entity.HasOne(d => d.Category)
+                    .WithMany(p => p.Product)
+                    .HasForeignKey(d => d.CategoryId)
+                    .HasConstraintName("FK_Product_Category");
             });
 
             OnModelCreatingPartial(modelBuilder);

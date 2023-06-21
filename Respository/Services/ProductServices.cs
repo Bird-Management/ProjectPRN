@@ -41,7 +41,7 @@ namespace Respository.Services
         {
             try
             {
-                var product = _context.Product.FirstOrDefault(p => p.Id == productId);
+                var product = _context.Product.FirstOrDefault(p => p.ProductId == productId);
                 return product;
             }
             catch (Exception ex)
@@ -54,7 +54,7 @@ namespace Respository.Services
         {
             try
             {
-                var product = _context.Product.FirstOrDefault(p => p.Id == productId);
+                var product = _context.Product.FirstOrDefault(p => p.ProductId == productId);
 
                 if (product != null)
                 {

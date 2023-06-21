@@ -11,19 +11,16 @@ namespace Respository.Models
     public partial class Account
     {
         [Key]
-        [Column("uID")]
-        public int UId { get; set; }
-        [Column("user")]
+        [Column("AccountID")]
+        public int AccountId { get; set; }
         [StringLength(50)]
-        public string User { get; set; }
-        [Column("pass")]
+        public string UserName { get; set; }
         [StringLength(50)]
-        public string Pass { get; set; }
-        [Column("isSell")]
-        public bool? IsSell { get; set; }
-        [Column("isAdmin")]
-        public bool? IsAdmin { get; set; }
-        [Column("isCustomer")]
-        public bool? IsCustomer { get; set; }
+        public string Password { get; set; }
+        [StringLength(50)]
+        public string Role { get; set; }
+        [StringLength(50)]
+        public string Email { get; set; }
+        public int? Phone { get; set; }
     }
 }
