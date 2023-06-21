@@ -1,231 +1,3 @@
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.exe
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.deps.json
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.runtimeconfig.json
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.pdb
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Respository.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Respository.pdb
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.AssemblyReference.cache
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Login.resources
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Properties.Resources.resources
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.GenerateResource.cache
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.AssemblyInfoInputs.cache
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.AssemblyInfo.cs
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.CoreCompileInputs.cache
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.CopyComplete
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\refint\Bird_Management.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.pdb
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.genruntimeconfig.cache
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\ref\Bird_Management.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Admin.resources
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Sell.resources
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.SignUp.resources
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.exe
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.deps.json
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.runtimeconfig.json
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.pdb
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Respository.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Respository.pdb
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.AssemblyReference.cache
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Admin.resources
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Login.resources
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Properties.Resources.resources
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Sell.resources
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.SignUp.resources
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.GenerateResource.cache
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.AssemblyInfoInputs.cache
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.AssemblyInfo.cs
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.CoreCompileInputs.cache
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.CopyComplete
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\refint\Bird_Management.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.pdb
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.genruntimeconfig.cache
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Bird-Management\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\ref\Bird_Management.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.AssemblyReference.cache
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Admin.resources
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Login.resources
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Properties.Resources.resources
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Sell.resources
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.SignUp.resources
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.GenerateResource.cache
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.AssemblyInfoInputs.cache
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.AssemblyInfo.cs
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.CoreCompileInputs.cache
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\refint\Bird_Management.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.pdb
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.exe
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.deps.json
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.runtimeconfig.json
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.pdb
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Respository.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\bin\Debug\net6.0-windows\Respository.pdb
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.CopyComplete
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.genruntimeconfig.cache
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\Project-PRN\Bird_Management\Bird_Management\obj\Debug\net6.0-windows\ref\Bird_Management.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.exe
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.deps.json
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.runtimeconfig.json
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.pdb
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Respository.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Respository.pdb
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.AssemblyReference.cache
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Admin.resources
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Login.resources
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Properties.Resources.resources
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Sell.resources
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.SignUp.resources
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.GenerateResource.cache
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.AssemblyInfoInputs.cache
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.AssemblyInfo.cs
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.CoreCompileInputs.cache
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.CopyComplete
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\refint\Bird_Management.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.pdb
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.genruntimeconfig.cache
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\ref\Bird_Management.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.CreateAccount.resources
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.AssemblyReference.cache
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Admin.resources
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.CreateAccount.resources
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Login.resources
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Properties.Resources.resources
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.SignUp.resources
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.UpdateAccount.resources
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.GenerateResource.cache
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.AssemblyInfoInputs.cache
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.AssemblyInfo.cs
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.CoreCompileInputs.cache
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\refint\Bird_Management.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.pdb
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.exe
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.deps.json
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.runtimeconfig.json
@@ -260,83 +32,30 @@ C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\B
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.CopyComplete
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.genruntimeconfig.cache
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\ref\Bird_Management.dll
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.DeleteAccount.resources
-C:\Users\ADMIN\OneDrive\Desktop\SUMMER2023\SWP391\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.UpdateAccount.resources
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.DeleteAccount.resources
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.AssemblyReference.cache
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Admin.resources
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.CreateAccount.resources
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.CreateProduct.resources
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.DeleteAccount.resources
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.DeleteProduct.resources
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Login.resources
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Properties.Resources.resources
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Sell.resources
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.SignUp.resources
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.UpdateAccount.resources
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.UpdateProduct.resources
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.GenerateResource.cache
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.GeneratedMSBuildEditorConfig.editorconfig
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.AssemblyInfoInputs.cache
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.AssemblyInfo.cs
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.CoreCompileInputs.cache
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.dll
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\refint\Bird_Management.dll
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.pdb
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.exe
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.deps.json
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.runtimeconfig.json
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Bird_Management.pdb
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Respository.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Respository.pdb
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.CopyComplete
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.genruntimeconfig.cache
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\ref\Bird_Management.dll
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.CreateProduct.resources
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.DeleteProduct.resources
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.UpdateProduct.resources
-<<<<<<< HEAD
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Customer.resources
-=======
-C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Seller.resources
->>>>>>> 1062abc77efa1e2dd0233f09b1315691e0f0ae58
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.ViewCart.resources
-D:\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Seller.resources
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Repository.dll
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Repository.pdb
->>>>>>> a8108fc329307eaa5d0b08dc7f66ef35615f2dca
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Repository.dll
-D:\ProjectPRN\Bird_Management\bin\Debug\net6.0-windows\Repository.pdb
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.AssemblyReference.cache
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Admin.resources
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.CreateAccount.resources
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.CreateProduct.resources
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Customer.resources
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.DeleteAccount.resources
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.DeleteProduct.resources
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Login.resources
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Properties.Resources.resources
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.Seller.resources
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.SignUp.resources
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.UpdateAccount.resources
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.UpdateProduct.resources
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.ViewCart.resources
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.GenerateResource.cache
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.AssemblyInfoInputs.cache
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.AssemblyInfo.cs
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.CoreCompileInputs.cache
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.csproj.CopyComplete
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.dll
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\refint\Bird_Management.dll
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.pdb
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.genruntimeconfig.cache
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\ref\Bird_Management.dll
