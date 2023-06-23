@@ -45,6 +45,10 @@ namespace Bird_Management
             string email = txtEmail.Text;
             string phone = txtPhone.Text;
 
+            // Disable user input in the combobox
+            cbRole.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbRole.Enabled = false;
+
             // Validate the input values
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) ||
                 string.IsNullOrEmpty(confirmPassword) || string.IsNullOrEmpty(email) ||
