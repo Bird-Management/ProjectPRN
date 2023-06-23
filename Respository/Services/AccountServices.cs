@@ -5,6 +5,7 @@ using System.Linq;
 using System.Numerics;
 using System.Security.Principal;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Repository.Services;
 using Respository.Models;
@@ -45,6 +46,7 @@ namespace Repository.Services
                 var listAccounts = _context.Account.Select(x => new Account
                 {
                     AccountId = x.AccountId,
+                    UserName = x.UserName,
                     Password = x.Password,
                     Role = x.Role,
                     Email = x.Email,
@@ -60,12 +62,13 @@ namespace Repository.Services
             }
         }
 
-        public Account NewAccountAdmin(string username, string password, string role, string email, int phone)
+        public Account NewAccountAdmin(string accountID, string username, string password, string role, string email, string phone)
         {
 
             try
             {
                 var account = new Account();
+                account.AccountId = accountID;
                 account.UserName = username;
                 account.Password = password;
                 account.Role = role;
@@ -82,6 +85,57 @@ namespace Repository.Services
             {
                 throw new Exception(ex.Message);
             }
+        }
+
+        public bool IsValidAccountIDFormat(string accountID)
+        {
+            // Regular expression pattern for accountID validation
+            string pattern = @"^A-(0[1-9]|[1-9][0-9]*)$";
+
+            // Check if the accountID matches the pattern
+            return Regex.IsMatch(accountID, pattern);
+        }
+
+        public bool AccountIDExists(string accountID)
+        {
+            try
+            {
+                return _context.Account.Any(a => a.AccountId == accountID);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public bool UsernameExists(string username)
+        {
+            try
+            {
+                return _context.Account.Any(a => a.UserName == username);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public bool IsValidEmail(string email)
+        {
+            // Regular expression pattern for email validation
+            string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+
+            // Check if the email matches the pattern
+            return Regex.IsMatch(email, pattern);
+        }
+
+        public bool IsValidPhoneNumber(string phone)
+        {
+            // Regular expression pattern for phone number validation
+            string pattern = @"^\d{10}$";
+
+            // Check if the phone number matches the pattern
+            return Regex.IsMatch(phone, pattern);
         }
 
         public bool DeleteAccountAdmin(string username, string password)
@@ -96,50 +150,6 @@ namespace Repository.Services
                     return true;
                 }
                 return false;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
-
-        public Account NewAccountSeller(string username, string password, string role, string email, int phone)
-        {
-            try
-            {
-                var account = new Account();
-                account.UserName = username;
-                account.Password = password;
-                account.Role = role;
-                account.Email = email;
-                account.Phone = phone;
-
-                _context.Account.Add(account);
-                _context.SaveChanges();
-
-                return account;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
-
-        public Account NewAccountCustomer(string username, string password, string role, string email, int phone)
-        {
-            try
-            {
-                var account = new Account();
-                account.UserName = username;
-                account.Password = password;
-                account.Role = role;
-                account.Email = email;
-                account.Phone = phone;
-
-                _context.Account.Add(account);
-                _context.SaveChanges();
-
-                return account;
             }
             catch (Exception ex)
             {
@@ -169,5 +179,48 @@ namespace Repository.Services
             }
         }
 
+        public Account NewAccountSeller(string username, string password, string role, string email, string phone)
+        {
+            try
+            {
+                var account = new Account();
+                account.UserName = username;
+                account.Password = password;
+                account.Role = role;
+                account.Email = email;
+                account.Phone = phone;
+
+                _context.Account.Add(account);
+                _context.SaveChanges();
+
+                return account;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public Account NewAccountCustomer(string username, string password, string role, string email, string phone)
+        {
+            try
+            {
+                var account = new Account();
+                account.UserName = username;
+                account.Password = password;
+                account.Role = role;
+                account.Email = email;
+                account.Phone = phone;
+
+                _context.Account.Add(account);
+                _context.SaveChanges();
+
+                return account;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

@@ -39,9 +39,14 @@
             label4 = new Label();
             toolStrip1 = new ToolStrip();
             btBack = new ToolStripButton();
-            chbSeller = new CheckBox();
-            chbAdmin = new CheckBox();
-            chbCustomer = new CheckBox();
+            label5 = new Label();
+            lable = new Label();
+            label7 = new Label();
+            txtPhone = new TextBox();
+            txtEmail = new TextBox();
+            cbRole = new ComboBox();
+            label6 = new Label();
+            txtAccountID = new TextBox();
             toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -49,7 +54,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(130, 114);
+            label1.Location = new Point(125, 161);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(99, 28);
@@ -60,7 +65,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(130, 161);
+            label2.Location = new Point(125, 208);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
             label2.Size = new Size(93, 28);
@@ -71,7 +76,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(130, 202);
+            label3.Location = new Point(125, 249);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
             label3.Size = new Size(168, 28);
@@ -81,8 +86,8 @@
             // txtUsername
             // 
             txtUsername.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtUsername.Location = new Point(319, 109);
-            txtUsername.Margin = new Padding(2);
+            txtUsername.Location = new Point(312, 161);
+            txtUsername.Margin = new Padding(2, 3, 2, 3);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(289, 34);
             txtUsername.TabIndex = 5;
@@ -90,8 +95,8 @@
             // txtPassword
             // 
             txtPassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtPassword.Location = new Point(319, 155);
-            txtPassword.Margin = new Padding(2);
+            txtPassword.Location = new Point(312, 208);
+            txtPassword.Margin = new Padding(2, 3, 2, 3);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
             txtPassword.Size = new Size(289, 34);
@@ -100,25 +105,24 @@
             // txtConfirmPassword
             // 
             txtConfirmPassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtConfirmPassword.Location = new Point(320, 196);
-            txtConfirmPassword.Margin = new Padding(2);
+            txtConfirmPassword.Location = new Point(313, 249);
+            txtConfirmPassword.Margin = new Padding(2, 3, 2, 3);
             txtConfirmPassword.Name = "txtConfirmPassword";
             txtConfirmPassword.PasswordChar = '*';
-            txtConfirmPassword.Size = new Size(288, 34);
+            txtConfirmPassword.Size = new Size(287, 34);
             txtConfirmPassword.TabIndex = 7;
             // 
             // btnCreateAccount
             // 
             btnCreateAccount.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnCreateAccount.Location = new Point(319, 287);
-            btnCreateAccount.Margin = new Padding(2);
+            btnCreateAccount.Location = new Point(311, 444);
+            btnCreateAccount.Margin = new Padding(2, 3, 2, 3);
             btnCreateAccount.Name = "btnCreateAccount";
             btnCreateAccount.Size = new Size(289, 36);
             btnCreateAccount.TabIndex = 10;
             btnCreateAccount.Text = "Create account";
             btnCreateAccount.UseVisualStyleBackColor = true;
             btnCreateAccount.Click += btnCreateAccount_Click;
-            btnCreateAccount.KeyDown += btnCreateAccount_KeyDown;
             // 
             // label4
             // 
@@ -138,7 +142,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { btBack });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(776, 35);
+            toolStrip1.Size = new Size(765, 35);
             toolStrip1.TabIndex = 12;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -152,44 +156,99 @@
             btBack.Text = "Back";
             btBack.Click += btBack_Click;
             // 
-            // chbSeller
+            // label5
             // 
-            chbSeller.AutoSize = true;
-            chbSeller.Location = new Point(319, 247);
-            chbSeller.Name = "chbSeller";
-            chbSeller.Size = new Size(68, 24);
-            chbSeller.TabIndex = 23;
-            chbSeller.Text = "Seller";
-            chbSeller.UseVisualStyleBackColor = true;
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(125, 295);
+            label5.Margin = new Padding(2, 0, 2, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(59, 28);
+            label5.TabIndex = 13;
+            label5.Text = "Email";
             // 
-            // chbAdmin
+            // lable
             // 
-            chbAdmin.AutoSize = true;
-            chbAdmin.Location = new Point(421, 247);
-            chbAdmin.Name = "chbAdmin";
-            chbAdmin.Size = new Size(75, 24);
-            chbAdmin.TabIndex = 24;
-            chbAdmin.Text = "Admin";
-            chbAdmin.UseVisualStyleBackColor = true;
+            lable.AutoSize = true;
+            lable.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lable.Location = new Point(125, 344);
+            lable.Margin = new Padding(2, 0, 2, 0);
+            lable.Name = "lable";
+            lable.Size = new Size(67, 28);
+            lable.TabIndex = 14;
+            lable.Text = "Phone";
             // 
-            // chbCustomer
+            // label7
             // 
-            chbCustomer.AutoSize = true;
-            chbCustomer.Location = new Point(514, 247);
-            chbCustomer.Name = "chbCustomer";
-            chbCustomer.Size = new Size(94, 24);
-            chbCustomer.TabIndex = 25;
-            chbCustomer.Text = "Customer";
-            chbCustomer.UseVisualStyleBackColor = true;
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Location = new Point(125, 391);
+            label7.Margin = new Padding(2, 0, 2, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(50, 28);
+            label7.TabIndex = 15;
+            label7.Text = "Role";
+            // 
+            // txtPhone
+            // 
+            txtPhone.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPhone.Location = new Point(312, 344);
+            txtPhone.Margin = new Padding(2, 3, 2, 3);
+            txtPhone.Name = "txtPhone";
+            txtPhone.Size = new Size(287, 34);
+            txtPhone.TabIndex = 16;
+            // 
+            // txtEmail
+            // 
+            txtEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtEmail.Location = new Point(312, 295);
+            txtEmail.Margin = new Padding(2, 3, 2, 3);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(287, 34);
+            txtEmail.TabIndex = 17;
+            // 
+            // cbRole
+            // 
+            cbRole.FormattingEnabled = true;
+            cbRole.Items.AddRange(new object[] { "Admin", "Seller", "Staff" });
+            cbRole.Location = new Point(311, 391);
+            cbRole.Name = "cbRole";
+            cbRole.Size = new Size(289, 28);
+            cbRole.TabIndex = 18;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Location = new Point(125, 115);
+            label6.Margin = new Padding(2, 0, 2, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(103, 28);
+            label6.TabIndex = 19;
+            label6.Text = "AccountID";
+            // 
+            // txtAccountID
+            // 
+            txtAccountID.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtAccountID.Location = new Point(311, 115);
+            txtAccountID.Margin = new Padding(2, 3, 2, 3);
+            txtAccountID.Name = "txtAccountID";
+            txtAccountID.Size = new Size(289, 34);
+            txtAccountID.TabIndex = 20;
             // 
             // CreateAccount
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(776, 394);
-            Controls.Add(chbCustomer);
-            Controls.Add(chbAdmin);
-            Controls.Add(chbSeller);
+            ClientSize = new Size(765, 528);
+            Controls.Add(txtAccountID);
+            Controls.Add(label6);
+            Controls.Add(cbRole);
+            Controls.Add(txtEmail);
+            Controls.Add(txtPhone);
+            Controls.Add(label7);
+            Controls.Add(lable);
+            Controls.Add(label5);
             Controls.Add(toolStrip1);
             Controls.Add(label4);
             Controls.Add(btnCreateAccount);
@@ -199,10 +258,9 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Margin = new Padding(2);
+            Margin = new Padding(2, 3, 2, 3);
             Name = "CreateAccount";
             Text = "CreateAccount";
-            Load += CreateAccount_Load;
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
             ResumeLayout(false);
@@ -215,7 +273,7 @@
         private Label label2;
         private Label label3;
         private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtEmail;
         private TextBox textBox3;
         private Button btnCreateAccount;
         private Label label4;
@@ -224,8 +282,12 @@
         private TextBox txtUsername;
         private TextBox txtPassword;
         private TextBox txtConfirmPassword;
-        private CheckBox chbSeller;
-        private CheckBox chbAdmin;
-        private CheckBox chbCustomer;
+        private Label label5;
+        private Label label7;
+        private ComboBox cbRole;
+        private Label lable;
+        private TextBox txtPhone;
+        private Label label6;
+        private TextBox txtAccountID;
     }
 }

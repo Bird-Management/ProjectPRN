@@ -34,116 +34,104 @@ namespace Bird_Management
         // Handle the Create Account button click event
         private void btnCreateAccount_Click(object sender, EventArgs e)
         {
+            // Create an instance of the AccountServices class, passing the _context as a parameter
             AccountServices accountServices = new AccountServices(_context);
 
-            // Get the trimmed username, password, and confirm password from the textboxes
+            // Retrieve input values from text boxes
+            string accountID = txtAccountID.Text;
             string username = txtUsername.Text.Trim();
             string password = txtPassword.Text;
             string confirmPassword = txtConfirmPassword.Text;
+            string email = txtEmail.Text;
+            string phone = txtPhone.Text;
 
-            // Check if the username is blank
-            if (string.IsNullOrWhiteSpace(username))
+            // Validate the input values
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) ||
+                string.IsNullOrEmpty(confirmPassword) || string.IsNullOrEmpty(email) ||
+                string.IsNullOrEmpty(phone) || string.IsNullOrEmpty(accountID))
             {
-                MessageBox.Show("Please enter a username.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please fill in all the required fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            // Check if the username already exists in the database
-            bool usernameExists = _context.Account.Any(a => a.UserName == username);
-            if (usernameExists)
+            // Validate the accountID format
+            if (!accountServices.IsValidAccountIDFormat(accountID))
             {
-                MessageBox.Show("Username already exists. Please choose a different username.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid accountID format. It should be in the format A-01 or higher.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            // Check if the password is blank
-            if (string.IsNullOrWhiteSpace(password))
+            // Validate if the accountID already exists
+            if (accountServices.AccountIDExists(accountID))
             {
-                MessageBox.Show("Please enter a password.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("AccountID already exists. Please choose a different AccountID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            // Check if the confirm password is blank
-            if (string.IsNullOrWhiteSpace(confirmPassword))
+            // Check if the username already exists
+            if (accountServices.UsernameExists(username))
             {
-                MessageBox.Show("Please enter the confirm password.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Username already exists", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             // Check if the password and confirm password match
             if (password != confirmPassword)
             {
-                MessageBox.Show("Password and confirm password do not match.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Password and Confirm Password do not match", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            // Check if checkboxes are checked or unchecked
-            if (chbAdmin.Checked == chbSeller.Checked && chbSeller.Checked == chbCustomer.Checked)
+            // Validate email format
+            if (!accountServices.IsValidEmail(email))
             {
-                MessageBox.Show("Please select either Admin, Seller, or Customer.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid email format", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            // Create a new account using the appropriate method based on the selected checkbox
-            Account account;
-
-            // Check if one and only one checkbox is selected
-            if ((chbAdmin.Checked && !chbSeller.Checked && !chbCustomer.Checked) ||  // Only admin checkbox is checked
-                (!chbAdmin.Checked && chbSeller.Checked && !chbCustomer.Checked) ||  // Only seller checkbox is checked
-                (!chbAdmin.Checked && !chbSeller.Checked && chbCustomer.Checked))    // Only customer checkbox is checked
+            // Validate phone number format
+            if (!accountServices.IsValidPhoneNumber(phone))
             {
-                // Valid selection: only one checkbox is checked
-
-                // Create the account based on the checked checkbox
-                //if (chbAdmin.Checked)
-                //{
-                //    account = accountServices.NewAccountAdmin(username, password); // Create an admin account
-                //} 
-                //else if (chbSeller.Checked)
-                //{
-                //    account = accountServices.NewAccountSeller(username, password); // Create a seller account
-                //}
-                //else
-                //{
-                //    account = accountServices.NewAccountCustomer(username, password); // Create a customer account
-                //}
-            }
-            else
-            {
-                // Invalid selection: either no checkbox or multiple checkboxes are checked
-
-                // Display validation error message
-                MessageBox.Show("Please select only one option: Admin, Seller, or Customer.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid phone number format", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
+            // Get the selected role from the combo box
+            string role = cbRole.SelectedItem?.ToString();
+
+            // Validate the selected role
+            if (string.IsNullOrEmpty(role))
+            {
+                // Display an error message if no role is selected
+                MessageBox.Show("Please select a role", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; // Exit the method if validation fails
+            }
+
+            // Create a new Account object with the input values
+            Account account = new Account
+            {   
+                AccountId = accountID,
+                UserName = username,
+                Password = password,
+                Email = email,
+                Phone = phone,
+                Role = role
+            };
+
+            // Call the NewAccountAdmin method of the accountServices instance to save the account in the database
+            accountServices.NewAccountAdmin(accountID, username, password, role, email, phone);
 
             // Display a success message
             MessageBox.Show("Account added successfully", "Notification", MessageBoxButtons.OK);
 
-            // Clear the input fields and reset the checkboxes
-            txtUsername.Clear();
-            txtPassword.Clear();
-            txtConfirmPassword.Clear();
-            chbAdmin.Checked = false;
-            chbSeller.Checked = false;
-            chbCustomer.Checked = false;
+            // Clear the input fields and combo box selection
+            txtAccountID.Text = "";
+            txtUsername.Text = "";
+            txtPassword.Text = "";
+            txtConfirmPassword.Text = "";
+            txtEmail.Text = "";
+            txtPhone.Text = "";
+            cbRole.SelectedIndex = -1;
         }
-
-
-        private void CreateAccount_Load(object sender, EventArgs e)
-        {
-            this.KeyPreview = true;
-            this.KeyDown += btnCreateAccount_KeyDown;
-
-        }
-        // Handle the Enter key press event on the Create Account button
-        private void btnCreateAccount_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                btnCreateAccount_KeyDown(sender, e);
-            }
-        }
-
     }
 }
