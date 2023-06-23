@@ -120,6 +120,18 @@ namespace Repository.Services
             }
         }
 
+        public bool PhoneExists(string phone)
+        {
+            // Check if any account in the database has the same phone number
+            return _context.Account.Any(a => a.Phone == phone);
+        }
+
+        public bool EmailExists(string email)
+        {
+            // Check if any account in the database has the same email
+            return _context.Account.Any(a => a.Email == email);
+        }
+
         public bool IsValidEmail(string email)
         {
             // Regular expression pattern for email validation

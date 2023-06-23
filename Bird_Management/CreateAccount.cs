@@ -45,10 +45,6 @@ namespace Bird_Management
             string email = txtEmail.Text;
             string phone = txtPhone.Text;
 
-            // Disable user input in the combobox
-            cbRole.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbRole.Enabled = false;
-
             // Validate the input values
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) ||
                 string.IsNullOrEmpty(confirmPassword) || string.IsNullOrEmpty(email) ||
@@ -97,6 +93,20 @@ namespace Bird_Management
             if (!accountServices.IsValidPhoneNumber(phone))
             {
                 MessageBox.Show("Invalid phone number format", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Validate if the email already exists
+            if (accountServices.EmailExists(email))
+            {
+                MessageBox.Show("Email already exists. Please choose a different email.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Validate if the phone number already exists
+            if (accountServices.PhoneExists(phone))
+            {
+                MessageBox.Show("Phone number already exists. Please choose a different phone number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
