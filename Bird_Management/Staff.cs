@@ -52,5 +52,19 @@ namespace Bird_Management
             Form form = new AddFood();
             form.ShowDialog();
         }
+
+        private void btnUpdateFood_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form form = new UpdateFood();
+            form.ShowDialog();
+        }
+
+        private void btnDeleteFood_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form form = new DeleteFood();
+            form.ShowDialog();
+        }
     }
 }

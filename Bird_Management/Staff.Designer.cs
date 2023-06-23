@@ -101,6 +101,7 @@
             btnUpdateFood.TabIndex = 14;
             btnUpdateFood.Text = "Update food";
             btnUpdateFood.UseVisualStyleBackColor = true;
+            btnUpdateFood.Click += btnUpdateFood_Click;
             // 
             // btnDeleteFood
             // 
@@ -111,6 +112,7 @@
             btnDeleteFood.TabIndex = 15;
             btnDeleteFood.Text = "Delete food";
             btnDeleteFood.UseVisualStyleBackColor = true;
+            btnDeleteFood.Click += btnDeleteFood_Click;
             // 
             // Staff
             // 
