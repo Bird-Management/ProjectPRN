@@ -53,7 +53,7 @@ namespace Bird_Management
         private void btnBack_Click(object sender, EventArgs e)
         {
             // Prompt the user with a confirmation dialog
-            DialogResult result = MessageBox.Show("Do you want to go back to the Admin Page?", "BirdShop", MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show("Do you want to go back to the Admin Page?", "Bird Management", MessageBoxButtons.YesNo);
 
             if (result == DialogResult.Yes)
             {

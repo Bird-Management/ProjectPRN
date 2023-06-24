@@ -52,7 +52,7 @@ namespace Bird_Management
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Do you want to back Login Page?", "BirdShop",
+            DialogResult result = MessageBox.Show("Do you want to back Login Page?", "Bird Management",
                 MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {

@@ -48,7 +48,7 @@ namespace Bird_Management
         private void btnBack_Click(object sender, EventArgs e)
         {
             // Display a confirmation message box before going back to the Admin Page
-            DialogResult result = MessageBox.Show("Do you want to go back to the Admin Page?", "BirdShop", MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show("Do you want to go back to the Admin Page?", "Bird Management", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
                 this.Close(); // Close the current form

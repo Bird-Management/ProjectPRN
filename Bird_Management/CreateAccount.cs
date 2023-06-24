@@ -21,7 +21,7 @@ namespace Bird_Management
         // Handle the Back button click event
         private void btBack_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Do you want to go back to the Admin Page?", "BirdShop",
+            DialogResult result = MessageBox.Show("Do you want to go back to the Admin Page?", "Bird Management",
                 MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
