@@ -32,7 +32,7 @@
             label1 = new Label();
             toolStrip1 = new ToolStrip();
             btnBack = new ToolStripButton();
-            dgvDeleteFood = new DataGridView();
+            dgvUpdateFood = new DataGridView();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
@@ -41,17 +41,18 @@
             label7 = new Label();
             label8 = new Label();
             label9 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            comboBox1 = new ComboBox();
+            txtFoodID = new TextBox();
+            txtFoodName = new TextBox();
+            txtStartDate = new TextBox();
+            txtEndDate = new TextBox();
+            txtPrice = new TextBox();
+            txtAmount = new TextBox();
+            cboProducer = new ComboBox();
             btnUpdate = new Button();
+            chbOutOfStock = new CheckBox();
+            chbStocking = new CheckBox();
             toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvDeleteFood).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvUpdateFood).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -59,7 +60,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label1.ForeColor = Color.IndianRed;
-            label1.Location = new Point(352, 30);
+            label1.Location = new Point(369, 30);
             label1.Name = "label1";
             label1.Size = new Size(262, 54);
             label1.TabIndex = 0;
@@ -71,7 +72,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { btnBack });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(909, 41);
+            toolStrip1.Size = new Size(1029, 41);
             toolStrip1.TabIndex = 1;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -85,15 +86,16 @@
             btnBack.Text = "Back";
             btnBack.Click += btnBack_Click;
             // 
-            // dgvDeleteFood
+            // dgvUpdateFood
             // 
-            dgvDeleteFood.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvDeleteFood.Location = new Point(413, 98);
-            dgvDeleteFood.Name = "dgvDeleteFood";
-            dgvDeleteFood.RowHeadersWidth = 62;
-            dgvDeleteFood.RowTemplate.Height = 33;
-            dgvDeleteFood.Size = new Size(484, 354);
-            dgvDeleteFood.TabIndex = 2;
+            dgvUpdateFood.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvUpdateFood.Location = new Point(485, 98);
+            dgvUpdateFood.Name = "dgvUpdateFood";
+            dgvUpdateFood.RowHeadersWidth = 62;
+            dgvUpdateFood.RowTemplate.Height = 33;
+            dgvUpdateFood.Size = new Size(532, 396);
+            dgvUpdateFood.TabIndex = 2;
+            dgvUpdateFood.CellDoubleClick += dgvUpdateFood_CellDoubleClick;
             // 
             // label2
             // 
@@ -175,95 +177,111 @@
             label9.TabIndex = 10;
             label9.Text = "Status";
             // 
-            // textBox1
+            // txtFoodID
             // 
-            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(155, 98);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(252, 39);
-            textBox1.TabIndex = 11;
+            txtFoodID.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtFoodID.Location = new Point(155, 98);
+            txtFoodID.Name = "txtFoodID";
+            txtFoodID.Size = new Size(324, 39);
+            txtFoodID.TabIndex = 11;
             // 
-            // textBox2
+            // txtFoodName
             // 
-            textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.Location = new Point(155, 143);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(252, 39);
-            textBox2.TabIndex = 12;
+            txtFoodName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtFoodName.Location = new Point(155, 143);
+            txtFoodName.Name = "txtFoodName";
+            txtFoodName.Size = new Size(324, 39);
+            txtFoodName.TabIndex = 12;
             // 
-            // textBox3
+            // txtStartDate
             // 
-            textBox3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox3.Location = new Point(155, 188);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(252, 39);
-            textBox3.TabIndex = 13;
+            txtStartDate.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtStartDate.Location = new Point(155, 188);
+            txtStartDate.Name = "txtStartDate";
+            txtStartDate.Size = new Size(324, 39);
+            txtStartDate.TabIndex = 13;
             // 
-            // textBox4
+            // txtEndDate
             // 
-            textBox4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox4.Location = new Point(155, 233);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(252, 39);
-            textBox4.TabIndex = 14;
+            txtEndDate.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtEndDate.Location = new Point(155, 233);
+            txtEndDate.Name = "txtEndDate";
+            txtEndDate.Size = new Size(324, 39);
+            txtEndDate.TabIndex = 14;
             // 
-            // textBox5
+            // txtPrice
             // 
-            textBox5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox5.Location = new Point(155, 413);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(252, 39);
-            textBox5.TabIndex = 15;
+            txtPrice.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPrice.Location = new Point(155, 323);
+            txtPrice.Name = "txtPrice";
+            txtPrice.Size = new Size(324, 39);
+            txtPrice.TabIndex = 16;
             // 
-            // textBox6
+            // txtAmount
             // 
-            textBox6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox6.Location = new Point(155, 323);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(252, 39);
-            textBox6.TabIndex = 16;
+            txtAmount.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtAmount.Location = new Point(155, 368);
+            txtAmount.Name = "txtAmount";
+            txtAmount.Size = new Size(324, 39);
+            txtAmount.TabIndex = 17;
             // 
-            // textBox7
+            // cboProducer
             // 
-            textBox7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox7.Location = new Point(155, 368);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(252, 39);
-            textBox7.TabIndex = 17;
-            // 
-            // comboBox1
-            // 
-            comboBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(155, 277);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(252, 40);
-            comboBox1.TabIndex = 18;
+            cboProducer.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            cboProducer.FormattingEnabled = true;
+            cboProducer.Location = new Point(155, 277);
+            cboProducer.Name = "cboProducer";
+            cboProducer.Size = new Size(324, 40);
+            cboProducer.TabIndex = 18;
             // 
             // btnUpdate
             // 
             btnUpdate.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnUpdate.Location = new Point(155, 473);
+            btnUpdate.Location = new Point(155, 512);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(112, 40);
             btnUpdate.TabIndex = 19;
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnUpdate_Click;
+            // 
+            // chbOutOfStock
+            // 
+            chbOutOfStock.AutoSize = true;
+            chbOutOfStock.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            chbOutOfStock.Location = new Point(155, 416);
+            chbOutOfStock.Name = "chbOutOfStock";
+            chbOutOfStock.Size = new Size(171, 36);
+            chbOutOfStock.TabIndex = 20;
+            chbOutOfStock.Text = "Out of stock";
+            chbOutOfStock.UseVisualStyleBackColor = true;
+            // 
+            // chbStocking
+            // 
+            chbStocking.AutoSize = true;
+            chbStocking.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            chbStocking.Location = new Point(155, 458);
+            chbStocking.Name = "chbStocking";
+            chbStocking.Size = new Size(131, 36);
+            chbStocking.TabIndex = 21;
+            chbStocking.Text = "Stocking";
+            chbStocking.UseVisualStyleBackColor = true;
             // 
             // UpdateFood
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(909, 579);
+            ClientSize = new Size(1029, 579);
+            Controls.Add(chbStocking);
+            Controls.Add(chbOutOfStock);
             Controls.Add(btnUpdate);
-            Controls.Add(comboBox1);
-            Controls.Add(textBox7);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(cboProducer);
+            Controls.Add(txtAmount);
+            Controls.Add(txtPrice);
+            Controls.Add(txtEndDate);
+            Controls.Add(txtStartDate);
+            Controls.Add(txtFoodName);
+            Controls.Add(txtFoodID);
             Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(label7);
@@ -272,14 +290,15 @@
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(dgvDeleteFood);
+            Controls.Add(dgvUpdateFood);
             Controls.Add(toolStrip1);
             Controls.Add(label1);
             Name = "UpdateFood";
             Text = "UpdateFood";
+            Load += UpdateFood_Load;
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvDeleteFood).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvUpdateFood).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -289,7 +308,7 @@
         private Label label1;
         private ToolStrip toolStrip1;
         private ToolStripButton btnBack;
-        private DataGridView dgvDeleteFood;
+        private DataGridView dgvUpdateFood;
         private Label label2;
         private Label label3;
         private Label label4;
@@ -298,14 +317,15 @@
         private Label label7;
         private Label label8;
         private Label label9;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
-        private ComboBox comboBox1;
+        private TextBox txtFoodID;
+        private TextBox txtFoodName;
+        private TextBox txtStartDate;
+        private TextBox txtEndDate;
+        private TextBox txtPrice;
+        private TextBox txtAmount;
+        private ComboBox cboProducer;
         private Button btnUpdate;
+        private CheckBox chbOutOfStock;
+        private CheckBox chbStocking;
     }
 }

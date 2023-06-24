@@ -49,7 +49,7 @@
             cboProducer = new ComboBox();
             label7 = new Label();
             chbOutOfStock = new CheckBox();
-            chbStoking = new CheckBox();
+            chbStocking = new CheckBox();
             toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -86,7 +86,7 @@
             // 
             // txtFoodName
             // 
-            txtFoodName.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtFoodName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtFoodName.Location = new Point(280, 150);
             txtFoodName.Name = "txtFoodName";
             txtFoodName.Size = new Size(435, 39);
@@ -94,7 +94,7 @@
             // 
             // txtPrice
             // 
-            txtPrice.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtPrice.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtPrice.Location = new Point(280, 330);
             txtPrice.Name = "txtPrice";
             txtPrice.Size = new Size(435, 39);
@@ -123,7 +123,7 @@
             // 
             // txtAmount
             // 
-            txtAmount.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtAmount.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtAmount.Location = new Point(280, 375);
             txtAmount.Name = "txtAmount";
             txtAmount.Size = new Size(435, 39);
@@ -161,7 +161,7 @@
             // 
             // txtFoodID
             // 
-            txtFoodID.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtFoodID.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtFoodID.Location = new Point(280, 105);
             txtFoodID.Name = "txtFoodID";
             txtFoodID.Size = new Size(435, 39);
@@ -243,23 +243,23 @@
             chbOutOfStock.Text = "Out of stock";
             chbOutOfStock.UseVisualStyleBackColor = true;
             // 
-            // chbStoking
+            // chbStocking
             // 
-            chbStoking.AutoSize = true;
-            chbStoking.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            chbStoking.Location = new Point(280, 466);
-            chbStoking.Name = "chbStoking";
-            chbStoking.Size = new Size(131, 36);
-            chbStoking.TabIndex = 27;
-            chbStoking.Text = "Stocking";
-            chbStoking.UseVisualStyleBackColor = true;
+            chbStocking.AutoSize = true;
+            chbStocking.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            chbStocking.Location = new Point(280, 466);
+            chbStocking.Name = "chbStocking";
+            chbStocking.Size = new Size(131, 36);
+            chbStocking.TabIndex = 27;
+            chbStocking.Text = "Stocking";
+            chbStocking.UseVisualStyleBackColor = true;
             // 
             // AddFood
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(806, 584);
-            Controls.Add(chbStoking);
+            Controls.Add(chbStocking);
             Controls.Add(chbOutOfStock);
             Controls.Add(label7);
             Controls.Add(cboProducer);
@@ -310,6 +310,6 @@
         private ComboBox cboProducer;
         private Label label7;
         private CheckBox chbOutOfStock;
-        private CheckBox chbStoking;
+        private CheckBox chbStocking;
     }
 }

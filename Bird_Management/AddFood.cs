@@ -23,15 +23,9 @@ namespace Bird_Management
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Do you want to back Shopping Page", "BirdShop",
-                MessageBoxButtons.YesNo);
-            if (result == DialogResult.Yes)
-            {
-                this.Close();
-                Form form = new Staff();
-                form.Show();
-
-            }
+            this.Close();
+            Form form = new Staff();
+            form.Show();
         }
 
         private void AddFood_Load(object sender, EventArgs e)
@@ -47,6 +41,8 @@ namespace Bird_Management
 
         private void btnAddFood_Click(object sender, EventArgs e)
         {
+            FoodServices foodServices = new FoodServices(context);
+
             string fID = txtFoodID.Text.Trim();
             string fName = txtFoodName.Text.Trim();
             string startD = txtStartDate.Text.Trim();
@@ -55,17 +51,21 @@ namespace Bird_Management
             string price = txtPrice.Text.Trim();
             string amount = txtAmount.Text.Trim();
 
-            // check fID follow Fxxxx format
-            string pattern = @"^F\d{4}$";
-            if (!Regex.IsMatch(fID, pattern) && string.IsNullOrEmpty(fID))
+            if (foodServices.FoodIdIsExist(fID))
             {
-                MessageBox.Show("Please enter in the blank \nFollowing format Fxxxx", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Food ID is exist \nPlease enter other ID", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!foodServices.IsValidFoodID(fID))
+            {
+                MessageBox.Show("Please enter Food ID \nFollowing format Fxxxx", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (string.IsNullOrEmpty(fName))
             {
-                MessageBox.Show("Please enter in the blank", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please enter Food Name", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -74,6 +74,7 @@ namespace Bird_Management
                 MessageBox.Show("Please enter the Manufacturing Date \nThe format is yyyy-mm-dd", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
             if (!DateTime.TryParse(endD, out DateTime endDate))
             {
                 MessageBox.Show("Please enter Expiry Date \nThe format is yyyy-mm-dd", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -88,43 +89,53 @@ namespace Bird_Management
 
             if (!float.TryParse(price, out float priceF))
             {
-                MessageBox.Show("Please enter in the numeric", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please enter Price of product", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!int.TryParse(amount, out int amountF))
             {
-                MessageBox.Show("Please enter in the numeric", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please enter Amount of product", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            if (chbOutOfStock.Checked)
+            bool status;
+            if (chbOutOfStock.Checked && chbStocking.Checked)
             {
-                bool status = false;
-                FoodServices foodServices = new FoodServices(context);
-                foodServices.AddNewFood(fID, fName, startDate, endDate, amountF, priceF, producer, status);
-                MessageBox.Show("Food added successfully", "Notification", MessageBoxButtons.OK);
+                MessageBox.Show("Please select only one food status", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
-            else if (chbStoking.Checked)
+            else if (chbOutOfStock.Checked)
             {
-                bool status = true;
-                FoodServices foodServices = new FoodServices(context);
-                foodServices.AddNewFood(fID, fName, startDate, endDate, amountF, priceF, producer, status);
-                MessageBox.Show("Food added successfully", "Notification", MessageBoxButtons.OK);
+                status = false;
+            }
+            else if (chbStocking.Checked)
+            {
+                status = true;
+            }
+            else
+            {
+                MessageBox.Show("Please select the food status", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
 
-            //clear text
-            txtFoodID.Clear();
-            txtFoodName.Clear();
-            txtStartDate.Clear();
-            txtEndDate.Clear();
-            txtAmount.Clear();
-            txtPrice.Clear();
-            cboProducer.SelectedIndex = -1;
-            chbOutOfStock.Checked = false;
-            chbStoking.Checked = false;
+            DialogResult result = MessageBox.Show("Are you sure you want to update the food?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                foodServices.AddNewFood(fID, fName, startDate, endDate, amountF, priceF, producer, status);
+                MessageBox.Show("Food added successfully", "Notification", MessageBoxButtons.OK);
+
+                // Xóa nội dung trong các textbox
+                txtFoodID.Clear();
+                txtFoodName.Clear();
+                txtStartDate.Clear();
+                txtEndDate.Clear();
+                txtAmount.Clear();
+                txtPrice.Clear();
+                cboProducer.SelectedIndex = -1;
+                chbOutOfStock.Checked = false;
+                chbStocking.Checked = false;
+            }
         }
-
-
     }
 }

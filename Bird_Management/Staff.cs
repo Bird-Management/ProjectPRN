@@ -27,7 +27,7 @@ namespace Bird_Management
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Do you want to exit BirdShop", "BirdShop",
+            DialogResult result = MessageBox.Show("Do you want to exit Bird Management", "Bird Management",
                 MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
@@ -41,7 +41,7 @@ namespace Bird_Management
         public void loadData()
         {
             FoodServices foodServices = new FoodServices(context);
-            var list = foodServices.GetFoods();
+            var list = foodServices.GetFoodsOther();
 
             dgvFood.DataSource = new BindingSource() { DataSource = list };
         }

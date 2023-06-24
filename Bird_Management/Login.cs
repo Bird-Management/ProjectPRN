@@ -43,7 +43,8 @@ namespace Bird_Management
 
                     Form form = new Seller();
                     form.ShowDialog();
-                }else
+                }
+                else
                 {
                     this.Hide();
                     Form form = new Staff();
