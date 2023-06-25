@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,37 +16,87 @@ namespace Bird_Management
 {
     public partial class DeleteProduct : Form
     {
-        private readonly ProductServices _productServices;
-        private readonly BirdManagementContext _context;
+        private BirdManagementContext dbContext;
+        private ProductServices productServices;
+        private Product selectedProduct;
 
         public DeleteProduct()
         {
             InitializeComponent();
-            _context = new BirdManagementContext();
-            _productServices = new ProductServices(_context);
+
+            // Initialize the DbContext
+            dbContext = new BirdManagementContext();
+            productServices = new ProductServices(dbContext);
+
+            // Load the products and categories
+            DeleteProduct_Load();
         }
 
-        private void DeleteProduct_Load(object sender, EventArgs e)
+        private void DeleteProduct_Load()
         {
-            LoadProducts();
-            this.KeyPreview = true;
-            this.KeyDown += btnDeleteProduct_KeyDown;
+            try
+            {
+                this.KeyPreview = true;
+                this.KeyDown += btnDeleteProduct_KeyDown;
+                // Retrieve all products from the database
+                List<Product> products = productServices.GetProducts();
+
+                // Bind the products to the DataGridView
+                dgvProduct.DataSource = products;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading products: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void DisplayProductPhoto(byte[] imageData)
+        {
+            if (imageData != null && imageData.Length > 0)
+            {
+                using (MemoryStream ms = new MemoryStream(imageData))
+                {
+                    pbImage.Image = Image.FromStream(ms);
+                    pbImage.SizeMode = PictureBoxSizeMode.Zoom; // Set the size mode to Zoom
+                }
+            }
+            else
+            {
+                pbImage.Image = null;
+            }
         }
 
         private void dgvProduct_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            // Get the selected product from the DataGridView
             if (e.RowIndex >= 0 && e.RowIndex < dgvProduct.Rows.Count)
             {
-                var productId = Convert.ToInt32(dgvProduct.Rows[e.RowIndex].Cells["Id"].Value);
-                //var product = _productServices.GetProductById(productId);
+                DataGridViewRow row = dgvProduct.Rows[e.RowIndex];
+                selectedProduct = (Product)row.DataBoundItem;
 
-                //if (product != null)
-                //{
-                //    //txtName.Text = product.ProductNames;
-                //    txtTitle.Text = product.Title;
-                //    txtDescription.Text = product.Description;
-                //    txtPrice.Text = product.Price.ToString();
-                //}
+                // Display the product details
+                txtID.Text = selectedProduct.ProductId.ToString();
+                txtName.Text = selectedProduct.ProductName;
+                txtTitle.Text = selectedProduct.Title;
+                txtDescription.Text = selectedProduct.Description;
+                txtPrice.Text = selectedProduct.Price.ToString();
+
+                // Display the category
+                Category selectedCategory = productServices.GetCategoryById(selectedProduct.CategoryId);
+                if (selectedCategory != null)
+                {
+                    txtCategory.Text = selectedCategory.CategoryName;
+                }
+                else
+                {
+                    txtCategory.Text = string.Empty;
+                }
+
+                // Display the product image
+                DisplayProductPhoto(selectedProduct.Image);
+
+                // Disable editing of fields
+                DisableFields();
             }
         }
 
@@ -55,39 +106,30 @@ namespace Bird_Management
 
             if (selectedProduct != null)
             {
-                var productName = selectedProduct.ProductName;
-
-                var result = MessageBox.Show($"Are you sure you want to delete the product '{productName}'?", "Delete Product", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
-
-                if (result == DialogResult.OK)
+                // Confirm the deletion
+                DialogResult result = MessageBox.Show("Are you sure you want to delete this product?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
                 {
                     try
                     {
-                        var productId = selectedProduct.ProductId;
-                        //var success = _productServices.DeleteProduct(productId);
+                        // Delete the product from the database
+                        productServices.DeleteProduct(selectedProduct.ProductId);
 
-                        //if (success)
-                        //{
-                        //    MessageBox.Show("Product deleted successfully.", "Delete Product", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        //    LoadProducts();
-                        //    ClearTextBoxes();
-                        //}
-                        //else
-                        //{
-                        //    MessageBox.Show("Failed to delete the product.", "Delete Product", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        //}
+                        // Display a success message
+                        MessageBox.Show("Product deleted successfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        // Clear the form controls
+                        ClearForm();
+
+                        // Refresh the products list
+                        DeleteProduct_Load();
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show($"Error deleting product: {ex.Message}", "Delete Product", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Error deleting product: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
-        }
-
-        private void LoadProducts()
-        {
-            dgvProduct.DataSource = _productServices.GetProducts();
         }
 
         private void ClearTextBoxes()
@@ -96,6 +138,19 @@ namespace Bird_Management
             txtTitle.Text = string.Empty;
             txtDescription.Text = string.Empty;
             txtPrice.Text = string.Empty;
+            txtCategory.Text = string.Empty;
+        }
+
+        private void ClearForm()
+        {
+            txtID.Text = "";
+            txtName.Text = "";
+            txtTitle.Text = "";
+            txtDescription.Text = "";
+            txtPrice.Text = "";
+            pbImage.Image = null;
+            txtCategory.Text = string.Empty;
+            selectedProduct = null;
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -116,6 +171,16 @@ namespace Bird_Management
             {
                 btnDeleteProduct_Click(sender, e);
             }
+        }
+
+        private void DisableFields()
+        {
+            txtID.Enabled = false;
+            txtName.Enabled = false;
+            txtTitle.Enabled = false;
+            txtDescription.Enabled = false;
+            txtPrice.Enabled = false;
+            txtCategory.Enabled = false;
         }
     }
 }

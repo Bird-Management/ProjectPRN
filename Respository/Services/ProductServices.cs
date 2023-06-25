@@ -1,11 +1,7 @@
 ﻿using Respository.Models;
-
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Respository.Services
 {
@@ -22,8 +18,8 @@ namespace Respository.Services
         {
             try
             {
-                var listAllProduct = this._context.Product.ToList();
-                if (listAllProduct != null )
+                var listAllProduct = _context.Product.ToList();
+                if (listAllProduct != null)
                 {
                     return listAllProduct;
                 }
@@ -31,7 +27,8 @@ namespace Respository.Services
                 {
                     return null;
                 }
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
@@ -71,5 +68,17 @@ namespace Respository.Services
             }
         }
 
+        public Category GetCategoryById(String categoryId)
+        {
+            try
+            {
+                var category = _context.Category.FirstOrDefault(c => c.CategoryId == categoryId);
+                return category;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error retrieving category: " + ex.Message);
+            }
+        }
     }
 }

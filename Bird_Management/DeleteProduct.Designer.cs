@@ -44,6 +44,10 @@
             btnDeleteProduct = new Button();
             toolStrip1 = new ToolStrip();
             btnBack = new ToolStripButton();
+            label7 = new Label();
+            label8 = new Label();
+            txtID = new TextBox();
+            txtCategory = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pbImage).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvProduct).BeginInit();
             toolStrip1.SuspendLayout();
@@ -54,7 +58,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label1.ForeColor = Color.IndianRed;
-            label1.Location = new Point(306, 26);
+            label1.Location = new Point(388, 23);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(200, 46);
@@ -65,7 +69,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(25, 109);
+            label2.Location = new Point(11, 86);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
             label2.Size = new Size(70, 28);
@@ -76,7 +80,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(27, 176);
+            label3.Location = new Point(11, 204);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
             label3.Size = new Size(68, 28);
@@ -87,7 +91,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(27, 214);
+            label4.Location = new Point(11, 242);
             label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
             label4.Size = new Size(55, 28);
@@ -98,7 +102,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(27, 255);
+            label5.Location = new Point(11, 282);
             label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
             label5.Size = new Size(121, 28);
@@ -109,7 +113,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(27, 290);
+            label6.Location = new Point(11, 320);
             label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
             label6.Size = new Size(59, 28);
@@ -119,65 +123,65 @@
             // txtName
             // 
             txtName.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            txtName.Location = new Point(165, 176);
+            txtName.Location = new Point(153, 198);
             txtName.Margin = new Padding(2);
             txtName.Name = "txtName";
-            txtName.Size = new Size(181, 34);
+            txtName.Size = new Size(211, 34);
             txtName.TabIndex = 6;
             // 
             // txtTitle
             // 
             txtTitle.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            txtTitle.Location = new Point(165, 217);
+            txtTitle.Location = new Point(153, 236);
             txtTitle.Margin = new Padding(2);
             txtTitle.Name = "txtTitle";
-            txtTitle.Size = new Size(181, 34);
+            txtTitle.Size = new Size(211, 34);
             txtTitle.TabIndex = 7;
             // 
             // txtDescription
             // 
             txtDescription.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            txtDescription.Location = new Point(164, 255);
+            txtDescription.Location = new Point(153, 276);
             txtDescription.Margin = new Padding(2);
             txtDescription.Name = "txtDescription";
-            txtDescription.Size = new Size(181, 34);
+            txtDescription.Size = new Size(211, 34);
             txtDescription.TabIndex = 8;
             // 
             // txtPrice
             // 
             txtPrice.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            txtPrice.Location = new Point(176, 284);
+            txtPrice.Location = new Point(153, 314);
             txtPrice.Margin = new Padding(2);
             txtPrice.Name = "txtPrice";
-            txtPrice.Size = new Size(181, 34);
+            txtPrice.Size = new Size(211, 34);
             txtPrice.TabIndex = 9;
             // 
             // pbImage
             // 
             pbImage.BorderStyle = BorderStyle.FixedSingle;
-            pbImage.Location = new Point(165, 86);
+            pbImage.Location = new Point(153, 37);
             pbImage.Margin = new Padding(2);
             pbImage.Name = "pbImage";
-            pbImage.Size = new Size(180, 76);
+            pbImage.Size = new Size(198, 121);
             pbImage.TabIndex = 10;
             pbImage.TabStop = false;
             // 
             // dgvProduct
             // 
             dgvProduct.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvProduct.Location = new Point(361, 86);
+            dgvProduct.Location = new Point(368, 86);
             dgvProduct.Margin = new Padding(2);
             dgvProduct.Name = "dgvProduct";
             dgvProduct.RowHeadersWidth = 62;
             dgvProduct.RowTemplate.Height = 33;
-            dgvProduct.Size = new Size(416, 238);
+            dgvProduct.Size = new Size(409, 262);
             dgvProduct.TabIndex = 11;
             dgvProduct.CellDoubleClick += dgvProduct_CellDoubleClick;
             // 
             // btnDeleteProduct
             // 
             btnDeleteProduct.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnDeleteProduct.Location = new Point(165, 337);
+            btnDeleteProduct.Location = new Point(488, 365);
             btnDeleteProduct.Margin = new Padding(2);
             btnDeleteProduct.Name = "btnDeleteProduct";
             btnDeleteProduct.Size = new Size(180, 34);
@@ -207,11 +211,49 @@
             btnBack.Text = "Back";
             btnBack.Click += btnBack_Click;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(12, 353);
+            label7.Name = "label7";
+            label7.Size = new Size(98, 28);
+            label7.TabIndex = 14;
+            label7.Text = "Category";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Location = new Point(11, 167);
+            label8.Name = "label8";
+            label8.Size = new Size(33, 28);
+            label8.TabIndex = 16;
+            label8.Text = "ID";
+            // 
+            // txtID
+            // 
+            txtID.Location = new Point(152, 167);
+            txtID.Name = "txtID";
+            txtID.Size = new Size(211, 27);
+            txtID.TabIndex = 17;
+            // 
+            // txtCategory
+            // 
+            txtCategory.Location = new Point(152, 364);
+            txtCategory.Name = "txtCategory";
+            txtCategory.Size = new Size(212, 27);
+            txtCategory.TabIndex = 18;
+            // 
             // DeleteProduct
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(786, 410);
+            Controls.Add(txtCategory);
+            Controls.Add(txtID);
+            Controls.Add(label8);
+            Controls.Add(label7);
             Controls.Add(toolStrip1);
             Controls.Add(btnDeleteProduct);
             Controls.Add(dgvProduct);
@@ -229,7 +271,6 @@
             Margin = new Padding(2);
             Name = "DeleteProduct";
             Text = "DeleteProduct";
-            Load += DeleteProduct_Load;
             ((System.ComponentModel.ISupportInitialize)pbImage).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvProduct).EndInit();
             toolStrip1.ResumeLayout(false);
@@ -255,5 +296,9 @@
         private Button btnDeleteProduct;
         private ToolStrip toolStrip1;
         private ToolStripButton btnBack;
+        private Label label7;
+        private Label label8;
+        private TextBox txtID;
+        private TextBox txtCategory;
     }
 }

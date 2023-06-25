@@ -23,26 +23,19 @@ namespace Respository.Models
         public virtual DbSet<Food> Food { get; set; }
         public virtual DbSet<Producer> Producer { get; set; }
         public virtual DbSet<Product> Product { get; set; }
+        public virtual DbSet<Status> Status { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Data Source=DESKTOP-QKQ1PQ7\\SQLEXPRESS;Initial Catalog=BirdManagement;User ID=sa;Password=sa");
+                optionsBuilder.UseSqlServer("Data Source=THANGNGUYEN\\THANG;Initial Catalog=BirdManagement;Persist Security Info=True;User ID=sa;Password=sa");
             }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Product>(entity =>
-            {
-                entity.HasOne(d => d.Category)
-                    .WithMany(p => p.Product)
-                    .HasForeignKey(d => d.CategoryId)
-                    .HasConstraintName("FK_Product_Category");
-            });
-
             OnModelCreatingPartial(modelBuilder);
         }
 
