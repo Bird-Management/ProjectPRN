@@ -1,14 +1,6 @@
 ﻿using Repository.Services;
 using Respository.Models;
-using Respository.Services;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Bird_Management
@@ -21,157 +13,157 @@ namespace Bird_Management
         public UpdateAccount()
         {
             InitializeComponent();
+            InitializeServices();
+            LoadAccountData();
+        }
 
-            // Initialize the database context and account services
+        private void InitializeServices()
+        {
             _context = new BirdManagementContext();
             _accountServices = new AccountServices(_context);
-
-            LoadAccountData(); // Load account data into the DataGridView
         }
 
-        // Load the account data into the DataGridView
         private void LoadAccountData()
         {
-            // Retrieve the list of accounts from the database
             var accountList = _accountServices.GetAccounts();
-
-            // Set the DataGridView's data source to the account list
-            dgvUpdateAccount.DataSource = new BindingSource() { DataSource = accountList };
+            dgvUpdateAccount.DataSource = new BindingSource { DataSource = accountList };
         }
 
-        // Clear the input fields (textboxes and checkboxes)
         private void ClearInputFields()
         {
+            txtAccountID.Text = string.Empty;
             txtUsername.Text = string.Empty;
             txtPassword.Text = string.Empty;
-            chbAdmin.Checked = false;
-            chbSeller.Checked = false;
-            chbCustomer.Checked = false;
+            txtPhone.Text = string.Empty;
+            txtEmail.Text = string.Empty;
+            cbRole.SelectedIndex = -1;
         }
 
-        // Go back to the Admin Page
         private void btnBack_Click(object sender, EventArgs e)
         {
-            // Prompt the user with a confirmation dialog
-            DialogResult result = MessageBox.Show("Do you want to go back to the Admin Page?", "Bird Management", MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show("Do you want to go back to the Admin Page?", "BirdShop", MessageBoxButtons.YesNo);
 
             if (result == DialogResult.Yes)
             {
-                this.Close(); // Close the current form
-                Form form = new Admin(); // Create a new instance of the Admin form
-                form.Show(); // Show the Admin form
+                Close();
+                Form form = new Admin();
+                form.Show();
             }
         }
 
-        // Handle double-click event on the DataGridView
         private void dgvUpdateAccount_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0) // Check if a valid row is double-clicked
+            if (e.RowIndex >= 0)
             {
-                // Retrieve the selected account from the DataGridView
                 var selectedAccount = dgvUpdateAccount.Rows[e.RowIndex].DataBoundItem as Account;
 
-                // Populate the text fields with the selected account details
+                txtAccountID.Text = selectedAccount.AccountId;
                 txtUsername.Text = selectedAccount.UserName;
                 txtPassword.Text = selectedAccount.Password;
+                txtPhone.Text = selectedAccount.Phone;
+                txtEmail.Text = selectedAccount.Email;
+                cbRole.SelectedItem = selectedAccount.Role;
 
-                // Enable editing of the text fields
+                txtAccountID.ReadOnly = true;
                 txtUsername.ReadOnly = false;
                 txtPassword.ReadOnly = false;
-
-                // Enable editing of the checkboxes
-                chbAdmin.Enabled = true;
-                chbSeller.Enabled = true;
-                chbCustomer.Enabled = true;
-
-                // Set checkbox selections based on account type
-                // If the account type is null, default to false
-                //chbAdmin.Checked = selectedAccount.IsAdmin ?? false;
-                //chbSeller.Checked = selectedAccount.IsSell ?? false;
-                //chbCustomer.Checked = selectedAccount.IsCustomer ?? false;
-
-                // Enable the update button
-                btnUpdateAccount.Enabled = true;
+                txtPhone.ReadOnly = false;
+                txtEmail.ReadOnly = false;
+                cbRole.Enabled = true;
             }
             else
             {
-                // Clear the text fields
                 ClearInputFields();
 
-                // Disable editing of the text fields
+                txtAccountID.ReadOnly = true;
                 txtUsername.ReadOnly = true;
                 txtPassword.ReadOnly = true;
-
-                // Uncheck the checkboxes and disable editing
-                chbAdmin.Checked = false;
-                chbSeller.Checked = false;
-                chbCustomer.Checked = false;
-                chbAdmin.Enabled = false;
-                chbSeller.Enabled = false;
-                chbCustomer.Enabled = false;
-
-                // Disable the update button
-                btnUpdateAccount.Enabled = false;
+                txtPhone.ReadOnly = true;
+                txtEmail.ReadOnly = true;
+                cbRole.Enabled = false;
             }
         }
 
-        // Handle the click event on the Update button
-        private void btnUpdateAccount_Click(object sender, EventArgs e)
+        private void btnUpdate_Click(object sender, EventArgs e)
         {
-            // Check if the required fields are empty
-            if (string.IsNullOrWhiteSpace(txtUsername.Text) || string.IsNullOrWhiteSpace(txtPassword.Text))
+            string accountId = txtAccountID.Text.Trim();
+            string username = txtUsername.Text.Trim();
+            string password = txtPassword.Text.Trim();
+            string phone = txtPhone.Text.Trim();
+            string email = txtEmail.Text.Trim();
+            string role = cbRole.SelectedItem?.ToString();
+
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) ||
+                string.IsNullOrEmpty(phone) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(role))
             {
-                MessageBox.Show("Please double-click the DataGridView to select an account to update.", "Incomplete Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return; // Stop further execution if fields are empty
+                MessageBox.Show("Please double click in Data Grid View or Search Account by ID to Update.",
+                    "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
 
-            // Check if more than one checkbox is checked or no checkbox is checked
-            if ((chbAdmin.Checked && (chbSeller.Checked || chbCustomer.Checked)) ||
-                (chbSeller.Checked && (chbAdmin.Checked || chbCustomer.Checked)) ||
-                (chbCustomer.Checked && (chbAdmin.Checked || chbSeller.Checked)) ||
-                (!chbAdmin.Checked && !chbSeller.Checked && !chbCustomer.Checked))
+            Account updatedAccount = new Account
             {
-                MessageBox.Show("Please select only one option.", "Invalid Selection", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return; // Stop further execution if more than one checkbox is checked or no checkbox is checked
-            }
-
-            // Get the selected account from the DataGridView
-            var selectedAccount = dgvUpdateAccount.CurrentRow?.DataBoundItem as Account;
-
-            // Update the account properties with the values from the text boxes and checkboxes
-            selectedAccount.UserName = txtUsername.Text;
-            selectedAccount.Password = txtPassword.Text;
-            //selectedAccount.IsAdmin = chbAdmin.Checked;
-            //selectedAccount.IsSell = chbSeller.Checked;
-            //selectedAccount.IsCustomer = chbCustomer.Checked;
+                AccountId = accountId,
+                UserName = username,
+                Password = password,
+                Phone = phone,
+                Email = email,
+                Role = role
+            };
 
             try
             {
-                // Call the UpdateAccountAdmin method from the AccountServices class to update the account
-                _accountServices.UpdateAccountAdmin(selectedAccount);
+                _accountServices.UpdateAccountAdmin(updatedAccount);
 
-                // Display success message
-                MessageBox.Show("Account updated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Account updated successfully.", "Update Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Clear the input fields (textboxes and checkboxes)
+                LoadAccountData();
+
                 ClearInputFields();
-
-                LoadAccountData(); // Reload the account data in the DataGridView
-
-                // Set textboxes and checkboxes as read-only
+                txtAccountID.ReadOnly = true;
                 txtUsername.ReadOnly = true;
                 txtPassword.ReadOnly = true;
-                chbAdmin.Enabled = false;
-                chbSeller.Enabled = false;
-                chbCustomer.Enabled = false;
-
-                // Disable the update button
-                btnUpdateAccount.Enabled = false;
+                txtPhone.ReadOnly = true;
+                txtEmail.ReadOnly = true;
+                cbRole.Enabled = false;
             }
             catch (Exception ex)
             {
-                // Display error message
-                MessageBox.Show("Failed to update the account.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Failed to update the account. Error: " + ex.Message, "Update Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string accountId = txtSearchAccountByID.Text.Trim();
+            LoadAccountData();
+            txtAccountID.ReadOnly = true;
+            txtUsername.ReadOnly = false;
+            txtPassword.ReadOnly = false;
+            txtPhone.ReadOnly = false;
+            txtEmail.ReadOnly = false;
+            cbRole.Enabled = true;
+
+            if (string.IsNullOrEmpty(accountId))
+            {
+                MessageBox.Show("Please enter an account ID to search.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            var account = _accountServices.GetAccountById(accountId);
+
+            if (account != null)
+            {
+                txtAccountID.Text = account.AccountId;
+                txtUsername.Text = account.UserName;
+                txtPassword.Text = account.Password;
+                txtPhone.Text = account.Phone;
+                txtEmail.Text = account.Email;
+                cbRole.SelectedItem = account.Role;
+            }
+            else
+            {
+                MessageBox.Show("Account not found.", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

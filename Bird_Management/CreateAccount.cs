@@ -1,16 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Repository.Services;
 using Respository.Models;
-using Respository.Services;
 using System;
-using System.Linq;
 using System.Windows.Forms;
-using Repository.Services;
 
 namespace Bird_Management
 {
     public partial class CreateAccount : Form
     {
-        private BirdManagementContext _context;
+        private readonly BirdManagementContext _context;
 
         public CreateAccount()
         {
@@ -18,24 +15,22 @@ namespace Bird_Management
             _context = new BirdManagementContext();
         }
 
-        // Handle the Back button click event
         private void btBack_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Do you want to go back to the Admin Page?", "Bird Management",
+            DialogResult result = MessageBox.Show("Do you want to go back to the Admin Page?", "BirdShop",
                 MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                this.Close(); // Close the current form
-                Form form = new Admin(); // Create a new instance of the Admin form
-                form.Show(); // Show the Admin form
+                Close();
+                Form form = new Admin();
+                form.Show();
             }
         }
 
-        // Handle the Create Account button click event
-        private void btnCreateAccount_Click(object sender, EventArgs e)
+        private void btnCreate_Click(object sender, EventArgs e)
         {
             // Create an instance of the AccountServices class, passing the _context as a parameter
-            AccountServices accountServices = new AccountServices(_context);
+            var accountServices = new AccountServices(_context);
 
             // Retrieve input values from text boxes
             string accountID = txtAccountID.Text;
@@ -118,12 +113,12 @@ namespace Bird_Management
             {
                 // Display an error message if no role is selected
                 MessageBox.Show("Please select a role", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return; // Exit the method if validation fails
+                return;
             }
 
-            // Create a new Account object with the input values
-            Account account = new Account
-            {   
+            // Create a new Account object
+            var account = new Account
+            {
                 AccountId = accountID,
                 UserName = username,
                 Password = password,
@@ -132,19 +127,29 @@ namespace Bird_Management
                 Role = role
             };
 
-            // Call the NewAccountAdmin method of the accountServices instance to save the account in the database
-            accountServices.NewAccountAdmin(accountID, username, password, role, email, phone);
+            try
+            {
+                // Call the NewAccountAdmin method to create the account
+                accountServices.NewAccountAdmin(accountID, username, password, role, email, phone);
+                MessageBox.Show("Account added successfully", "Notification", MessageBoxButtons.OK);
 
-            // Display a success message
-            MessageBox.Show("Account added successfully", "Notification", MessageBoxButtons.OK);
+                ClearInputFields(); // Clear input fields after successful account creation
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to create the account. Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
-            // Clear the input fields and combo box selection
-            txtAccountID.Text = "";
-            txtUsername.Text = "";
-            txtPassword.Text = "";
-            txtConfirmPassword.Text = "";
-            txtEmail.Text = "";
-            txtPhone.Text = "";
+        private void ClearInputFields()
+        {
+            // Clear the input fields (textboxes and combo box)
+            txtAccountID.Text = string.Empty;
+            txtUsername.Text = string.Empty;
+            txtPassword.Text = string.Empty;
+            txtConfirmPassword.Text = string.Empty;
+            txtEmail.Text = string.Empty;
+            txtPhone.Text = string.Empty;
             cbRole.SelectedIndex = -1;
         }
     }

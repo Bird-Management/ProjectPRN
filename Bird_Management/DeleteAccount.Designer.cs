@@ -35,7 +35,7 @@
             label4 = new Label();
             txtUsername = new TextBox();
             txtPassword = new TextBox();
-            Delete = new Button();
+            btnDelete = new Button();
             dgvDeleteAccount = new DataGridView();
             toolStrip1 = new ToolStrip();
             btnBack = new ToolStripButton();
@@ -116,17 +116,17 @@
             txtPassword.Size = new Size(308, 34);
             txtPassword.TabIndex = 5;
             // 
-            // Delete
+            // btnDelete
             // 
-            Delete.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            Delete.Location = new Point(148, 490);
-            Delete.Margin = new Padding(2);
-            Delete.Name = "Delete";
-            Delete.Size = new Size(308, 33);
-            Delete.TabIndex = 8;
-            Delete.Text = "Delete account";
-            Delete.UseVisualStyleBackColor = true;
-            Delete.Click += btnDelete_Click;
+            btnDelete.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDelete.Location = new Point(148, 490);
+            btnDelete.Margin = new Padding(2);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(308, 33);
+            btnDelete.TabIndex = 8;
+            btnDelete.Text = "Delete Account";
+            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // dgvDeleteAccount
             // 
@@ -279,7 +279,7 @@
             Controls.Add(d);
             Controls.Add(toolStrip1);
             Controls.Add(dgvDeleteAccount);
-            Controls.Add(Delete);
+            Controls.Add(btnDelete);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
             Controls.Add(label4);
@@ -304,7 +304,7 @@
         private Label label4;
         private TextBox txtUsername;
         private TextBox txtPassword;
-        private Button Delete;
+        private Button btnDelete;
         private DataGridView dgvDeleteAccount;
         private ToolStrip toolStrip1;
         private ToolStripButton btnBack;
