@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,6 +31,15 @@ namespace Bird_Management
             PopulateCategories();
         }
 
+        private byte[] ImageToByteArray(Image image)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                image.Save(ms, ImageFormat.Jpeg); // Change the format if needed
+                return ms.ToArray();
+            }
+        }
+
         private void btnCreateProduct_Click(object sender, EventArgs e)
         {
             // Get the values from the form controls
@@ -39,6 +49,7 @@ namespace Bird_Management
             string description = txtDescription.Text;
             decimal price = decimal.Parse(txtPrice.Text);
             Category selectedCategory = (Category)cbCategory.SelectedItem;
+            byte[] imageData = ImageToByteArray(pbImage.Image); // Convert the image to byte array
 
             // Create a new Product object
             Product newProduct = new Product
@@ -48,7 +59,8 @@ namespace Bird_Management
                 Title = title,
                 Description = description,
                 Price = (double?)price,
-                CategoryId = selectedCategory.CategoryId
+                CategoryId = selectedCategory.CategoryId,
+                Image = imageData // Assign the image byte array to the Product's Image property
             };
 
             // Save the new product to the database
@@ -61,7 +73,6 @@ namespace Bird_Management
             // Clear the form controls
             ClearForm();
         }
-
 
         private void ClearForm()
         {
@@ -170,11 +181,12 @@ namespace Bird_Management
                     graphics.DrawImage(originalImage, 0, 0, newWidth, newHeight);
                 }
 
+                // Dispose the previous image in the PictureBox, if any
+                pbImage.Image?.Dispose();
+
                 // Display the resized image in the PictureBox
                 pbImage.Image = resizedImage;
 
-                // Dispose the original image
-                originalImage.Dispose();
             }
             catch (Exception ex)
             {

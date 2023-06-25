@@ -10,11 +10,6 @@ namespace Respository.Models
 {
     public partial class Category
     {
-        public Category()
-        {
-            Product = new HashSet<Product>();
-        }
-
         [Key]
         [Column("CategoryID")]
         [StringLength(10)]
@@ -22,8 +17,5 @@ namespace Respository.Models
         [Required]
         [StringLength(50)]
         public string CategoryName { get; set; }
-
-        [InverseProperty("Category")]
-        public virtual ICollection<Product> Product { get; set; }
     }
 }

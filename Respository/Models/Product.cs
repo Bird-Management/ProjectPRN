@@ -11,13 +11,12 @@ namespace Respository.Models
     public partial class Product
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column("ProductID")]
         [StringLength(10)]
         public string ProductId { get; set; }
         [StringLength(50)]
         public string ProductName { get; set; }
-        public string Image { get; set; }
+        public byte[] Image { get; set; }
         public double? Price { get; set; }
         [StringLength(50)]
         public string Title { get; set; }
@@ -25,9 +24,5 @@ namespace Respository.Models
         [Column("CategoryID")]
         [StringLength(10)]
         public string CategoryId { get; set; }
-
-        [ForeignKey("CategoryId")]
-        [InverseProperty("Product")]
-        public virtual Category Category { get; set; }
     }
 }
