@@ -35,13 +35,20 @@
             label4 = new Label();
             txtUsername = new TextBox();
             txtPassword = new TextBox();
-            chkSeller = new CheckBox();
-            chkAdmin = new CheckBox();
             Delete = new Button();
             dgvDeleteAccount = new DataGridView();
             toolStrip1 = new ToolStrip();
             btnBack = new ToolStripButton();
-            chkCustomer = new CheckBox();
+            d = new Label();
+            txtAccountID = new TextBox();
+            txtEmail = new TextBox();
+            txtPhone = new TextBox();
+            lable = new Label();
+            label5 = new Label();
+            cbRole = new ComboBox();
+            label6 = new Label();
+            txtSearchAccountByID = new TextBox();
+            btnSearch = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvDeleteAccount).BeginInit();
             toolStrip1.SuspendLayout();
             SuspendLayout();
@@ -49,12 +56,12 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.IndianRed;
-            label1.Location = new Point(335, 35);
+            label1.Location = new Point(338, 35);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(279, 46);
+            label1.Size = new Size(363, 60);
             label1.TabIndex = 0;
             label1.Text = "Delete Acccount";
             // 
@@ -62,7 +69,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(20, 173);
+            label2.Location = new Point(29, 280);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
             label2.Size = new Size(93, 28);
@@ -73,7 +80,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(20, 215);
+            label3.Location = new Point(29, 434);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
             label3.Size = new Size(50, 28);
@@ -84,7 +91,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(20, 127);
+            label4.Location = new Point(29, 234);
             label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
             label4.Size = new Size(99, 28);
@@ -94,7 +101,7 @@
             // txtUsername
             // 
             txtUsername.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtUsername.Location = new Point(139, 127);
+            txtUsername.Location = new Point(148, 234);
             txtUsername.Margin = new Padding(2);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(308, 34);
@@ -103,58 +110,33 @@
             // txtPassword
             // 
             txtPassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtPassword.Location = new Point(139, 173);
+            txtPassword.Location = new Point(148, 280);
             txtPassword.Margin = new Padding(2);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(308, 34);
             txtPassword.TabIndex = 5;
             // 
-            // chkSeller
-            // 
-            chkSeller.AutoSize = true;
-            chkSeller.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            chkSeller.Location = new Point(139, 223);
-            chkSeller.Margin = new Padding(2);
-            chkSeller.Name = "chkSeller";
-            chkSeller.Size = new Size(82, 32);
-            chkSeller.TabIndex = 6;
-            chkSeller.Text = "Seller";
-            chkSeller.UseVisualStyleBackColor = true;
-            // 
-            // chkAdmin
-            // 
-            chkAdmin.AutoSize = true;
-            chkAdmin.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            chkAdmin.Location = new Point(233, 223);
-            chkAdmin.Margin = new Padding(2);
-            chkAdmin.Name = "chkAdmin";
-            chkAdmin.Size = new Size(92, 32);
-            chkAdmin.TabIndex = 7;
-            chkAdmin.Text = "Admin";
-            chkAdmin.UseVisualStyleBackColor = true;
-            // 
             // Delete
             // 
             Delete.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            Delete.Location = new Point(139, 263);
+            Delete.Location = new Point(148, 490);
             Delete.Margin = new Padding(2);
             Delete.Name = "Delete";
             Delete.Size = new Size(308, 33);
             Delete.TabIndex = 8;
             Delete.Text = "Delete account";
             Delete.UseVisualStyleBackColor = true;
-            Delete.Click += Delete_Click;
-            Delete.KeyDown += btnDeleteAccount_KeyDown;
+            Delete.Click += btnDelete_Click;
             // 
             // dgvDeleteAccount
             // 
             dgvDeleteAccount.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvDeleteAccount.Location = new Point(468, 106);
+            dgvDeleteAccount.Location = new Point(477, 167);
             dgvDeleteAccount.Margin = new Padding(2);
             dgvDeleteAccount.Name = "dgvDeleteAccount";
             dgvDeleteAccount.RowHeadersWidth = 62;
             dgvDeleteAccount.RowTemplate.Height = 33;
-            dgvDeleteAccount.Size = new Size(523, 232);
+            dgvDeleteAccount.Size = new Size(670, 356);
             dgvDeleteAccount.TabIndex = 9;
             dgvDeleteAccount.CellDoubleClick += dgvDeleteAccount_CellDoubleClick;
             // 
@@ -164,7 +146,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { btnBack });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(1025, 35);
+            toolStrip1.Size = new Size(1181, 35);
             toolStrip1.TabIndex = 10;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -178,29 +160,126 @@
             btnBack.Text = "Back";
             btnBack.Click += btnBack_Click;
             // 
-            // chkCustomer
+            // d
             // 
-            chkCustomer.AutoSize = true;
-            chkCustomer.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            chkCustomer.Location = new Point(329, 223);
-            chkCustomer.Margin = new Padding(2);
-            chkCustomer.Name = "chkCustomer";
-            chkCustomer.Size = new Size(118, 32);
-            chkCustomer.TabIndex = 11;
-            chkCustomer.Text = "Customer";
-            chkCustomer.UseVisualStyleBackColor = true;
+            d.AutoSize = true;
+            d.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            d.Location = new Point(29, 185);
+            d.Margin = new Padding(2, 0, 2, 0);
+            d.Name = "d";
+            d.Size = new Size(103, 28);
+            d.TabIndex = 11;
+            d.Text = "AccountID";
+            // 
+            // txtAccountID
+            // 
+            txtAccountID.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtAccountID.Location = new Point(148, 185);
+            txtAccountID.Margin = new Padding(2);
+            txtAccountID.Name = "txtAccountID";
+            txtAccountID.Size = new Size(308, 34);
+            txtAccountID.TabIndex = 12;
+            // 
+            // txtEmail
+            // 
+            txtEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtEmail.Location = new Point(148, 333);
+            txtEmail.Margin = new Padding(2, 3, 2, 3);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(308, 34);
+            txtEmail.TabIndex = 21;
+            // 
+            // txtPhone
+            // 
+            txtPhone.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPhone.Location = new Point(148, 382);
+            txtPhone.Margin = new Padding(2, 3, 2, 3);
+            txtPhone.Name = "txtPhone";
+            txtPhone.Size = new Size(308, 34);
+            txtPhone.TabIndex = 20;
+            // 
+            // lable
+            // 
+            lable.AutoSize = true;
+            lable.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lable.Location = new Point(29, 372);
+            lable.Margin = new Padding(2, 0, 2, 0);
+            lable.Name = "lable";
+            lable.Size = new Size(67, 28);
+            lable.TabIndex = 19;
+            lable.Text = "Phone";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(29, 333);
+            label5.Margin = new Padding(2, 0, 2, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(59, 28);
+            label5.TabIndex = 18;
+            label5.Text = "Email";
+            // 
+            // cbRole
+            // 
+            cbRole.FormattingEnabled = true;
+            cbRole.Items.AddRange(new object[] { "Admin", "Seller", "Staff" });
+            cbRole.Location = new Point(148, 434);
+            cbRole.Name = "cbRole";
+            cbRole.Size = new Size(308, 28);
+            cbRole.TabIndex = 22;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Location = new Point(178, 108);
+            label6.Margin = new Padding(2, 0, 2, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(182, 28);
+            label6.TabIndex = 23;
+            label6.Text = "SearchAccountByID";
+            // 
+            // txtSearchAccountByID
+            // 
+            txtSearchAccountByID.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtSearchAccountByID.Location = new Point(405, 108);
+            txtSearchAccountByID.Margin = new Padding(2);
+            txtSearchAccountByID.Name = "txtSearchAccountByID";
+            txtSearchAccountByID.Size = new Size(308, 34);
+            txtSearchAccountByID.TabIndex = 24;
+            // 
+            // btnSearch
+            // 
+            btnSearch.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSearch.Location = new Point(760, 109);
+            btnSearch.Margin = new Padding(2);
+            btnSearch.Name = "btnSearch";
+            btnSearch.Size = new Size(197, 33);
+            btnSearch.TabIndex = 25;
+            btnSearch.Text = "Search";
+            btnSearch.UseVisualStyleBackColor = true;
+            btnSearch.Click += btnSearch_Click;
             // 
             // DeleteAccount
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1025, 412);
-            Controls.Add(chkCustomer);
+            AutoSize = true;
+            ClientSize = new Size(1181, 556);
+            Controls.Add(btnSearch);
+            Controls.Add(txtSearchAccountByID);
+            Controls.Add(label6);
+            Controls.Add(cbRole);
+            Controls.Add(txtEmail);
+            Controls.Add(txtPhone);
+            Controls.Add(lable);
+            Controls.Add(label5);
+            Controls.Add(txtAccountID);
+            Controls.Add(d);
             Controls.Add(toolStrip1);
             Controls.Add(dgvDeleteAccount);
             Controls.Add(Delete);
-            Controls.Add(chkAdmin);
-            Controls.Add(chkSeller);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
             Controls.Add(label4);
@@ -210,7 +289,6 @@
             Margin = new Padding(2);
             Name = "DeleteAccount";
             Text = "DeleteAccount";
-            Load += DeleteAccount_Load;
             ((System.ComponentModel.ISupportInitialize)dgvDeleteAccount).EndInit();
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
@@ -226,12 +304,19 @@
         private Label label4;
         private TextBox txtUsername;
         private TextBox txtPassword;
-        private CheckBox chkSeller;
-        private CheckBox chkAdmin;
         private Button Delete;
         private DataGridView dgvDeleteAccount;
         private ToolStrip toolStrip1;
         private ToolStripButton btnBack;
-        private CheckBox chkCustomer;
+        private Label d;
+        private TextBox txtAccountID;
+        private TextBox txtEmail;
+        private TextBox txtPhone;
+        private Label lable;
+        private Label label5;
+        private ComboBox cbRole;
+        private Label label6;
+        private TextBox txtSearchAccountByID;
+        private Button btnSearch;
     }
 }

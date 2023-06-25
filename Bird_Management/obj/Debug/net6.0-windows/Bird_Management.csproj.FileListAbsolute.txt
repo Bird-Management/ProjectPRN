@@ -59,3 +59,5 @@ C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\B
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.pdb
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.genruntimeconfig.cache
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\ref\Bird_Management.dll
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.DeleteFood.resources
+C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Bird_Management\obj\Debug\net6.0-windows\Bird_Management.UpdateFood.resources

@@ -150,11 +150,12 @@ namespace Repository.Services
             return Regex.IsMatch(phone, pattern);
         }
 
-        public bool DeleteAccountAdmin(string username, string password)
+        public bool DeleteAccountAdmin(string accountID, string username, string password, string role, string phone, string email)
         {
             try
             {
-                var account = _context.Account.FirstOrDefault(a => a.UserName == username && a.Password == password);
+                var account = _context.Account.FirstOrDefault(a =>a.AccountId == accountID && a.UserName == username && 
+                a.Password == password && a.Role == role && a.Phone == phone && a.Email == email);
                 if (account != null)
                 {
                     _context.Account.Remove(account);
@@ -191,48 +192,14 @@ namespace Repository.Services
             }
         }
 
-        public Account NewAccountSeller(string username, string password, string role, string email, string phone)
+        public Account GetAccountById(string accountId)
         {
-            try
-            {
-                var account = new Account();
-                account.UserName = username;
-                account.Password = password;
-                account.Role = role;
-                account.Email = email;
-                account.Phone = phone;
+            // Perform database query to retrieve the account by ID
+            // You can use the _context or any other means to query the database
+            var account = _context.Account.FirstOrDefault(a => a.AccountId == accountId);
 
-                _context.Account.Add(account);
-                _context.SaveChanges();
-
-                return account;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+            return account;
         }
 
-        public Account NewAccountCustomer(string username, string password, string role, string email, string phone)
-        {
-            try
-            {
-                var account = new Account();
-                account.UserName = username;
-                account.Password = password;
-                account.Role = role;
-                account.Email = email;
-                account.Phone = phone;
-
-                _context.Account.Add(account);
-                _context.SaveChanges();
-
-                return account;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
     }
 }
