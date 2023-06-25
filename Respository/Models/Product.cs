@@ -11,6 +11,7 @@ namespace Respository.Models
     public partial class Product
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column("ProductID")]
         [StringLength(10)]
         public string ProductId { get; set; }
