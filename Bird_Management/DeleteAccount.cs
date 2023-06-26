@@ -70,12 +70,12 @@ namespace Bird_Management
                     txtEmail.Text = selectedAccount.Email;
 
                     // Set TextBoxes as read-only
-                    txtUsername.ReadOnly = true;
-                    txtPassword.ReadOnly = true;
-                    txtAccountID.ReadOnly = true;
+                    txtUsername.Enabled = false;
+                    txtPassword.Enabled = false;
+                    txtAccountID.Enabled = false;
                     cbRole.Enabled = false;
-                    txtEmail.ReadOnly = true;
-                    txtPhone.ReadOnly = true;
+                    txtEmail.Enabled = false;
+                    txtPhone.Enabled = false;
                 }
             }
         }
