@@ -77,7 +77,7 @@ namespace Bird_Management
                 // Display the product details
                 txtID.Text = selectedProduct.ProductId.ToString();
                 txtName.Text = selectedProduct.ProductName;
-                txtTitle.Text = selectedProduct.Title;
+                txtQuantity.Text = selectedProduct.Quantity.ToString();
                 txtDescription.Text = selectedProduct.Description;
                 txtPrice.Text = selectedProduct.Price.ToString();
 
@@ -135,7 +135,7 @@ namespace Bird_Management
         private void ClearTextBoxes()
         {
             txtName.Text = string.Empty;
-            txtTitle.Text = string.Empty;
+            txtQuantity.Text = string.Empty;
             txtDescription.Text = string.Empty;
             txtPrice.Text = string.Empty;
             txtCategory.Text = string.Empty;
@@ -145,7 +145,7 @@ namespace Bird_Management
         {
             txtID.Text = "";
             txtName.Text = "";
-            txtTitle.Text = "";
+            txtQuantity.Text = "";
             txtDescription.Text = "";
             txtPrice.Text = "";
             pbImage.Image = null;
@@ -177,7 +177,7 @@ namespace Bird_Management
         {
             txtID.Enabled = false;
             txtName.Enabled = false;
-            txtTitle.Enabled = false;
+            txtQuantity.Enabled = false;
             txtDescription.Enabled = false;
             txtPrice.Enabled = false;
             txtCategory.Enabled = false;

@@ -45,7 +45,7 @@ namespace Bird_Management
             // Get the values from the form controls
             string id = txtId.Text;
             string name = txtName.Text;
-            string title = txtTitle.Text;
+            int quantity = int.Parse(txtQuantity.Text);
             string description = txtDescription.Text;
             decimal price = decimal.Parse(txtPrice.Text);
             Category selectedCategory = (Category)cbCategory.SelectedItem;
@@ -56,7 +56,7 @@ namespace Bird_Management
             {
                 ProductId = id.ToString(),
                 ProductName = name,
-                Title = title,
+                Quantity = quantity,
                 Description = description,
                 Price = (double?)price,
                 CategoryId = selectedCategory.CategoryId,
@@ -78,7 +78,7 @@ namespace Bird_Management
         {
             txtId.Text = "";
             txtName.Text = "";
-            txtTitle.Text = "";
+            txtQuantity.Text = "";
             txtDescription.Text = "";
             txtPrice.Text = "";
             pbImage.Image = null;
