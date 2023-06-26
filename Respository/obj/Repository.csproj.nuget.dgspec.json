@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\JavaWeb\\ProjectPRN\\Respository\\Repository.csproj": {}
+    "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Respository\\Repository.csproj": {}
   },
   "projects": {
-    "D:\\JavaWeb\\ProjectPRN\\Respository\\Repository.csproj": {
+    "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Respository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\JavaWeb\\ProjectPRN\\Respository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Respository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "D:\\JavaWeb\\ProjectPRN\\Respository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\JavaWeb\\ProjectPRN\\Respository\\obj\\",
+        "projectPath": "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Respository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\nghia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nghia\\OneDrive\\Documents\\FPT Summer 2023 Semester 5\\PRN211\\ProjectPRN\\Respository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nghia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
