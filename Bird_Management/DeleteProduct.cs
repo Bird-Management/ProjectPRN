@@ -38,11 +38,15 @@ namespace Bird_Management
             {
                 this.KeyPreview = true;
                 this.KeyDown += btnDeleteProduct_KeyDown;
+
                 // Retrieve all products from the database
                 List<Product> products = productServices.GetProducts();
 
                 // Bind the products to the DataGridView
                 dgvProduct.DataSource = products;
+
+                // Set the active control explicitly
+                ActiveControl = btnDeleteProduct;
             }
             catch (Exception ex)
             {
@@ -68,77 +72,90 @@ namespace Bird_Management
 
         private void dgvProduct_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Get the selected product from the DataGridView
             if (e.RowIndex >= 0 && e.RowIndex < dgvProduct.Rows.Count)
             {
                 DataGridViewRow row = dgvProduct.Rows[e.RowIndex];
-                selectedProduct = (Product)row.DataBoundItem;
+                Product clickedProduct = (Product)row.DataBoundItem;
 
-                // Display the product details
-                txtID.Text = selectedProduct.ProductId.ToString();
-                txtName.Text = selectedProduct.ProductName;
-                txtQuantity.Text = selectedProduct.Quantity.ToString();
-                txtDescription.Text = selectedProduct.Description;
-                txtPrice.Text = selectedProduct.Price.ToString();
-
-                // Display the category
-                Category selectedCategory = productServices.GetCategoryById(selectedProduct.CategoryId);
-                if (selectedCategory != null)
+                // Check if the clicked product is the same as the previously selected product
+                if (selectedProduct == clickedProduct)
                 {
-                    txtCategory.Text = selectedCategory.CategoryName;
+                    // Unselect the product
+                    selectedProduct = null;
+                    dgvProduct.ClearSelection();
+                    ClearForm();
                 }
                 else
                 {
-                    txtCategory.Text = string.Empty;
+                    // Select the new product
+                    selectedProduct = clickedProduct;
+
+                    // Display the product details
+                    txtID.Text = selectedProduct.ProductId.ToString();
+                    txtName.Text = selectedProduct.ProductName;
+                    txtQuantity.Text = selectedProduct.Quantity.ToString();
+                    txtDescription.Text = selectedProduct.Description;
+                    txtPrice.Text = selectedProduct.Price.ToString();
+
+                    // Display the category
+                    Category selectedCategory = productServices.GetCategoryById(selectedProduct.CategoryId);
+                    if (selectedCategory != null)
+                    {
+                        txtCategory.Text = selectedCategory.CategoryName;
+                    }
+                    else
+                    {
+                        txtCategory.Text = string.Empty;
+                    }
+
+                    // Display the product image
+                    DisplayProductPhoto(selectedProduct.Image);
+
+                    // Disable editing of fields
+                    DisableFields();
                 }
-
-                // Display the product image
-                DisplayProductPhoto(selectedProduct.Image);
-
-                // Disable editing of fields
-                DisableFields();
             }
         }
 
         private void btnDeleteProduct_Click(object sender, EventArgs e)
         {
-            var selectedProduct = dgvProduct.CurrentRow?.DataBoundItem as Product;
+            var selectedRow = dgvProduct.SelectedRows;
 
-            if (selectedProduct != null)
+            if (selectedRow.Count > 0)
             {
-                // Confirm the deletion
-                DialogResult result = MessageBox.Show("Are you sure you want to delete this product?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (result == DialogResult.Yes)
+                var selectedProduct = selectedRow[0].DataBoundItem as Product;
+
+                if (selectedProduct != null)
                 {
-                    try
+                    // Confirm the deletion
+                    DialogResult result = MessageBox.Show("Are you sure you want to delete this product?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
                     {
-                        // Delete the product from the database
-                        productServices.DeleteProduct(selectedProduct.ProductId);
+                        try
+                        {
+                            // Delete the product from the database
+                            productServices.DeleteProduct(selectedProduct.ProductId);
 
-                        // Display a success message
-                        MessageBox.Show("Product deleted successfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            // Display a success message
+                            MessageBox.Show("Product deleted successfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        // Clear the form controls
-                        ClearForm();
+                            // Clear the form controls
+                            ClearForm();
 
-                        // Refresh the products list
-                        DeleteProduct_Load();
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Error deleting product: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            // Refresh the products list
+                            DeleteProduct_Load();
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Error deleting product: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                 }
             }
-        }
-
-        private void ClearTextBoxes()
-        {
-            txtName.Text = string.Empty;
-            txtQuantity.Text = string.Empty;
-            txtDescription.Text = string.Empty;
-            txtPrice.Text = string.Empty;
-            txtCategory.Text = string.Empty;
+            else
+            {
+                MessageBox.Show("Please select a product to delete.", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void ClearForm()

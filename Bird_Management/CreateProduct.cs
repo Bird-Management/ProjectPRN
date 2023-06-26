@@ -18,7 +18,6 @@ namespace Bird_Management
         private BirdManagementContext dbContext;
         private ProductServices productServices;
 
-
         public CreateProduct()
         {
             InitializeComponent();
@@ -115,7 +114,6 @@ namespace Bird_Management
             }
         }
 
-
         private void ClearForm()
         {
             txtId.Text = "";
@@ -125,7 +123,6 @@ namespace Bird_Management
             txtPrice.Text = "";
             pbImage.Image = null;
             cbCategory.SelectedIndex = -1;
-
         }
 
         private void PopulateCategories()
@@ -148,8 +145,7 @@ namespace Bird_Management
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Do you want to go back to the Sell Page?", "Bird Management",
-                MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show("Do you want to go back to the Sell Page?", "Bird Management", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
                 this.Close();
@@ -228,7 +224,6 @@ namespace Bird_Management
 
                 // Display the resized image in the PictureBox
                 pbImage.Image = resizedImage;
-
             }
             catch (Exception ex)
             {

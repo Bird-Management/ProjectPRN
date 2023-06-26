@@ -123,7 +123,7 @@
             // 
             // txtQuantity
             // 
-            txtQuantity.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtQuantity.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtQuantity.Location = new Point(153, 265);
             txtQuantity.Margin = new Padding(2);
             txtQuantity.Name = "txtQuantity";
@@ -132,7 +132,7 @@
             // 
             // txtName
             // 
-            txtName.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtName.Location = new Point(153, 227);
             txtName.Margin = new Padding(2);
             txtName.Name = "txtName";
@@ -141,7 +141,7 @@
             // 
             // txtDescription
             // 
-            txtDescription.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtDescription.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtDescription.Location = new Point(153, 303);
             txtDescription.Margin = new Padding(2);
             txtDescription.Name = "txtDescription";
@@ -150,7 +150,7 @@
             // 
             // txtPrice
             // 
-            txtPrice.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtPrice.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtPrice.Location = new Point(153, 341);
             txtPrice.Margin = new Padding(2);
             txtPrice.Name = "txtPrice";
