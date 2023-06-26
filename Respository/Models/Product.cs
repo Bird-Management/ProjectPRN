@@ -18,8 +18,7 @@ namespace Respository.Models
         public string ProductName { get; set; }
         public byte[] Image { get; set; }
         public double? Price { get; set; }
-        [StringLength(50)]
-        public string Title { get; set; }
+        public int? Quantity { get; set; }
         public string Description { get; set; }
         [Column("CategoryID")]
         [StringLength(10)]

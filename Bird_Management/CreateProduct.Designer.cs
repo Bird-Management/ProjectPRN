@@ -78,11 +78,9 @@
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label3.Location = new Point(205, 436);
             label3.Name = "label3";
-<<<<<<< HEAD
-            label3.Size = new Size(64, 32);
-=======
+
             label3.Size = new Size(95, 28);
->>>>>>> 8fa2fc7694aa9a34e50fd3379b40b3685c15838a
+
             label3.TabIndex = 2;
             label3.Text = "Quantity";
             // 
@@ -127,19 +125,11 @@
             // 
             // txtQuantity
             // 
-<<<<<<< HEAD
-            txtTitle.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtTitle.Location = new Point(454, 436);
-            txtTitle.Name = "txtTitle";
-            txtTitle.Size = new Size(324, 39);
-            txtTitle.TabIndex = 8;
-=======
             txtQuantity.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtQuantity.Location = new Point(454, 436);
             txtQuantity.Name = "txtQuantity";
             txtQuantity.Size = new Size(324, 34);
             txtQuantity.TabIndex = 8;
->>>>>>> 8fa2fc7694aa9a34e50fd3379b40b3685c15838a
             // 
             // txtDescription
             // 
