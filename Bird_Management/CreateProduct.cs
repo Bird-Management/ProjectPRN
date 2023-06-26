@@ -42,37 +42,79 @@ namespace Bird_Management
 
         private void btnCreateProduct_Click(object sender, EventArgs e)
         {
-            // Get the values from the form controls
-            string id = txtId.Text;
-            string name = txtName.Text;
-            int quantity = int.Parse(txtQuantity.Text);
-            string description = txtDescription.Text;
-            decimal price = decimal.Parse(txtPrice.Text);
-            Category selectedCategory = (Category)cbCategory.SelectedItem;
-            byte[] imageData = ImageToByteArray(pbImage.Image); // Convert the image to byte array
-
-            // Create a new Product object
-            Product newProduct = new Product
+            try
             {
-                ProductId = id.ToString(),
-                ProductName = name,
-                Quantity = quantity,
-                Description = description,
-                Price = (double?)price,
-                CategoryId = selectedCategory.CategoryId,
-                Image = imageData // Assign the image byte array to the Product's Image property
-            };
+                // Get the values from the form controls
+                string id = txtId.Text;
+                string name = txtName.Text;
+                string quantityText = txtQuantity.Text;
+                string description = txtDescription.Text;
+                string priceText = txtPrice.Text;
+                Category selectedCategory = (Category)cbCategory.SelectedItem;
+                Image image = pbImage.Image;
 
-            // Save the new product to the database
-            dbContext.Product.Add(newProduct);
-            dbContext.SaveChanges();
+                // Validate the inputs
+                if (string.IsNullOrWhiteSpace(id) || string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(quantityText) ||
+                    string.IsNullOrWhiteSpace(description) || string.IsNullOrWhiteSpace(priceText) || selectedCategory == null)
+                {
+                    MessageBox.Show("Please fill in all the required fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
 
-            // Display a success message
-            MessageBox.Show("New bird created successfully!", "Notification", MessageBoxButtons.OK);
+                int quantity;
+                if (!int.TryParse(quantityText, out quantity))
+                {
+                    MessageBox.Show("Invalid quantity format. Please enter a whole number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
 
-            // Clear the form controls
-            ClearForm();
+                decimal price;
+                if (!decimal.TryParse(priceText, out price))
+                {
+                    MessageBox.Show("Invalid price format. Please enter a valid decimal number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                byte[] imageData = null;
+                if (image != null)
+                {
+                    // Convert the image to byte array
+                    imageData = ImageToByteArray(image);
+                }
+                else
+                {
+                    MessageBox.Show("Please select an image.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Create a new Product object
+                Product newProduct = new Product
+                {
+                    ProductId = id,
+                    ProductName = name,
+                    Quantity = quantity,
+                    Description = description,
+                    Price = (double?)price,
+                    CategoryId = selectedCategory.CategoryId,
+                    Image = imageData // Assign the image byte array to the Product's Image property
+                };
+
+                // Save the new product to the database
+                dbContext.Product.Add(newProduct);
+                dbContext.SaveChanges();
+
+                // Display a success message
+                MessageBox.Show("New bird created successfully!", "Notification", MessageBoxButtons.OK);
+
+                // Clear the form controls
+                ClearForm();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error creating product: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
 
         private void ClearForm()
         {
