@@ -4,11 +4,13 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
+using System.IO;
+
 
 namespace Bird_Management
 {
@@ -35,7 +37,7 @@ namespace Bird_Management
         {
             if (imageData != null && imageData.Length > 0)
             {
-                using (var ms = new System.IO.MemoryStream(imageData))
+                using (var ms = new MemoryStream(imageData))
                 {
                     Image originalImage = Image.FromStream(ms);
 

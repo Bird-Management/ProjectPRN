@@ -12,3 +12,17 @@ C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\R
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Respository\obj\Debug\net6.0\Repository.pdb
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Respository\obj\Debug\net6.0\Repository.genruntimeconfig.cache
 C:\Users\nghia\OneDrive\Documents\FPT Summer 2023 Semester 5\PRN211\ProjectPRN\Respository\obj\Debug\net6.0\ref\Repository.dll
+D:\JavaWeb\ProjectPRN\Respository\bin\Debug\net6.0\Repository.deps.json
+D:\JavaWeb\ProjectPRN\Respository\bin\Debug\net6.0\Repository.runtimeconfig.json
+D:\JavaWeb\ProjectPRN\Respository\bin\Debug\net6.0\Repository.dll
+D:\JavaWeb\ProjectPRN\Respository\bin\Debug\net6.0\Repository.pdb
+D:\JavaWeb\ProjectPRN\Respository\obj\Debug\net6.0\Repository.csproj.AssemblyReference.cache
+D:\JavaWeb\ProjectPRN\Respository\obj\Debug\net6.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\JavaWeb\ProjectPRN\Respository\obj\Debug\net6.0\Repository.AssemblyInfoInputs.cache
+D:\JavaWeb\ProjectPRN\Respository\obj\Debug\net6.0\Repository.AssemblyInfo.cs
+D:\JavaWeb\ProjectPRN\Respository\obj\Debug\net6.0\Repository.csproj.CoreCompileInputs.cache
+D:\JavaWeb\ProjectPRN\Respository\obj\Debug\net6.0\Repository.dll
+D:\JavaWeb\ProjectPRN\Respository\obj\Debug\net6.0\refint\Repository.dll
+D:\JavaWeb\ProjectPRN\Respository\obj\Debug\net6.0\Repository.pdb
+D:\JavaWeb\ProjectPRN\Respository\obj\Debug\net6.0\Repository.genruntimeconfig.cache
+D:\JavaWeb\ProjectPRN\Respository\obj\Debug\net6.0\ref\Repository.dll

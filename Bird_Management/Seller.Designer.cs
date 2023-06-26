@@ -47,22 +47,22 @@
             label1.AutoSize = true;
             label1.BackColor = Color.DarkOrange;
             label1.Font = new Font("Arial", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(188, 46);
+            label1.Location = new Point(235, 58);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(447, 40);
+            label1.Size = new Size(527, 46);
             label1.TabIndex = 0;
             label1.Text = "WELCOME TO SELL PAGE";
             // 
             // dgvListProduct
             // 
             dgvListProduct.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvListProduct.Location = new Point(188, 98);
+            dgvListProduct.Location = new Point(235, 122);
             dgvListProduct.Margin = new Padding(2);
             dgvListProduct.Name = "dgvListProduct";
             dgvListProduct.RowHeadersWidth = 62;
             dgvListProduct.RowTemplate.Height = 33;
-            dgvListProduct.Size = new Size(584, 238);
+            dgvListProduct.Size = new Size(730, 298);
             dgvListProduct.TabIndex = 1;
             dgvListProduct.CellClick += dgvListProduct_CellClick;
             dgvListProduct.SelectionChanged += dgvListProduct_SelectionChanged;
@@ -70,10 +70,10 @@
             // btnCreateProduct
             // 
             btnCreateProduct.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            btnCreateProduct.Location = new Point(188, 361);
+            btnCreateProduct.Location = new Point(235, 451);
             btnCreateProduct.Margin = new Padding(2);
             btnCreateProduct.Name = "btnCreateProduct";
-            btnCreateProduct.Size = new Size(89, 46);
+            btnCreateProduct.Size = new Size(111, 58);
             btnCreateProduct.TabIndex = 2;
             btnCreateProduct.Text = "Create";
             btnCreateProduct.UseVisualStyleBackColor = true;
@@ -82,10 +82,10 @@
             // btnUpdateProduct
             // 
             btnUpdateProduct.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            btnUpdateProduct.Location = new Point(422, 361);
+            btnUpdateProduct.Location = new Point(528, 451);
             btnUpdateProduct.Margin = new Padding(2);
             btnUpdateProduct.Name = "btnUpdateProduct";
-            btnUpdateProduct.Size = new Size(89, 44);
+            btnUpdateProduct.Size = new Size(111, 55);
             btnUpdateProduct.TabIndex = 3;
             btnUpdateProduct.Text = "Update";
             btnUpdateProduct.UseVisualStyleBackColor = true;
@@ -94,10 +94,10 @@
             // btnDeleteProduct
             // 
             btnDeleteProduct.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            btnDeleteProduct.Location = new Point(652, 360);
+            btnDeleteProduct.Location = new Point(815, 450);
             btnDeleteProduct.Margin = new Padding(2);
             btnDeleteProduct.Name = "btnDeleteProduct";
-            btnDeleteProduct.Size = new Size(89, 45);
+            btnDeleteProduct.Size = new Size(111, 56);
             btnDeleteProduct.TabIndex = 4;
             btnDeleteProduct.Text = "Delete";
             btnDeleteProduct.UseVisualStyleBackColor = true;
@@ -109,7 +109,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { btLogout });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(783, 35);
+            toolStrip1.Size = new Size(979, 41);
             toolStrip1.TabIndex = 6;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -121,24 +121,26 @@
             btLogout.Image = (Image)resources.GetObject("btLogout.Image");
             btLogout.ImageTransparentColor = Color.Magenta;
             btLogout.Name = "btLogout";
-            btLogout.Size = new Size(106, 32);
+            btLogout.Size = new Size(123, 36);
             btLogout.Text = "Logout";
             btLogout.Click += btLogout_Click_1;
             // 
             // pbImage
             // 
             pbImage.BorderStyle = BorderStyle.FixedSingle;
-            pbImage.Location = new Point(12, 130);
+            pbImage.Location = new Point(15, 162);
+            pbImage.Margin = new Padding(4);
             pbImage.Name = "pbImage";
-            pbImage.Size = new Size(162, 178);
+            pbImage.Size = new Size(202, 222);
+            pbImage.SizeMode = PictureBoxSizeMode.StretchImage;
             pbImage.TabIndex = 13;
             pbImage.TabStop = false;
             // 
             // Seller
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(783, 418);
+            ClientSize = new Size(979, 522);
             Controls.Add(pbImage);
             Controls.Add(toolStrip1);
             Controls.Add(btnDeleteProduct);

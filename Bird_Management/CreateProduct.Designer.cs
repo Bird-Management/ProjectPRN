@@ -58,7 +58,7 @@
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label1.Location = new Point(205, 383);
             label1.Name = "label1";
-            label1.Size = new Size(68, 28);
+            label1.Size = new Size(81, 32);
             label1.TabIndex = 0;
             label1.Text = "Name";
             // 
@@ -68,7 +68,7 @@
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label2.Location = new Point(205, 183);
             label2.Name = "label2";
-            label2.Size = new Size(70, 28);
+            label2.Size = new Size(85, 32);
             label2.TabIndex = 1;
             label2.Text = "Image";
             // 
@@ -78,7 +78,7 @@
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label3.Location = new Point(205, 436);
             label3.Name = "label3";
-            label3.Size = new Size(55, 28);
+            label3.Size = new Size(64, 32);
             label3.TabIndex = 2;
             label3.Text = "Title";
             // 
@@ -88,7 +88,7 @@
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label4.Location = new Point(205, 489);
             label4.Name = "label4";
-            label4.Size = new Size(121, 28);
+            label4.Size = new Size(146, 32);
             label4.TabIndex = 3;
             label4.Text = "Description";
             // 
@@ -98,7 +98,7 @@
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label5.Location = new Point(205, 542);
             label5.Name = "label5";
-            label5.Size = new Size(59, 28);
+            label5.Size = new Size(71, 32);
             label5.TabIndex = 4;
             label5.Text = "Price";
             // 
@@ -109,7 +109,7 @@
             label6.ForeColor = Color.IndianRed;
             label6.Location = new Point(454, 23);
             label6.Name = "label6";
-            label6.Size = new Size(282, 46);
+            label6.Size = new Size(331, 54);
             label6.TabIndex = 5;
             label6.Text = "Create New Bird";
             // 
@@ -118,7 +118,7 @@
             txtName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtName.Location = new Point(454, 383);
             txtName.Name = "txtName";
-            txtName.Size = new Size(324, 34);
+            txtName.Size = new Size(324, 39);
             txtName.TabIndex = 6;
             // 
             // txtTitle
@@ -126,7 +126,7 @@
             txtTitle.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtTitle.Location = new Point(454, 436);
             txtTitle.Name = "txtTitle";
-            txtTitle.Size = new Size(324, 34);
+            txtTitle.Size = new Size(324, 39);
             txtTitle.TabIndex = 8;
             // 
             // txtDescription
@@ -134,7 +134,7 @@
             txtDescription.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtDescription.Location = new Point(454, 483);
             txtDescription.Name = "txtDescription";
-            txtDescription.Size = new Size(324, 34);
+            txtDescription.Size = new Size(324, 39);
             txtDescription.TabIndex = 9;
             // 
             // txtPrice
@@ -142,7 +142,7 @@
             txtPrice.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtPrice.Location = new Point(453, 536);
             txtPrice.Name = "txtPrice";
-            txtPrice.Size = new Size(324, 34);
+            txtPrice.Size = new Size(324, 39);
             txtPrice.TabIndex = 10;
             // 
             // btnCreateProduct
@@ -175,6 +175,7 @@
             pbImage.Location = new Point(454, 94);
             pbImage.Name = "pbImage";
             pbImage.Size = new Size(323, 208);
+            pbImage.SizeMode = PictureBoxSizeMode.StretchImage;
             pbImage.TabIndex = 13;
             pbImage.TabStop = false;
             // 
@@ -184,8 +185,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { btnBack });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Padding = new Padding(0, 0, 2, 0);
-            toolStrip1.Size = new Size(1224, 35);
+            toolStrip1.Size = new Size(1224, 41);
             toolStrip1.TabIndex = 14;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -195,7 +195,7 @@
             btnBack.Image = (Image)resources.GetObject("btnBack.Image");
             btnBack.ImageTransparentColor = Color.Magenta;
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(85, 32);
+            btnBack.Size = new Size(95, 36);
             btnBack.Text = "Back";
             btnBack.Click += btnBack_Click;
             // 
@@ -206,7 +206,7 @@
             label7.Location = new Point(923, 294);
             label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
-            label7.Size = new Size(98, 28);
+            label7.Size = new Size(118, 32);
             label7.TabIndex = 15;
             label7.Text = "Category";
             // 
@@ -216,7 +216,7 @@
             cbCategory.Location = new Point(834, 375);
             cbCategory.Margin = new Padding(4);
             cbCategory.Name = "cbCategory";
-            cbCategory.Size = new Size(294, 36);
+            cbCategory.Size = new Size(294, 40);
             cbCategory.TabIndex = 16;
             // 
             // label8
@@ -225,7 +225,7 @@
             label8.Location = new Point(205, 327);
             label8.Margin = new Padding(4, 0, 4, 0);
             label8.Name = "label8";
-            label8.Size = new Size(33, 28);
+            label8.Size = new Size(40, 32);
             label8.TabIndex = 17;
             label8.Text = "ID";
             // 
@@ -233,12 +233,12 @@
             // 
             txtId.Location = new Point(454, 327);
             txtId.Name = "txtId";
-            txtId.Size = new Size(324, 34);
+            txtId.Size = new Size(324, 39);
             txtId.TabIndex = 18;
             // 
             // CreateProduct
             // 
-            AutoScaleDimensions = new SizeF(12F, 28F);
+            AutoScaleDimensions = new SizeF(14F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1224, 599);
             Controls.Add(txtId);
