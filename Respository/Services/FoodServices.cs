@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -171,6 +172,35 @@ namespace Repository.Services
                 throw new Exception(ex.Message);
             }
         }
+
+        public Food SearchFood(string searchID)
+        {
+            try
+            {
+                var searchResults = this._context.Food.Where(x => x.FoodId.Contains(searchID)).Select(
+                    x => new Food
+                    {
+                        FoodId = x.FoodId,
+                        FoodName = x.FoodName,
+                        Price = x.Price,
+                        StartDate = x.StartDate,
+                        EndDate = x.EndDate,
+                        Producer = x.Producer,
+                        Amount = x.Amount,
+                        Status = x.Status
+                    }).FirstOrDefault();
+                if (searchResults != null)
+                {
+                    return searchResults;
+                }
+                return null;
+            }catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            
+        }
+
 
     }
 }

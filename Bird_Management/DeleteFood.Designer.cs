@@ -50,6 +50,9 @@
             txtAmount = new TextBox();
             txtPrice = new TextBox();
             txtStatus = new TextBox();
+            label10 = new Label();
+            txtSearchFood = new TextBox();
+            btnSearch = new Button();
             toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvDeleteFood).BeginInit();
             SuspendLayout();
@@ -88,7 +91,7 @@
             // dgvDeleteFood
             // 
             dgvDeleteFood.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvDeleteFood.Location = new Point(492, 109);
+            dgvDeleteFood.Location = new Point(492, 158);
             dgvDeleteFood.Name = "dgvDeleteFood";
             dgvDeleteFood.RowHeadersWidth = 62;
             dgvDeleteFood.RowTemplate.Height = 33;
@@ -99,7 +102,7 @@
             // btnDeleteFood
             // 
             btnDeleteFood.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnDeleteFood.Location = new Point(157, 469);
+            btnDeleteFood.Location = new Point(157, 518);
             btnDeleteFood.Name = "btnDeleteFood";
             btnDeleteFood.Size = new Size(191, 43);
             btnDeleteFood.TabIndex = 3;
@@ -111,7 +114,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(12, 112);
+            label2.Location = new Point(12, 161);
             label2.Name = "label2";
             label2.Size = new Size(98, 32);
             label2.TabIndex = 4;
@@ -121,7 +124,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(12, 157);
+            label3.Location = new Point(12, 206);
             label3.Name = "label3";
             label3.Size = new Size(139, 32);
             label3.TabIndex = 5;
@@ -131,7 +134,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(12, 202);
+            label4.Location = new Point(12, 251);
             label4.Name = "label4";
             label4.Size = new Size(64, 32);
             label4.TabIndex = 6;
@@ -141,7 +144,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(12, 247);
+            label5.Location = new Point(12, 296);
             label5.Name = "label5";
             label5.Size = new Size(53, 32);
             label5.TabIndex = 7;
@@ -151,7 +154,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(12, 292);
+            label6.Location = new Point(12, 341);
             label6.Name = "label6";
             label6.Size = new Size(109, 32);
             label6.TabIndex = 8;
@@ -161,7 +164,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(12, 337);
+            label7.Location = new Point(12, 386);
             label7.Name = "label7";
             label7.Size = new Size(100, 32);
             label7.TabIndex = 9;
@@ -171,7 +174,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(12, 382);
+            label8.Location = new Point(12, 431);
             label8.Name = "label8";
             label8.Size = new Size(65, 32);
             label8.TabIndex = 10;
@@ -181,7 +184,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(12, 427);
+            label9.Location = new Point(12, 476);
             label9.Name = "label9";
             label9.Size = new Size(78, 32);
             label9.TabIndex = 11;
@@ -190,7 +193,7 @@
             // txtFoodID
             // 
             txtFoodID.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtFoodID.Location = new Point(157, 109);
+            txtFoodID.Location = new Point(157, 158);
             txtFoodID.Name = "txtFoodID";
             txtFoodID.Size = new Size(329, 39);
             txtFoodID.TabIndex = 12;
@@ -198,7 +201,7 @@
             // txtFoodName
             // 
             txtFoodName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtFoodName.Location = new Point(157, 154);
+            txtFoodName.Location = new Point(157, 203);
             txtFoodName.Name = "txtFoodName";
             txtFoodName.Size = new Size(329, 39);
             txtFoodName.TabIndex = 13;
@@ -206,7 +209,7 @@
             // txtStartDate
             // 
             txtStartDate.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtStartDate.Location = new Point(157, 199);
+            txtStartDate.Location = new Point(157, 248);
             txtStartDate.Name = "txtStartDate";
             txtStartDate.Size = new Size(329, 39);
             txtStartDate.TabIndex = 14;
@@ -214,7 +217,7 @@
             // txtEndDate
             // 
             txtEndDate.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtEndDate.Location = new Point(157, 244);
+            txtEndDate.Location = new Point(157, 293);
             txtEndDate.Name = "txtEndDate";
             txtEndDate.Size = new Size(329, 39);
             txtEndDate.TabIndex = 15;
@@ -222,7 +225,7 @@
             // txtProducer
             // 
             txtProducer.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtProducer.Location = new Point(157, 289);
+            txtProducer.Location = new Point(157, 338);
             txtProducer.Name = "txtProducer";
             txtProducer.Size = new Size(329, 39);
             txtProducer.TabIndex = 16;
@@ -230,7 +233,7 @@
             // txtAmount
             // 
             txtAmount.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtAmount.Location = new Point(157, 334);
+            txtAmount.Location = new Point(157, 383);
             txtAmount.Name = "txtAmount";
             txtAmount.Size = new Size(329, 39);
             txtAmount.TabIndex = 17;
@@ -238,7 +241,7 @@
             // txtPrice
             // 
             txtPrice.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtPrice.Location = new Point(157, 379);
+            txtPrice.Location = new Point(157, 428);
             txtPrice.Name = "txtPrice";
             txtPrice.Size = new Size(329, 39);
             txtPrice.TabIndex = 18;
@@ -246,16 +249,50 @@
             // txtStatus
             // 
             txtStatus.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtStatus.Location = new Point(157, 424);
+            txtStatus.Location = new Point(157, 473);
             txtStatus.Name = "txtStatus";
             txtStatus.Size = new Size(329, 39);
             txtStatus.TabIndex = 19;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.Location = new Point(157, 109);
+            label10.Name = "label10";
+            label10.Size = new Size(96, 32);
+            label10.TabIndex = 20;
+            label10.Text = "Search ";
+            // 
+            // txtSearchFood
+            // 
+            txtSearchFood.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtSearchFood.Location = new Point(259, 106);
+            txtSearchFood.Name = "txtSearchFood";
+            txtSearchFood.Size = new Size(529, 39);
+            txtSearchFood.TabIndex = 21;
+            // 
+            // btnSearch
+            // 
+            btnSearch.BackgroundImageLayout = ImageLayout.Zoom;
+            btnSearch.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSearch.Location = new Point(794, 106);
+            btnSearch.Name = "btnSearch";
+            btnSearch.Size = new Size(103, 39);
+            btnSearch.TabIndex = 22;
+            btnSearch.Text = "Search ";
+            btnSearch.TextAlign = ContentAlignment.MiddleRight;
+            btnSearch.UseVisualStyleBackColor = true;
+            btnSearch.Click += btnSearch_Click;
             // 
             // DeleteFood
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1219, 590);
+            Controls.Add(btnSearch);
+            Controls.Add(txtSearchFood);
+            Controls.Add(label10);
             Controls.Add(txtStatus);
             Controls.Add(txtPrice);
             Controls.Add(txtAmount);
@@ -308,5 +345,8 @@
         private TextBox txtAmount;
         private TextBox txtPrice;
         private TextBox txtStatus;
+        private Label label10;
+        private TextBox txtSearchFood;
+        private Button btnSearch;
     }
 }
