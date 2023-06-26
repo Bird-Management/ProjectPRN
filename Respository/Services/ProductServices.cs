@@ -80,5 +80,33 @@ namespace Respository.Services
                 throw new Exception("Error retrieving category: " + ex.Message);
             }
         }
+
+        public List<Category> GetAllCategories()
+        {
+            return _context.Category.ToList();
+        }
+
+        public bool UpdateProduct(Product updatedProduct)
+        {
+            try
+            {
+                var existingProduct = _context.Product.Find(updatedProduct.ProductId);
+                if (existingProduct == null)
+                    return false;
+
+                existingProduct.ProductName = updatedProduct.ProductName;
+                existingProduct.Quantity = updatedProduct.Quantity;
+                existingProduct.Description = updatedProduct.Description;
+                existingProduct.Price = updatedProduct.Price;
+                existingProduct.CategoryId = updatedProduct.CategoryId;
+
+                _context.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
     }
 }

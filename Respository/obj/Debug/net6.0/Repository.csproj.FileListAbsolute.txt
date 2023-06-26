@@ -26,3 +26,17 @@ D:\JavaWeb\ProjectPRN\Respository\obj\Debug\net6.0\refint\Repository.dll
 D:\JavaWeb\ProjectPRN\Respository\obj\Debug\net6.0\Repository.pdb
 D:\JavaWeb\ProjectPRN\Respository\obj\Debug\net6.0\Repository.genruntimeconfig.cache
 D:\JavaWeb\ProjectPRN\Respository\obj\Debug\net6.0\ref\Repository.dll
+D:\HCHCHC\SU23\PRN211\BirdSelling\ProjectPRN\Respository\bin\Debug\net6.0\Repository.deps.json
+D:\HCHCHC\SU23\PRN211\BirdSelling\ProjectPRN\Respository\bin\Debug\net6.0\Repository.runtimeconfig.json
+D:\HCHCHC\SU23\PRN211\BirdSelling\ProjectPRN\Respository\bin\Debug\net6.0\Repository.dll
+D:\HCHCHC\SU23\PRN211\BirdSelling\ProjectPRN\Respository\bin\Debug\net6.0\Repository.pdb
+D:\HCHCHC\SU23\PRN211\BirdSelling\ProjectPRN\Respository\obj\Debug\net6.0\Repository.csproj.AssemblyReference.cache
+D:\HCHCHC\SU23\PRN211\BirdSelling\ProjectPRN\Respository\obj\Debug\net6.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\HCHCHC\SU23\PRN211\BirdSelling\ProjectPRN\Respository\obj\Debug\net6.0\Repository.AssemblyInfoInputs.cache
+D:\HCHCHC\SU23\PRN211\BirdSelling\ProjectPRN\Respository\obj\Debug\net6.0\Repository.AssemblyInfo.cs
+D:\HCHCHC\SU23\PRN211\BirdSelling\ProjectPRN\Respository\obj\Debug\net6.0\Repository.csproj.CoreCompileInputs.cache
+D:\HCHCHC\SU23\PRN211\BirdSelling\ProjectPRN\Respository\obj\Debug\net6.0\Repository.dll
+D:\HCHCHC\SU23\PRN211\BirdSelling\ProjectPRN\Respository\obj\Debug\net6.0\refint\Repository.dll
+D:\HCHCHC\SU23\PRN211\BirdSelling\ProjectPRN\Respository\obj\Debug\net6.0\Repository.pdb
+D:\HCHCHC\SU23\PRN211\BirdSelling\ProjectPRN\Respository\obj\Debug\net6.0\Repository.genruntimeconfig.cache
+D:\HCHCHC\SU23\PRN211\BirdSelling\ProjectPRN\Respository\obj\Debug\net6.0\ref\Repository.dll
