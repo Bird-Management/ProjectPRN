@@ -51,6 +51,9 @@
             btnUpdate = new Button();
             chbOutOfStock = new CheckBox();
             chbStocking = new CheckBox();
+            label10 = new Label();
+            txtSearchFood = new TextBox();
+            btnSearch = new Button();
             toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvUpdateFood).BeginInit();
             SuspendLayout();
@@ -89,7 +92,7 @@
             // dgvUpdateFood
             // 
             dgvUpdateFood.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUpdateFood.Location = new Point(485, 98);
+            dgvUpdateFood.Location = new Point(485, 157);
             dgvUpdateFood.Name = "dgvUpdateFood";
             dgvUpdateFood.RowHeadersWidth = 62;
             dgvUpdateFood.RowTemplate.Height = 33;
@@ -101,7 +104,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(21, 101);
+            label2.Location = new Point(21, 160);
             label2.Name = "label2";
             label2.Size = new Size(98, 32);
             label2.TabIndex = 3;
@@ -111,7 +114,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(21, 146);
+            label3.Location = new Point(21, 205);
             label3.Name = "label3";
             label3.Size = new Size(135, 32);
             label3.TabIndex = 4;
@@ -121,7 +124,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(21, 191);
+            label4.Location = new Point(21, 250);
             label4.Name = "label4";
             label4.Size = new Size(64, 32);
             label4.TabIndex = 5;
@@ -131,7 +134,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(21, 236);
+            label5.Location = new Point(21, 295);
             label5.Name = "label5";
             label5.Size = new Size(53, 32);
             label5.TabIndex = 6;
@@ -141,7 +144,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(21, 281);
+            label6.Location = new Point(21, 340);
             label6.Name = "label6";
             label6.Size = new Size(109, 32);
             label6.TabIndex = 7;
@@ -151,7 +154,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(21, 326);
+            label7.Location = new Point(21, 385);
             label7.Name = "label7";
             label7.Size = new Size(65, 32);
             label7.TabIndex = 8;
@@ -161,7 +164,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(21, 371);
+            label8.Location = new Point(21, 430);
             label8.Name = "label8";
             label8.Size = new Size(100, 32);
             label8.TabIndex = 9;
@@ -171,7 +174,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(21, 416);
+            label9.Location = new Point(21, 475);
             label9.Name = "label9";
             label9.Size = new Size(78, 32);
             label9.TabIndex = 10;
@@ -180,7 +183,7 @@
             // txtFoodID
             // 
             txtFoodID.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtFoodID.Location = new Point(155, 98);
+            txtFoodID.Location = new Point(155, 157);
             txtFoodID.Name = "txtFoodID";
             txtFoodID.Size = new Size(324, 39);
             txtFoodID.TabIndex = 11;
@@ -188,7 +191,7 @@
             // txtFoodName
             // 
             txtFoodName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtFoodName.Location = new Point(155, 143);
+            txtFoodName.Location = new Point(155, 202);
             txtFoodName.Name = "txtFoodName";
             txtFoodName.Size = new Size(324, 39);
             txtFoodName.TabIndex = 12;
@@ -196,7 +199,7 @@
             // txtStartDate
             // 
             txtStartDate.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtStartDate.Location = new Point(155, 188);
+            txtStartDate.Location = new Point(155, 247);
             txtStartDate.Name = "txtStartDate";
             txtStartDate.Size = new Size(324, 39);
             txtStartDate.TabIndex = 13;
@@ -204,7 +207,7 @@
             // txtEndDate
             // 
             txtEndDate.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtEndDate.Location = new Point(155, 233);
+            txtEndDate.Location = new Point(155, 292);
             txtEndDate.Name = "txtEndDate";
             txtEndDate.Size = new Size(324, 39);
             txtEndDate.TabIndex = 14;
@@ -212,7 +215,7 @@
             // txtPrice
             // 
             txtPrice.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtPrice.Location = new Point(155, 323);
+            txtPrice.Location = new Point(155, 382);
             txtPrice.Name = "txtPrice";
             txtPrice.Size = new Size(324, 39);
             txtPrice.TabIndex = 16;
@@ -220,7 +223,7 @@
             // txtAmount
             // 
             txtAmount.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtAmount.Location = new Point(155, 368);
+            txtAmount.Location = new Point(155, 427);
             txtAmount.Name = "txtAmount";
             txtAmount.Size = new Size(324, 39);
             txtAmount.TabIndex = 17;
@@ -229,7 +232,7 @@
             // 
             cboProducer.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cboProducer.FormattingEnabled = true;
-            cboProducer.Location = new Point(155, 277);
+            cboProducer.Location = new Point(155, 336);
             cboProducer.Name = "cboProducer";
             cboProducer.Size = new Size(324, 40);
             cboProducer.TabIndex = 18;
@@ -237,7 +240,7 @@
             // btnUpdate
             // 
             btnUpdate.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnUpdate.Location = new Point(155, 512);
+            btnUpdate.Location = new Point(155, 571);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(112, 40);
             btnUpdate.TabIndex = 19;
@@ -249,7 +252,7 @@
             // 
             chbOutOfStock.AutoSize = true;
             chbOutOfStock.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            chbOutOfStock.Location = new Point(155, 416);
+            chbOutOfStock.Location = new Point(155, 475);
             chbOutOfStock.Name = "chbOutOfStock";
             chbOutOfStock.Size = new Size(171, 36);
             chbOutOfStock.TabIndex = 20;
@@ -260,18 +263,50 @@
             // 
             chbStocking.AutoSize = true;
             chbStocking.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            chbStocking.Location = new Point(155, 458);
+            chbStocking.Location = new Point(155, 517);
             chbStocking.Name = "chbStocking";
             chbStocking.Size = new Size(131, 36);
             chbStocking.TabIndex = 21;
             chbStocking.Text = "Stocking";
             chbStocking.UseVisualStyleBackColor = true;
             // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label10.Location = new Point(155, 102);
+            label10.Name = "label10";
+            label10.Size = new Size(85, 32);
+            label10.TabIndex = 22;
+            label10.Text = "Search";
+            // 
+            // txtSearchFood
+            // 
+            txtSearchFood.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtSearchFood.Location = new Point(264, 97);
+            txtSearchFood.Name = "txtSearchFood";
+            txtSearchFood.Size = new Size(462, 39);
+            txtSearchFood.TabIndex = 23;
+            // 
+            // btnSearch
+            // 
+            btnSearch.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSearch.Location = new Point(746, 97);
+            btnSearch.Name = "btnSearch";
+            btnSearch.Size = new Size(112, 39);
+            btnSearch.TabIndex = 24;
+            btnSearch.Text = "Search";
+            btnSearch.UseVisualStyleBackColor = true;
+            btnSearch.Click += btnSearch_Click;
+            // 
             // UpdateFood
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1029, 579);
+            ClientSize = new Size(1029, 620);
+            Controls.Add(btnSearch);
+            Controls.Add(txtSearchFood);
+            Controls.Add(label10);
             Controls.Add(chbStocking);
             Controls.Add(chbOutOfStock);
             Controls.Add(btnUpdate);
@@ -327,5 +362,8 @@
         private Button btnUpdate;
         private CheckBox chbOutOfStock;
         private CheckBox chbStocking;
+        private Label label10;
+        private TextBox txtSearchFood;
+        private Button btnSearch;
     }
 }

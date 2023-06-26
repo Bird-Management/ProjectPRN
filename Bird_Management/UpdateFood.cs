@@ -167,6 +167,7 @@ namespace Bird_Management
             txtAmount.Clear();
             chbOutOfStock.Checked = false;
             chbStocking.Checked = false;
+            txtSearchFood.Clear();
         }
 
         private void RefreshData()
@@ -175,5 +176,44 @@ namespace Bird_Management
             var list = _foodServices.GetFoodsOther();
             dgvUpdateFood.DataSource = new BindingSource() { DataSource = list };
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string input = txtSearchFood.Text;
+
+            if (!string.IsNullOrEmpty(input))
+            {
+                FoodServices foodServices = new FoodServices(_context);
+                var searchResults = foodServices.SearchFood(input);
+
+                if (searchResults != null)
+                {
+                    txtFoodID.Text = searchResults.FoodId.ToString();
+                    txtFoodName.Text = searchResults.FoodName.ToString();
+                    txtStartDate.Text = searchResults.StartDate.ToString();
+                    txtEndDate.Text = searchResults.EndDate.ToString();
+                    txtPrice.Text = searchResults.Price.ToString();
+                    txtAmount.Text = searchResults.Amount.ToString();
+                    cboProducer.Text = searchResults.Producer.ToString();
+                    if (searchResults.Status == true)
+                    {
+                        chbStocking.Checked = true;
+                    }
+                    else
+                    {
+                        chbOutOfStock.Checked = true;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Food is not found.", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please enter a ID you want to search.", "Empty ID", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
     }
 }

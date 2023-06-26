@@ -63,15 +63,7 @@ namespace Bird_Management
                     txtStatus.Text = "Out of stock";
                 }
 
-                // set read only
-                txtFoodID.Enabled = false;
-                txtFoodName.Enabled = false;
-                txtStartDate.Enabled = false;
-                txtEndDate.Enabled = false;
-                txtProducer.Enabled = false;
-                txtPrice.Enabled = false;
-                txtAmount.Enabled = false;
-                txtStatus.Enabled = false;
+                SetReadOnly();
             }
         }
 
@@ -112,6 +104,7 @@ namespace Bird_Management
             txtPrice.Clear();
             txtAmount.Clear();
             txtStatus.Clear();
+            txtSearchFood.Clear();
         }
 
         private void RefreshData()
@@ -121,5 +114,55 @@ namespace Bird_Management
             dgvDeleteFood.DataSource = new BindingSource() { DataSource = list };
         }
 
+        private void SetReadOnly()
+        {
+            txtFoodID.Enabled = false;
+            txtFoodName.Enabled = false;
+            txtStartDate.Enabled = false;
+            txtEndDate.Enabled = false;
+            txtProducer.Enabled = false;
+            txtPrice.Enabled = false;
+            txtAmount.Enabled = false;
+            txtStatus.Enabled = false;
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string input = txtSearchFood.Text;
+
+            if (!string.IsNullOrEmpty(input))
+            {
+                FoodServices foodServices = new FoodServices(context);
+                var searchResults = foodServices.SearchFood(input);
+
+                if (searchResults != null)
+                {
+                    txtFoodID.Text = searchResults.FoodId.ToString();
+                    txtFoodName.Text = searchResults.FoodName.ToString();
+                    txtStartDate.Text = searchResults.StartDate.ToString();
+                    txtEndDate.Text = searchResults.EndDate.ToString();
+                    txtPrice.Text = searchResults.Price.ToString();
+                    txtAmount.Text = searchResults.Amount.ToString();
+                    txtProducer.Text = searchResults.Producer.ToString();
+                    if (searchResults.Status == true)
+                    {
+                        txtStatus.Text = "Stocking";
+                    }
+                    else
+                    {
+                        txtStatus.Text = "Out of stock";
+                    }
+                    SetReadOnly();
+                }
+                else
+                {
+                    MessageBox.Show("Food is not found.", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please enter a ID you want to search.", "Empty ID", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }
