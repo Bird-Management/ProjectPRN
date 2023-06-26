@@ -36,7 +36,7 @@
             label5 = new Label();
             label6 = new Label();
             txtName = new TextBox();
-            txtTitle = new TextBox();
+            txtQuantity = new TextBox();
             txtDescription = new TextBox();
             txtPrice = new TextBox();
             btnCreateProduct = new Button();
@@ -78,9 +78,9 @@
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label3.Location = new Point(205, 436);
             label3.Name = "label3";
-            label3.Size = new Size(55, 28);
+            label3.Size = new Size(95, 28);
             label3.TabIndex = 2;
-            label3.Text = "Title";
+            label3.Text = "Quantity";
             // 
             // label4
             // 
@@ -121,13 +121,13 @@
             txtName.Size = new Size(324, 34);
             txtName.TabIndex = 6;
             // 
-            // txtTitle
+            // txtQuantity
             // 
-            txtTitle.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtTitle.Location = new Point(454, 436);
-            txtTitle.Name = "txtTitle";
-            txtTitle.Size = new Size(324, 34);
-            txtTitle.TabIndex = 8;
+            txtQuantity.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtQuantity.Location = new Point(454, 436);
+            txtQuantity.Name = "txtQuantity";
+            txtQuantity.Size = new Size(324, 34);
+            txtQuantity.TabIndex = 8;
             // 
             // txtDescription
             // 
@@ -251,7 +251,7 @@
             Controls.Add(btnCreateProduct);
             Controls.Add(txtPrice);
             Controls.Add(txtDescription);
-            Controls.Add(txtTitle);
+            Controls.Add(txtQuantity);
             Controls.Add(txtName);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -279,7 +279,7 @@
         private Label label5;
         private Label label6;
         private TextBox txtName;
-        private TextBox txtTitle;
+        private TextBox txtQuantity;
         private TextBox txtDescription;
         private TextBox txtPrice;
         private Button btnCreateProduct;

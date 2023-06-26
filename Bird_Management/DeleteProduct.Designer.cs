@@ -36,7 +36,7 @@
             label5 = new Label();
             label6 = new Label();
             txtName = new TextBox();
-            txtTitle = new TextBox();
+            txtQuantity = new TextBox();
             txtDescription = new TextBox();
             txtPrice = new TextBox();
             pbImage = new PictureBox();
@@ -94,9 +94,9 @@
             label4.Location = new Point(11, 242);
             label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(55, 28);
+            label4.Size = new Size(95, 28);
             label4.TabIndex = 3;
-            label4.Text = "Title";
+            label4.Text = "Quantity";
             // 
             // label5
             // 
@@ -129,14 +129,14 @@
             txtName.Size = new Size(211, 34);
             txtName.TabIndex = 6;
             // 
-            // txtTitle
+            // txtQuantity
             // 
-            txtTitle.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            txtTitle.Location = new Point(153, 236);
-            txtTitle.Margin = new Padding(2);
-            txtTitle.Name = "txtTitle";
-            txtTitle.Size = new Size(211, 34);
-            txtTitle.TabIndex = 7;
+            txtQuantity.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtQuantity.Location = new Point(153, 236);
+            txtQuantity.Margin = new Padding(2);
+            txtQuantity.Name = "txtQuantity";
+            txtQuantity.Size = new Size(211, 34);
+            txtQuantity.TabIndex = 7;
             // 
             // txtDescription
             // 
@@ -260,7 +260,7 @@
             Controls.Add(pbImage);
             Controls.Add(txtPrice);
             Controls.Add(txtDescription);
-            Controls.Add(txtTitle);
+            Controls.Add(txtQuantity);
             Controls.Add(txtName);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -288,7 +288,7 @@
         private Label label5;
         private Label label6;
         private TextBox txtName;
-        private TextBox txtTitle;
+        private TextBox txtQuantity;
         private TextBox txtDescription;
         private TextBox txtPrice;
         private PictureBox pbImage;
