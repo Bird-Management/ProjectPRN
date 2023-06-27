@@ -77,6 +77,12 @@ namespace Bird_Management
 
         private void btnImage_Click(object sender, EventArgs e)
         {
+            if (_selectedProduct == null)
+            {
+                MessageBox.Show("Please select a product to update the image.", "No Product Selected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
                 openFileDialog.Title = "Select Image File";
@@ -108,6 +114,7 @@ namespace Bird_Management
                 }
             }
         }
+
 
 
         private void btnUpdateProduct_Click(object sender, EventArgs e)
