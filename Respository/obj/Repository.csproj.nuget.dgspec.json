@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\HCHCHC\\SU23\\PRN211\\BirdSelling\\ProjectPRN\\Respository\\Repository.csproj": {}
+    "D:\\ProjectPRN\\Respository\\Repository.csproj": {}
   },
   "projects": {
-    "D:\\HCHCHC\\SU23\\PRN211\\BirdSelling\\ProjectPRN\\Respository\\Repository.csproj": {
+    "D:\\ProjectPRN\\Respository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\HCHCHC\\SU23\\PRN211\\BirdSelling\\ProjectPRN\\Respository\\Repository.csproj",
+        "projectUniqueName": "D:\\ProjectPRN\\Respository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "D:\\HCHCHC\\SU23\\PRN211\\BirdSelling\\ProjectPRN\\Respository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\THANGNGUYEN.THANGNGUYEN\\.nuget\\packages\\",
-        "outputPath": "D:\\HCHCHC\\SU23\\PRN211\\BirdSelling\\ProjectPRN\\Respository\\obj\\",
+        "projectPath": "D:\\ProjectPRN\\Respository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\ProjectPRN\\Respository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\THANGNGUYEN.THANGNGUYEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

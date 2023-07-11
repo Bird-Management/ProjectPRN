@@ -34,7 +34,6 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            btRegister = new Button();
             btnShoppingCart = new Button();
             SuspendLayout();
             // 
@@ -60,7 +59,7 @@
             // btLogin
             // 
             btLogin.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            btLogin.Location = new Point(328, 278);
+            btLogin.Location = new Point(328, 266);
             btLogin.Margin = new Padding(2);
             btLogin.Name = "btLogin";
             btLogin.Size = new Size(111, 58);
@@ -105,18 +104,6 @@
             label3.TabIndex = 5;
             label3.Text = "Password";
             // 
-            // btRegister
-            // 
-            btRegister.Font = new Font("Arial", 11.999999F, FontStyle.Bold, GraphicsUnit.Point);
-            btRegister.Location = new Point(444, 278);
-            btRegister.Margin = new Padding(2);
-            btRegister.Name = "btRegister";
-            btRegister.Size = new Size(134, 58);
-            btRegister.TabIndex = 6;
-            btRegister.Text = "Register";
-            btRegister.UseVisualStyleBackColor = true;
-            btRegister.Click += btRegister_Click;
-            // 
             // btnShoppingCart
             // 
             btnShoppingCart.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
@@ -132,14 +119,13 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(858, 440);
-            Controls.Add(btRegister);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(btLogin);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
-            Margin = new Padding(5, 5, 5, 5);
+            Margin = new Padding(5);
             Name = "Login";
             Text = "Login";
             Load += Login_Load;
@@ -155,7 +141,6 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private Button btRegister;
         private Button btnShoppingCart;
     }
 }

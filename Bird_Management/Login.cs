@@ -57,13 +57,13 @@ namespace Bird_Management
             }
         }
 
-        private void btRegister_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form formSignUp = new SignUp();
-            formSignUp.ShowDialog();
+        //private void btRegister_Click(object sender, EventArgs e)
+        //{
+        //    this.Hide();
+        //    Form formSignUp = new SignUp();
+        //    formSignUp.ShowDialog();
 
-        }
+        //}
 
         private void btLogin_KeyDown(object sender, KeyEventArgs e)
         {

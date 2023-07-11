@@ -122,12 +122,12 @@ namespace Repository.Services
             return _context.Food.Any(x => x.FoodId == fID);
         }
 
-        public bool IsValidPriceVND(float price)
-        {
-            string pricePattern = @"^([1-9]\d{3,}|[1-9]\d{2,}\d*VND)$"; // Định dạng giá cả: lớn hơn 1000 hoặc có dạng "số lượng dương + VND"
-            string priceString = price.ToString(); // Chuyển đổi giá trị price thành chuỗi
-            return Regex.IsMatch(priceString, pricePattern);
-        }
+        //public bool IsValidPriceVND(float price)
+        //{
+        //    string pricePattern = @"^([1-9]\d{3,}|[1-9]\d{2,}\d*VND)$"; // Định dạng giá cả: lớn hơn 1000 hoặc có dạng "số lượng dương + VND"
+        //    string priceString = price.ToString(); // Chuyển đổi giá trị price thành chuỗi
+        //    return Regex.IsMatch(priceString, pricePattern);
+        //}
 
 
         public bool DeleteFood(string foodID)
