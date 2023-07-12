@@ -41,14 +41,9 @@ namespace Bird_Management
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            // Display a confirmation message box before going back to the Admin Page
-            DialogResult result = MessageBox.Show("Do you want to go back to the Admin Page?", "BirdShop", MessageBoxButtons.YesNo);
-            if (result == DialogResult.Yes)
-            {
-                Close(); // Close the current form
+                this.Close(); // Close the current form
                 Form form = new Admin(); // Create a new instance of the Admin form
                 form.Show(); // Show the Admin form
-            }
         }
 
         private void dgvDeleteAccount_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

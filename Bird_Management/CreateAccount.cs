@@ -17,14 +17,9 @@ namespace Bird_Management
 
         private void btBack_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Do you want to go back to the Admin Page?", "BirdShop",
-                MessageBoxButtons.YesNo);
-            if (result == DialogResult.Yes)
-            {
-                Close();
+                this.Close();
                 Form form = new Admin();
                 form.Show();
-            }
         }
 
         private void btnCreate_Click(object sender, EventArgs e)
@@ -52,7 +47,7 @@ namespace Bird_Management
             // Validate the accountID format
             if (!accountServices.IsValidAccountIDFormat(accountID))
             {
-                MessageBox.Show("Invalid accountID format. It should be in the format A-01 or higher.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid accountID format. It should be in the format A-1 or higher.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 

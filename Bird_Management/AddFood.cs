@@ -32,11 +32,15 @@ namespace Bird_Management
         {
             FoodServices foodServices = new FoodServices(context);
             var listProducer = foodServices.GetProducerList();
+
+            cboProducer.DropDownStyle = ComboBoxStyle.DropDownList;
+
             foreach (var item in listProducer)
             {
                 cboProducer.Items.Add(item.ProducerName);
             }
         }
+
 
 
         private void btnAddFood_Click(object sender, EventArgs e)
@@ -53,13 +57,13 @@ namespace Bird_Management
 
             if (foodServices.FoodIdIsExist(fID))
             {
-                MessageBox.Show("Food ID is exist \nPlease enter other ID", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Food ID is exist\nPlease enter other ID", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!foodServices.IsValidFoodID(fID))
             {
-                MessageBox.Show("Please enter Food ID \nFollowing format Fxxxx", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please enter Food ID\nFollowing format F-xxx", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -71,13 +75,13 @@ namespace Bird_Management
 
             if (!DateTime.TryParse(startD, out DateTime startDate))
             {
-                MessageBox.Show("Please enter the Manufacturing Date \nThe format is yyyy-mm-dd", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please enter the Manufacturing Date\nThe format is yyyy-mm-dd", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!DateTime.TryParse(endD, out DateTime endDate))
             {
-                MessageBox.Show("Please enter Expiry Date \nThe format is yyyy-mm-dd", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please enter Expiry Date\nThe format is yyyy-mm-dd", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -87,17 +91,66 @@ namespace Bird_Management
                 return;
             }
 
+
+            // Validate price
             if (!float.TryParse(price, out float priceF))
             {
-                MessageBox.Show("Please enter Price of product", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please enter a valid price", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
+            if (priceF <= 0)
+            {
+                MessageBox.Show("Price must be a positive number", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Yêu cầu 1: `price` không được âm
+            if (priceF < 0)
+            {
+                MessageBox.Show("Price cannot be negative", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            //// Yêu cầu 2: `price` phải nằm trong một khoảng giá trị
+            //const float minPrice = 0.0f;
+            //const float maxPrice = 1000.0f;
+            //if (priceF < minPrice || priceF > maxPrice)
+            //{
+            //    MessageBox.Show($"Price must be between {minPrice} and {maxPrice}", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    return;
+            //}
+
+
+            // Validate amount
             if (!int.TryParse(amount, out int amountF))
             {
                 MessageBox.Show("Please enter Amount of product", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
+            if (amountF <= 0)
+            {
+                MessageBox.Show("Amount of product must be a positive number", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Yêu cầu 1: `amount` không được âm
+            if (amountF < 0)
+            {
+                MessageBox.Show("Amount of product cannot be negative", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Yêu cầu 2: `amount` phải nằm trong một khoảng giá trị
+            const int minAmount = 0;
+            const int maxAmount = 100;
+            if (amountF < minAmount || amountF > maxAmount)
+            {
+                MessageBox.Show($"Amount of product must be between {minAmount} and {maxAmount}", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
 
             bool status;
             if (chbOutOfStock.Checked && chbStocking.Checked)
@@ -119,7 +172,7 @@ namespace Bird_Management
                 return;
             }
 
-            DialogResult result = MessageBox.Show("Are you sure you want to update the food?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show("Are you sure you want to add new food?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
                 foodServices.AddNewFood(fID, fName, startDate, endDate, amountF, priceF, producer, status);

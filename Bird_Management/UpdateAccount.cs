@@ -41,14 +41,9 @@ namespace Bird_Management
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Do you want to go back to the Admin Page?", "BirdShop", MessageBoxButtons.YesNo);
-
-            if (result == DialogResult.Yes)
-            {
                 Close();
                 Form form = new Admin();
                 form.Show();
-            }
         }
 
         private void dgvUpdateAccount_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

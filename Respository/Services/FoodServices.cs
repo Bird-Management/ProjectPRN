@@ -112,7 +112,7 @@ namespace Repository.Services
 
         public bool IsValidFoodID(string fID)
         {
-            string pattern = @"^F\d{4}$";
+            string pattern = @"^F-\d{3}$";
             return Regex.IsMatch(fID, pattern);
 
         }
@@ -177,23 +177,9 @@ namespace Repository.Services
         {
             try
             {
-                var searchResults = this._context.Food.Where(x => x.FoodId.Contains(searchID)).Select(
-                    x => new Food
-                    {
-                        FoodId = x.FoodId,
-                        FoodName = x.FoodName,
-                        Price = x.Price,
-                        StartDate = x.StartDate,
-                        EndDate = x.EndDate,
-                        Producer = x.Producer,
-                        Amount = x.Amount,
-                        Status = x.Status
-                    }).FirstOrDefault();
-                if (searchResults != null)
-                {
-                    return searchResults;
-                }
-                return null;
+                var searchResults = _context.Food.FirstOrDefault(x => x.FoodId == searchID);
+
+                return searchResults;
             }catch (Exception ex)
             {
                 throw new Exception(ex.Message);

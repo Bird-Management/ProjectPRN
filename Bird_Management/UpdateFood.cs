@@ -72,13 +72,17 @@ namespace Bird_Management
 
         private void UpdateFood_Load(object sender, EventArgs e)
         {
-            FoodServices _foodServices = new FoodServices(_context);
-            var listProducer = _foodServices.GetProducerList();
-            foreach (var producer in listProducer)
+            FoodServices foodServices = new FoodServices(_context);
+            var listProducer = foodServices.GetProducerList();
+
+            cboProducer.DropDownStyle = ComboBoxStyle.DropDownList; // Đặt kiểu dropdown là DropDownList
+
+            foreach (var item in listProducer)
             {
-                cboProducer.Items.Add(producer.ProducerName);
+                cboProducer.Items.Add(item.ProducerName);
             }
         }
+
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
@@ -112,15 +116,51 @@ namespace Bird_Management
                 return;
             }
 
+            // validate price
+            if (string.IsNullOrEmpty(price))
+            {
+                MessageBox.Show("Please enter a Price", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             if (!float.TryParse(price, out float priceValue))
             {
                 MessageBox.Show("Please enter a valid Price", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
+            if (priceValue < 0)
+            {
+                MessageBox.Show("Price cannot be negative", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Validate amount
             if (!int.TryParse(amount, out int amountValue))
             {
-                MessageBox.Show("Please enter a valid Amount", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please enter Amount of product", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (amountValue <= 0)
+            {
+                MessageBox.Show("Amount of product must be a positive number", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Yêu cầu 1: `amount` không được âm
+            if (amountValue < 0)
+            {
+                MessageBox.Show("Amount of product cannot be negative", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Yêu cầu 2: `amount` phải nằm trong một khoảng giá trị
+            const int minAmount = 0;
+            const int maxAmount = 100;
+            if (amountValue < minAmount || amountValue > maxAmount)
+            {
+                MessageBox.Show($"Amount of product must be between {minAmount} and {maxAmount}", "Bird Management", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 

@@ -90,7 +90,7 @@ namespace Repository.Services
         public bool IsValidAccountIDFormat(string accountID)
         {
             // Regular expression pattern for accountID validation
-            string pattern = @"^A-(0[1-9]|[1-9][0-9]*)$";
+            string pattern = @"^A-([1-9]|[1-9][0-9]*)$";
 
             // Check if the accountID matches the pattern
             return Regex.IsMatch(accountID, pattern);

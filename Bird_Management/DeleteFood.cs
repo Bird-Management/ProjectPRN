@@ -156,7 +156,7 @@ namespace Bird_Management
                 }
                 else
                 {
-                    MessageBox.Show("Food is not found.", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Food is not found.\nPlease enter a Food ID you want to search.", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             else

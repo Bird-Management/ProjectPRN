@@ -172,14 +172,9 @@ namespace Bird_Management
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Do you want to go back to the Sell Page?", "Bird Management",
-                MessageBoxButtons.YesNo);
-            if (result == DialogResult.Yes)
-            {
                 this.Close();
                 Form form = new Seller();
                 form.Show();
-            }
         }
 
         private void btnDeleteProduct_KeyDown(object sender, KeyEventArgs e)
