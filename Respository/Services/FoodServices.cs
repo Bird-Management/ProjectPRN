@@ -112,7 +112,7 @@ namespace Repository.Services
 
         public bool IsValidFoodID(string fID)
         {
-            string pattern = @"^F-\d{3}$";
+            string pattern = @"^F-([1-9]|[1-9][0-9]*)$";
             return Regex.IsMatch(fID, pattern);
 
         }
