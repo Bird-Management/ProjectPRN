@@ -52,6 +52,7 @@ namespace Bird_Management
                     // Find the category with the corresponding CategoryId
                     Category selectedCategory = cbCategory.Items.Cast<Category>().FirstOrDefault(category => category.CategoryId == _selectedProduct.CategoryId);
                     cbCategory.SelectedItem = selectedCategory;
+                    DisableFields();
 
                     if (_selectedProduct.Image != null)
                     {
@@ -62,6 +63,7 @@ namespace Bird_Management
                             pbImage.Image = resizedImage;
                         }
                     }
+
                     else
                     {
                         pbImage.Image = null;
@@ -233,6 +235,16 @@ namespace Bird_Management
             {
                 btnUpdateProduct_Click(sender, e);
             }
+        }
+
+        private void DisableFields()
+        {
+            txtID.Enabled = false;
+            txtName.Enabled = true;
+            txtQuantity.Enabled = true;
+            txtDescription.Enabled = true;
+            txtPrice.Enabled = true;
+            cbCategory.Enabled = true;
         }
     }
 }

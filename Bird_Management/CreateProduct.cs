@@ -28,6 +28,8 @@ namespace Bird_Management
 
             // Populate the Category ComboBox
             PopulateCategories();
+
+            DisableFields();
         }
 
         private byte[] ImageToByteArray(Image image)
@@ -39,12 +41,33 @@ namespace Bird_Management
             }
         }
 
+        private int GetNextProductId()
+        {
+            // Retrieve the last product ID from the database
+            string lastProductId = dbContext.Product
+                .OrderByDescending(p => p.ProductId)
+                .Select(p => p.ProductId)
+                .FirstOrDefault();
+
+            // Extract the numeric part of the last product ID
+            if (!string.IsNullOrEmpty(lastProductId) && lastProductId.StartsWith("D-"))
+            {
+                if (int.TryParse(lastProductId.Substring(2), out int lastIdNumber))
+                {
+                    // Increment the last ID number and return the next product ID
+                    return lastIdNumber + 1;
+                }
+            }
+
+            // If no valid ID found, return 1 as the default starting value
+            return 1;
+        }
+
         private void btnCreateProduct_Click(object sender, EventArgs e)
         {
             try
             {
                 // Get the values from the form controls
-                string id = txtId.Text;
                 string name = txtName.Text;
                 string quantityText = txtQuantity.Text;
                 string description = txtDescription.Text;
@@ -53,7 +76,7 @@ namespace Bird_Management
                 Image image = pbImage.Image;
 
                 // Validate the inputs
-                if (string.IsNullOrWhiteSpace(id) || string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(quantityText) ||
+                if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(quantityText) ||
                     string.IsNullOrWhiteSpace(description) || string.IsNullOrWhiteSpace(priceText) || selectedCategory == null)
                 {
                     MessageBox.Show("Please fill in all the required fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -61,16 +84,16 @@ namespace Bird_Management
                 }
 
                 int quantity;
-                if (!int.TryParse(quantityText, out quantity))
+                if (!int.TryParse(quantityText, out quantity) || quantity < 0)
                 {
-                    MessageBox.Show("Invalid quantity format. Please enter a whole number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Invalid quantity format. Please enter a whole number greater than or equal to zero.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
                 decimal price;
-                if (!decimal.TryParse(priceText, out price))
+                if (!decimal.TryParse(priceText, out price) || price < 0)
                 {
-                    MessageBox.Show("Invalid price format. Please enter a valid decimal number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Invalid price format. Please enter a valid decimal number greater than or equal to zero.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -85,6 +108,10 @@ namespace Bird_Management
                     MessageBox.Show("Please select an image.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
+
+                // Generate the next product ID
+                int nextProductId = GetNextProductId();
+                string id = "D-0" + nextProductId;
 
                 // Create a new Product object
                 Product newProduct = new Product
@@ -113,6 +140,7 @@ namespace Bird_Management
                 MessageBox.Show("Error creating product: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private void ClearForm()
         {
@@ -145,9 +173,9 @@ namespace Bird_Management
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-                this.Close();
-                Form form = new Seller();
-                form.Show();
+            this.Close();
+            Form form = new Seller();
+            form.Show();
         }
 
         private void btnCreateProduct_KeyDown(object sender, KeyEventArgs e)
@@ -225,6 +253,16 @@ namespace Bird_Management
             {
                 MessageBox.Show("Error loading image: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void DisableFields()
+        {
+            txtId.Enabled = false;
+            txtName.Enabled = true;
+            txtQuantity.Enabled = true;
+            txtDescription.Enabled = true;
+            txtPrice.Enabled = true;
+            cbCategory.Enabled = true;
         }
     }
 }
